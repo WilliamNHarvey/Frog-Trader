@@ -20,7 +20,7 @@ angular.module('pepeTrader.tap', [])
                     'top': parseInt($('#tapbutton').css('top')) + 10,
                     'left': parseInt($('#tapbutton').css('left')) + 10
 
-                }, 50);
+                }, 200);
                 $('#tapbutton').animate({
 
                     'width': "+=30",
@@ -28,7 +28,7 @@ angular.module('pepeTrader.tap', [])
                     'top': "-=15",
                     'left': "-=15"
 
-                }, 50);
+                }, 200);
                 $('#tapbutton').animate({
 
                     'width': "-=20",
@@ -36,7 +36,7 @@ angular.module('pepeTrader.tap', [])
                     'top': parseInt($('#tapbutton').css('top')) + 5,
                     'left': parseInt($('#tapbutton').css('left')) + 5
 
-                }, 50);
+                }, 200);
                 $('#tapbutton').animate({
 
                     'width': "+=10",
@@ -44,7 +44,7 @@ angular.module('pepeTrader.tap', [])
                     'top': "-=5",
                     'left': "-=5"
 
-                }, 50);
+                }, 200);
             }
         }
     }
