@@ -7,17 +7,21 @@ angular.module('pepeTrader.tap', [])
         template: '<div class="tapbutton" layout-align="center center" ng-click="tapButton()"></div>',
         controller: function($scope, $element){
             $scope.tapButton = function(){
-                $element.animate({
+                $('.red').animate({
+                    'width': "-=50",
+                    'height': "-=50" }, 2000);
+                $('.tapbutton').animate({
 
-                    width: "-=10",
-                    height: "+=10"
+                    'width': "-=50",
+                    'height': "-=50"
 
-                }, 200, function() {
+                }, 200);
+                $('.tapbutton').animate({
 
-                    width: "+=10",
-                    height: "+=10"
+                    'width': "+=50",
+                    'height': "+=50"
 
-                });
+                }, 200);
             }
         }
     }
