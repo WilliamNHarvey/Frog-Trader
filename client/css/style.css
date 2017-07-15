@@ -18,9 +18,12 @@
 
 .tapbutton {
     display:block;
-    height: 300px;
-    width: 300px;
-    color: darkgreen;
+    height: 100px;
+    width: 100px;
+    background: darkgreen;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;

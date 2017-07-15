@@ -184,9 +184,13 @@ angular.module('pepeTrader.controllers', [])
 })
 
 .controller('TapPageCtrl', function($scope, $location) {
-  $scope.tapButton = tapButton();
-
-  function tapButton() {
-
-  }
+    $scope.tapButton = function(){
+        $(this).animate({
+            "width": "-=10",
+            "height": "+=10"
+        }, 200, function() {
+            "width": "+=10",
+            "height": "+=10"
+        });
+    }
 })
