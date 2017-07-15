@@ -19,8 +19,8 @@ angular.module('pepeTrader.tap', [])
 
                     'width': "+=30",
                     'height': "+=30",
-                    'top': parseInt($('#tapbutton').css('top')) - 15,
-                    'left': parseInt($('#tapbutton').css('left')) - 15
+                    'top': parseInt($('#tapbutton').css('top')) - 60,
+                    'left': parseInt($('#tapbutton').css('left')) - 60
 
                 }, 200);
                 $('#tapbutton').animate({
@@ -35,8 +35,8 @@ angular.module('pepeTrader.tap', [])
 
                     'width': "+=10",
                     'height': "+=10",
-                    'top': parseInt($('#tapbutton').css('top')) - 5,
-                    'left': parseInt($('#tapbutton').css('left')) - 5
+                    'top': parseInt($('#tapbutton').css('top')) - 20,
+                    'left': parseInt($('#tapbutton').css('left')) - 20
 
                 }, 200);
             }
