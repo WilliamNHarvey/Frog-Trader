@@ -1,4 +1,4 @@
-angular.module('starter.services', [])
+angular.module('pepeTrader.services', [])
 
 .factory('SocketIO', function() {
   return io()
