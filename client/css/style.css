@@ -34,7 +34,7 @@
     transition-property: transform;
     position: absolute;
     top: 50%;
-    margin-top: -150px;
+    margin-top: 150px;
     left: 50%;
     margin-left: -150px;
 }
