@@ -33,7 +33,7 @@
     -o-transition-property: -o-transform;
     transition-property: transform;
     position: absolute;
-    top: 50%;
+    top: 25%;
     right: 0px;
     left: 0px;
     margin: auto;
