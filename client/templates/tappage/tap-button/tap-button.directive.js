@@ -7,6 +7,7 @@ angular.module('pepeTrader.tap', [])
         template: '<div id="tapbutton" class="tapbutton" layout-align="center center" ng-click="tapButton()"></div>',
         controller: function($scope, $element){
             $scope.tapButton = function(){
+                $('#tapbutton').stop(true).fadeTo('fast',1);
                 $('#tapbutton').animate({
 
                     'width': "-=20",
@@ -19,8 +20,8 @@ angular.module('pepeTrader.tap', [])
 
                     'width': "+=30",
                     'height': "+=30",
-                    'top': parseInt($('#tapbutton').css('top')) - 15,
-                    'left': parseInt($('#tapbutton').css('left')) - 15
+                    'top': parseInt($('#tapbutton').css('top')) - 10,
+                    'left': parseInt($('#tapbutton').css('left')) - 10
 
                 }, 200);
                 $('#tapbutton').animate({
