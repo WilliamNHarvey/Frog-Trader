@@ -1,13 +1,13 @@
-angular.module('pepeTrader.tap', [])
+angular.module('pepeTrader', [])
 
 .directive('tapButton', function(){
     return {
-        restrict: 'AE',
+        restrict: 'E',
         scope: true,
         template: '<div class="tapbutton" layout-align="center center" ng-click="tapButton()"></div>',
         controller: function($scope, $element){
             $scope.tapbutton = function(){
-                
+
             }
         }
     }
