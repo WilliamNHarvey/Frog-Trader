@@ -18,8 +18,8 @@
 
 .tapbutton {
     display:block;
-    height: 100px;
-    width: 100px;
+    height: 500px;
+    width: 500px;
     background: darkgreen;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
@@ -32,6 +32,13 @@
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
     transition-property: transform;
+    position: absolute;
+    top: 20%;
+    right: 0px;
+    bottom: 20%;
+    left: 0px;
+    margin: auto;
+    text-align: center;
 }
 
 .pulse {

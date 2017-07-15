@@ -12,14 +12,26 @@ angular.module('pepeTrader.tap', [])
                     'height': "-=50" }, 2000);
                 $('.tapbutton').animate({
 
-                    'width': "-=50",
-                    'height': "-=50"
+                    'width': "-=20",
+                    'height': "-=20"
 
                 }, 200);
                 $('.tapbutton').animate({
 
-                    'width': "+=50",
-                    'height': "+=50"
+                    'width': "+=30",
+                    'height': "+=30"
+
+                }, 200);
+                $('.tapbutton').animate({
+
+                    'width': "-=20",
+                    'height': "-=20"
+
+                }, 200);
+                $('.tapbutton').animate({
+
+                    'width': "+=10",
+                    'height': "+=10"
 
                 }, 200);
             }
