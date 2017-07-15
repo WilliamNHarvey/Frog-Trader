@@ -10,9 +10,33 @@
 }
 
 /* home screen */
-.home-content {
-    background: url(/img/splash-background.png) no-repeat;
-    background-size: cover;
+.tappage-content {
+    /*background: url(/img/splash-background.png) no-repeat;
+    background-size: cover;*/
+    background-color: white;
+}
+
+.tapbutton {
+    display:block;
+    height: 300px;
+    width: 300px;
+    color: darkgreen;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.pulse {
+    animation-name: pulse_animation;
+    animation-duration: 1000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .home-content > .scroll {
