@@ -6,7 +6,7 @@ angular.module('pepeTrader.tap', [])
         scope: true,
         template: '<div id="tapbutton" class="tapbutton" layout-align="center center" ng-click="tapButton()"></div>',
         controller: function($scope, $element){
-            $scope.transforming = true;
+            $scope.transforming = false;
             $scope.tapButton = function(){
 
 
@@ -16,7 +16,7 @@ angular.module('pepeTrader.tap', [])
                 $('#tapbutton').css('top', '50%');
                 $('#tapbutton').css('left', '50%');*/
                 if(!$scope.transforming) {
-
+                    $scope.transforming = true;
                     $('#tapbutton').animate({
 
                         'width': "-=20",
