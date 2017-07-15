@@ -16,15 +16,6 @@
     background-color: white;
 }
 
-.positioner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    width: 25%;
-    padding-bottom: 25%;
-}
-
 .tapbutton {
     display:block;
     height: 300px;
@@ -33,10 +24,19 @@
     -moz-border-radius: 150px;
     -webkit-border-radius: 150px;
     border-radius: 150px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
     position: absolute;
-    top: -50%;
-    left: -50%;
-    padding-bottom: 100%;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: -150px;
 }
 
 .pulse {

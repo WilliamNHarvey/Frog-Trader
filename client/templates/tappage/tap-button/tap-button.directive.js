@@ -7,31 +7,36 @@ angular.module('pepeTrader.tap', [])
         template: '<div class="positioner"><div class="tapbutton" layout-align="center center" ng-click="tapButton()"></div></div>',
         controller: function($scope, $element){
             $scope.tapButton = function(){
-                $('.red').animate({
-                    'width': "-=50",
-                    'height': "-=50" }, 2000);
                 $('.tapbutton').animate({
 
                     'width': "-=20",
-                    'height': "-=20"
+                    'height': "-=20",
+                    'top': parseInt($('.tapbutton').css('top')) - 20,
+                    'left': parseInt($('.tapbutton').css('left')) - 20
 
                 }, 200);
                 $('.tapbutton').animate({
 
                     'width': "+=30",
                     'height': "+=30"
+                    'top': parseInt($('.tapbutton').css('top')) + 30,
+                    'left': parseInt($('.tapbutton').css('left')) + 30
 
                 }, 200);
                 $('.tapbutton').animate({
 
                     'width': "-=20",
                     'height': "-=20"
+                    'top': parseInt($('.tapbutton').css('top')) - 20,
+                    'left': parseInt($('.tapbutton').css('left')) - 20
 
                 }, 200);
                 $('.tapbutton').animate({
 
                     'width': "+=10",
                     'height': "+=10"
+                    'top': parseInt($('.tapbutton').css('top')) + 10,
+                    'left': parseInt($('.tapbutton').css('left')) + 10
 
                 }, 200);
             }
