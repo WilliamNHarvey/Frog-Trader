@@ -4,7 +4,7 @@ angular.module('pepeTrader.tap', [])
     return {
         restrict: 'AE',
         scope: true,
-        template: '<div class="tapbutton" layout-align="center center" ng-click="tapButton()"></div>',
+        template: '<div class="positioner"><div class="tapbutton" layout-align="center center" ng-click="tapButton()"></div></div>',
         controller: function($scope, $element){
             $scope.tapButton = function(){
                 $('.red').animate({
