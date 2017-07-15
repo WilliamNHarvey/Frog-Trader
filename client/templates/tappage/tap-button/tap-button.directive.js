@@ -11,32 +11,32 @@ angular.module('pepeTrader.tap', [])
 
                     'width': "-=20",
                     'height': "-=20",
-                    'top': parseInt($('#tapbutton').css('top')) - 10,
-                    'left': parseInt($('#tapbutton').css('left')) - 10
+                    'top': parseInt($('#tapbutton').css('top')) + 10,
+                    'left': parseInt($('#tapbutton').css('left')) + 10
 
                 }, 200);
                 $('#tapbutton').animate({
 
                     'width': "+=30",
                     'height': "+=30",
-                    'top': parseInt($('#tapbutton').css('top')) + 15,
-                    'left': parseInt($('#tapbutton').css('left')) + 15
+                    'top': parseInt($('#tapbutton').css('top')) - 15,
+                    'left': parseInt($('#tapbutton').css('left')) - 15
 
                 }, 200);
                 $('#tapbutton').animate({
 
                     'width': "-=20",
                     'height': "-=20",
-                    'top': parseInt($('#tapbutton').css('top')) - 10,
-                    'left': parseInt($('#tapbutton').css('left')) - 10
+                    'top': parseInt($('#tapbutton').css('top')) + 10,
+                    'left': parseInt($('#tapbutton').css('left')) + 10
 
                 }, 200);
                 $('#tapbutton').animate({
 
                     'width': "+=10",
                     'height': "+=10",
-                    'top': parseInt($('#tapbutton').css('top')) + 5,
-                    'left': parseInt($('#tapbutton').css('left')) + 5
+                    'top': parseInt($('#tapbutton').css('top')) - 5,
+                    'left': parseInt($('#tapbutton').css('left')) - 5
 
                 }, 200);
             }
