@@ -1,4 +1,4 @@
-angular.module('pepeTrader', [])
+angular.module('pepeTrader.tap', [])
 
 .directive('tapButton', function(){
     return {
