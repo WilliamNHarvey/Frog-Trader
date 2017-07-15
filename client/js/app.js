@@ -3,7 +3,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngResource'])
+angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.services', 'ngResource'])
 
 .run(function($window, $location, $ionicPlatform, $rootScope, AuthenticationService) {
   $rootScope.user = {
@@ -18,10 +18,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   $rootScope.$on("$stateChangeStart", function(event, toState) {
     //redirect only if both isAuthenticated is false and no token is set
 
-    if (['home', 'login', 'logout', 'register'].indexOf(toState.name) === -1) {
+    if (['tappage', 'login', 'logout', 'register'].indexOf(toState.name) === -1) {
       if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
         event.preventDefault();
-        $location.path("/home");
+        $location.path("/tappage");
       }
     }
 
@@ -46,10 +46,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
-  $stateProvider.state('home', {
-    url: "/home",
-    templateUrl: "templates/home.html",
-    controller: 'HomeCtrl'
+  $stateProvider.state('tappage', {
+    url: "/tappage",
+    templateUrl: "templates/tappage/tapbutton/tappage.html",
+    controller: 'TapPageCtrl'
   })
 
   .state('register', {

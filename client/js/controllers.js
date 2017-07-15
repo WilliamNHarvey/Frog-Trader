@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('pepeTrader.controllers', [])
 
 .controller('AppCtrl', function($scope, $location, RegistrationService) {
   $scope.logout = function() {
@@ -183,6 +183,10 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('HomeCtrl', function($scope, $location) {
+.controller('TapPageCtrl', function($scope, $location) {
+  $scope.tapButton = tapButton();
 
+  function tapButton() {
+
+  }
 })
