@@ -35,10 +35,8 @@
     position: absolute;
     top: 50%;
     margin-top: -150px;
-    right: 0px;
-    left: 0px;
-    margin: auto;
-    text-align: center;
+    left: 50%;
+    margin-left: -150px;
 }
 
 .pulse {
