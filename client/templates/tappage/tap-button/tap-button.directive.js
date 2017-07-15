@@ -9,13 +9,13 @@ angular.module('pepeTrader.tap', [])
             $scope.tapButton = function(){
                 $element.animate({
 
-                    "width": "-=10",
-                    "height": "+=10"
+                    width: "-=10",
+                    height: "+=10"
 
                 }, 200, function() {
 
-                    "width": "+=10",
-                        "height": "+=10"
+                    width: "+=10",
+                    height: "+=10"
 
                 });
             }
