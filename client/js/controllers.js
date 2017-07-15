@@ -184,9 +184,5 @@ angular.module('pepeTrader.controllers', [])
 })
 
 .controller('TapPageCtrl', function($scope, $location) {
-  $scope.tapButton = tapButton();
 
-  function tapButton() {
-      
-  }
 })
