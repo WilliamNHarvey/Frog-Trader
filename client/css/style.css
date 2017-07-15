@@ -21,9 +21,9 @@
     height: 500px;
     width: 500px;
     background: darkgreen;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
+    -moz-border-radius: 250px;
+    -webkit-border-radius: 250px;
+    border-radius: 250px;
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
@@ -33,9 +33,8 @@
     -o-transition-property: -o-transform;
     transition-property: transform;
     position: absolute;
-    top: 20%;
+    top: 50%;
     right: 0px;
-    bottom: 20%;
     left: 0px;
     margin: auto;
     text-align: center;
