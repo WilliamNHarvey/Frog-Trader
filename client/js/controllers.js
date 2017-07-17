@@ -1,11 +1,12 @@
 angular.module('pepeTrader.controllers', [])
 
-.controller('AppCtrl', function($scope, $location, RegistrationService) {
-  $scope.logout = function() {
+.controller('NavCtrl', function($scope, $location, RegistrationService) {
+  /*$scope.logout = function() {
     RegistrationService.logout();
     $location.path("/register");
   }
-  $scope.timeleft = '0 secs';
+  $scope.timeleft = '0 secs';*/
+
 })
 
 
