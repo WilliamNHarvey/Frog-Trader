@@ -6,7 +6,7 @@ angular.module('pepeTrader.tap', [])
         scope: true,
         template: '<div id="tapbutton" class="tapbutton" layout-align="center center" ng-click="tapButton($event)"></div>',
         controller: function($scope, $element){
-            //var pepimg = $('<div class="pepimg fadeupandout"></div>');
+
 
             $scope.tapButton = function(e){
 
