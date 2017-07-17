@@ -47,7 +47,7 @@
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
-    position: absolute;
+    position: relative;
     z-index: 99 !important;
 }
 
