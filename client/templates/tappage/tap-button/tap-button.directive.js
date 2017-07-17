@@ -49,8 +49,8 @@ angular.module('pepeTrader.tap', [])
                 }, 150);
 
                 var newpep = pepimg.css({
-                        "left": e.pageX + 'px',
-                        "top": e.pageY + 'px'
+                        "left": e.offsetX + 'px',
+                        "top": e.offsetY + 'px'
                     })
                     .appendTo(document.body);
 
