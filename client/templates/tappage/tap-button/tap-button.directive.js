@@ -52,9 +52,7 @@ angular.module('pepeTrader.tap', [])
                         "left": e.pageX + 'px',
                         "top": e.pageY + 'px'
                     })
-                    .appendTo(document.body)
-
-                $('#tapbutton').animate({
+                    .appendTo(document.body);
 
             }
         }
