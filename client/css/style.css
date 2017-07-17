@@ -37,6 +37,7 @@
     left: 50%;
     margin-top: 100px;
     margin-left: -150px;
+    opacity: 0.5;
 }
 
 .pepimg {
@@ -47,8 +48,8 @@
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    z-index: 99 !important;
 }
 
 .fadeupandout {
