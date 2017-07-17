@@ -47,10 +47,13 @@
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
+    position: relative;
+    z-index: 2;
 }
 
 .fadeupandout {
-    animation: MoveUp 1s ease-out 1;
+    animation: MoveUp 1s ease-out infinite;
+    -webkit-animation: MoveUp 1s ease-out infinite;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
