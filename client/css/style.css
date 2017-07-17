@@ -47,7 +47,7 @@
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
-    position: relative;
+    position: absolute;
     z-index: 99 !important;
 }
 
@@ -59,10 +59,10 @@
 
 @keyframes MoveUp {
     0% {
-        bottom: 0;
+        margin-bottom: 0;
     }
     100% {
-        bottom: 50px;
+        margin-bottom: 50px;
     }
 }
 
