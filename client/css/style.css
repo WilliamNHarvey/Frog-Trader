@@ -37,7 +37,6 @@
     left: 50%;
     margin-top: 100px;
     margin-left: -150px;
-    opacity: 0.5;
 }
 
 .pepimg {
@@ -53,9 +52,8 @@
 }
 
 .fadeupandout {
-    animation: moveUp 1s ease-out 1 forwards, fade 1s linear;
-    -webkit-animation: MoveUp 1s ease-out 1 forwards, fade 1s linear;
-    visibility: visible;
+    animation: fade 1s linear, moveUp 1s ease-out 1 forwards;
+    -webkit-animation: fade 1s linear, moveUp 1s ease-out 1 forwards;
     opacity: 1;
 }
 
