@@ -55,6 +55,7 @@ angular.module('pepeTrader.tap', [])
                     .appendTo(document.body);
 
                 console.log(newpep);
+                console.log(e);
 
             }
         }

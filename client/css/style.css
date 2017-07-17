@@ -52,19 +52,28 @@
 }
 
 .fadeupandout {
-    animation: MoveUp 2s ease-out 1;
-    -webkit-animation: MoveUp 2s ease-out 1;
+    animation: moveUp 1s ease-out 1 forwards;
+    -webkit-animation: MoveUp 1s ease-out 1 forwards;
     visibility: visible;
     opacity: 1;
-    transition: opacity 2s linear;
+    animation: fade 1s linear;
 }
 
-@keyframes MoveUp {
+@keyframes moveUp {
     0% {
         bottom: 0;
     }
     100% {
         bottom: 50px;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
