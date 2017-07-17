@@ -59,14 +59,32 @@
 
 @keyframes MoveUp {
     0% {
-        margin-bottom: 0;
+        transform: translateY(0px);
     }
     100% {
-        margin-bottom: 50px;
+        transform: translateY(50px);
+    }
+}
+
+@-webkit-keyframes openAnimation {
+    0% {
+        -webkit-transform: translateY(0px);
+    }
+    100% {
+        -webkit-transform: translateY(50px);
     }
 }
 
 @keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fade {
     0% {
         opacity: 1;
     }
