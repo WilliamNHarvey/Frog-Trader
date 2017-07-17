@@ -4,9 +4,11 @@ angular.module('pepeTrader.tap', [])
     return {
         restrict: 'AE',
         scope: true,
-        template: '<div id="tapbutton" class="tapbutton" layout-align="center center" ng-click="tapButton()"></div>',
+        template: '<div id="tapbutton" class="tapbutton" layout-align="center center" ng-click="tapButton($event)"></div>',
         controller: function($scope, $element){
-            $scope.tapButton = function(){
+            var pepimg = $('<div class="pepimg fadeout"></div>');
+
+            $scope.tapButton = function(e){
 
                 $('#tapbutton').stop(true).fadeTo('fast',1);
                 $('#tapbutton').css('width', '300px');
@@ -46,8 +48,14 @@ angular.module('pepeTrader.tap', [])
 
                 }, 150);
 
-                //add pepes
-                
+                var newpep = pepeimg.css({
+                        "left": e.pageX + 'px',
+                        "top": e.pageY + 'px'
+                    })
+                    .appendTo(document.body)
+
+                $('#tapbutton').animate({
+
             }
         }
     }
