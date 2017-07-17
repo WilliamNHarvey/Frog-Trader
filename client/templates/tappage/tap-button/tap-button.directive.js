@@ -54,7 +54,7 @@ angular.module('pepeTrader.tap', [])
 
                     })
                     .appendTo(document.body);
-                setTimeout(function(){ newpep.remove() }, 1000);
+                setTimeout(function(){ newpep.remove() }, 1500);
 
             }
         }
