@@ -52,26 +52,26 @@
 }
 
 .fadeupandout {
-    animation: MoveUp 1s ease-out infinite;
-    -webkit-animation: MoveUp 1s ease-out infinite;
+    animation: moveUp 1s ease-out infinite, fade 1s linear;
+    -webkit-animation: moveUp 1s ease-out infinite, fade 1s linear;
     opacity: 1;
 }
 
-@keyframes MoveUp {
+@keyframes moveUp {
     0% {
         transform: translateY(0px);
     }
     100% {
-        transform: translateY(50px);
+        transform: translateY(-50px);
     }
 }
 
-@-webkit-keyframes openAnimation {
+@-webkit-keyframes moveUp {
     0% {
         -webkit-transform: translateY(0px);
     }
     100% {
-        -webkit-transform: translateY(50px);
+        -webkit-transform: translateY(-50px);
     }
 }
 
