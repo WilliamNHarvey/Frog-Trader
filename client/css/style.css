@@ -52,8 +52,8 @@
 }
 
 .fadeupandout {
-    animation: moveUp 1.5s ease-out 1, fade 1.5s linear;
-    -webkit-animation: moveUp 1.5s ease-out 1, fade 1.5s linear;
+    animation: moveUp 1.5s ease-out 1, fade 1.25s linear;
+    -webkit-animation: moveUp 1.5s ease-out 1, fade 1.25s linear;
     opacity: 1;
 }
 

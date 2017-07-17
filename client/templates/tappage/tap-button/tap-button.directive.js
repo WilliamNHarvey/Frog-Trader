@@ -6,7 +6,7 @@ angular.module('pepeTrader.tap', [])
         scope: true,
         template: '<div id="tapbutton" class="tapbutton" layout-align="center center" ng-click="tapButton($event)"></div>',
         controller: function($scope, $element){
-            var pepimg = $('<div class="pepimg fadeupandout"></div>');
+            //var pepimg = $('<div class="pepimg fadeupandout"></div>');
 
             $scope.tapButton = function(e){
 
@@ -48,7 +48,8 @@ angular.module('pepeTrader.tap', [])
 
                 }, 150);
 
-                var newpep = pepimg.css({
+                var newpep = $('<div class="pepimg fadeupandout"></div>')
+                    .css({
                         "left": e.pageX + 'px',
                         "top": e.pageY + 'px'
 
