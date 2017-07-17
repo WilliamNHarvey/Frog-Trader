@@ -54,8 +54,8 @@
 .fadeupandout {
     animation: MoveUp 1s ease-out infinite;
     -webkit-animation: MoveUp 1s ease-out infinite;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    transition: opacity 1s ease-out;
 }
 
 @keyframes MoveUp {
