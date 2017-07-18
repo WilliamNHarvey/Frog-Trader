@@ -57,9 +57,10 @@
     opacity: 1;
 }
 
-.bar, .bar-header, .toolbar-background {
+.bar, .bar-stable, .bar-header, .toolbar-background {
     border: none !important;
     background: none !important;
+    background-color: transparent !important;
 }
 
 @keyframes moveUp {
