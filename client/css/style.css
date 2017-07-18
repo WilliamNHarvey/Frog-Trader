@@ -57,8 +57,9 @@
     opacity: 1;
 }
 
-.bar {
+.bar .toolbar-background {
     border: none !important;
+    background: none; 
 }
 
 @keyframes moveUp {

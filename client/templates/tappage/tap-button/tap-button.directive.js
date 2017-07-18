@@ -29,7 +29,6 @@ angular.module('pepeTrader.tap', [])
             }
 
             function bounce() {
-
                 $('#tapbutton').animate({
 
                     'width': "-=20",
