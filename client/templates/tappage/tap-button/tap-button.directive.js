@@ -25,7 +25,7 @@ angular.module('pepeTrader.tap', [])
                     })
                     .appendTo(document.body);
                 setTimeout(function(){ newpep.remove() }, 1500);
-                bounceTimer = setTimeout(function(){ bounce() }, 500);
+                bounceTimer = setTimeout(function(){ bounce() }, 750);
             }
 
             function bounce() {
