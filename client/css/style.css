@@ -59,7 +59,7 @@
 
 .bar, .bar-header, .toolbar-background {
     border: none !important;
-    background: none;
+    background: none !important;
 }
 
 @keyframes moveUp {
