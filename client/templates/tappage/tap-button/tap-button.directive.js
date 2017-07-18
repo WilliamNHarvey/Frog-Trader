@@ -7,9 +7,15 @@ angular.module('pepeTrader.tap', [])
         template: '<div id="tapbutton" class="tapbutton" layout-align="center center" ng-click="tapButton($event)"></div>',
         controller: function($scope, $element){
             var bounceTimer;
-            
+
             $scope.tapButton = function(e){
                 $('#tapbutton').stop(true).fadeTo('fast',1);
+                if($('#tapbutton').width() != 300) {
+                    $('#tapbutton').css('width', '300px');
+                    $('#tapbutton').css('height', '300px');
+                    $('#tapbutton').css('top', '50%');
+                    $('#tapbutton').css('left', '50%');
+                }
                 clearTimeout(bounceTimer);
                 var newpep = $('<div class="pepimg fadeupandout"></div>')
                     .css({
@@ -23,12 +29,7 @@ angular.module('pepeTrader.tap', [])
             }
 
             function bounce() {
-                if($('#tapbutton').width() != 300) {
-                    $('#tapbutton').css('width', '300px');
-                    $('#tapbutton').css('height', '300px');
-                    $('#tapbutton').css('top', '50%');
-                    $('#tapbutton').css('left', '50%');
-                }
+
                 $('#tapbutton').animate({
 
                     'width': "-=20",
