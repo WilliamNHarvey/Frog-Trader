@@ -903,7 +903,7 @@ define("cordova/exec", function(require, exports, module) {
  * @param {String} action       Action to be run in cordova
  * @param {String[]} [args]     Zero or more arguments to pass to the method
  */
-var cordova = require('cordova'),
+var cordova = require('client/js/cordova'),
     nativeApiProvider = require('cordova/android/nativeapiprovider'),
     utils = require('cordova/utils'),
     base64 = require('cordova/base64'),
@@ -1202,7 +1202,7 @@ module.exports = {
 define("cordova/init", function(require, exports, module) {
 
 var channel = require('cordova/channel');
-var cordova = require('cordova');
+var cordova = require('client/js/cordova');
 var modulemapper = require('cordova/modulemapper');
 var platform = require('cordova/platform');
 var pluginloader = require('cordova/pluginloader');
@@ -1318,7 +1318,7 @@ channel.join(function() {
     // constructors have run and cordova info has been received from native
     // side.
     channel.join(function() {
-        require('cordova').fireDocumentEvent('deviceready');
+        require('client/js/cordova').fireDocumentEvent('deviceready');
     }, channel.deviceReadyChannelsArray);
 
 }, platformInitChannelsArray);
@@ -1330,7 +1330,7 @@ channel.join(function() {
 define("cordova/init_b", function(require, exports, module) {
 
 var channel = require('cordova/channel');
-var cordova = require('cordova');
+var cordova = require('client/js/cordova');
 var modulemapper = require('cordova/modulemapper');
 var platform = require('cordova/platform');
 var pluginloader = require('cordova/pluginloader');
@@ -1444,7 +1444,7 @@ channel.join(function() {
     // constructors have run and cordova info has been received from native
     // side.
     channel.join(function() {
-        require('cordova').fireDocumentEvent('deviceready');
+        require('client/js/cordova').fireDocumentEvent('deviceready');
     }, channel.deviceReadyChannelsArray);
 
 }, platformInitChannelsArray);
@@ -1659,7 +1659,7 @@ module.exports = {
     id: 'android',
     bootstrap: function() {
         var channel = require('cordova/channel'),
-            cordova = require('cordova'),
+            cordova = require('client/js/cordova'),
             exec = require('cordova/exec'),
             modulemapper = require('cordova/modulemapper');
 
@@ -1717,7 +1717,7 @@ module.exports = {
 };
 
 function onMessageFromNative(msg) {
-    var cordova = require('cordova');
+    var cordova = require('client/js/cordova');
     var action = msg.action;
 
     switch (action)
@@ -1763,7 +1763,7 @@ function onMessageFromNative(msg) {
 define("cordova/plugin/android/app", function(require, exports, module) {
 
 var exec = require('cordova/exec');
-var APP_PLUGIN_NAME = Number(require('cordova').platformVersion.split('.')[0]) >= 4 ? 'CoreAndroid' : 'App';
+var APP_PLUGIN_NAME = Number(require('client/js/cordova').platformVersion.split('.')[0]) >= 4 ? 'CoreAndroid' : 'App';
 
 module.exports = {
     /**
@@ -2200,7 +2200,7 @@ utils.alert = function(msg) {
 
 });
 
-window.cordova = require('cordova');
+window.cordova = require('client/js/cordova');
 // file: src/scripts/bootstrap.js
 
 require('cordova/init');
