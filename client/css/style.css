@@ -57,7 +57,7 @@
     opacity: 1;
 }
 
-.bar .toolbar-background {
+.bar .bar-header .toolbar-background {
     border: none !important;
     background: none;
 }
