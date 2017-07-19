@@ -6,7 +6,7 @@ angular.module('pepeTrader.controllers', [])
     $location.path("/register");
   }
   $scope.timeleft = '0 secs';*/
-    var pow=Math.pow, floor=Math.floor, abs=Math.abs, log=Math.log;
+    var pow=Math.pow, floor=Math.floor, abs=Math.abs, log=Math.log, precision = 3;
     function round(n, precision) {
         var prec = Math.pow(10, precision);
         return Math.floor(n*prec)/prec;
@@ -21,8 +21,8 @@ angular.module('pepeTrader.controllers', [])
     $scope.parsePepes = function(n){
         var base = floor(log(abs(n))/log(1000));
         var suffix = ' ' + ['kilo','Mega','Giga','Tera','Peta','Exa','Zetta','Yotta'][base-1];
-        round(n/pow(1000,base),2) == 1 ? suffix += 'pepe' : suffix += 'pepes';
-        return suffix ? round(n/pow(1000,base),2)+suffix : ''+n;
+        round(n/pow(1000,base), precision) == 1 ? suffix += 'pepe' : suffix += 'pepes';
+        return suffix ? round(n/pow(1000,base), precision)+suffix : ''+n;
     };
 })
 
