@@ -6,14 +6,14 @@ angular.module('pepeTrader.controllers', [])
     $location.path("/register");
   }
   $scope.timeleft = '0 secs';*/
-    var pow=Math.pow, floor=Math.floor, abs=Math.abs, log=Math.log, precision = 3;
+    var pow=Math.pow, floor=Math.floor, abs=Math.abs, log=Math.log, precision = 2;
     function round(n, precision) {
         var prec = Math.pow(10, precision);
         return Math.floor(n*prec)/prec;
     }
     PepesService.get().then(function() {
         //fade in score
-        $scope.pepes = 1000999;
+        $scope.pepes = 0;
     });
     $scope.increasePepes = function() {
         $scope.pepes++;
