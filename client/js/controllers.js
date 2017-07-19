@@ -1,6 +1,6 @@
 angular.module('pepeTrader.controllers', [])
 
-.controller('NavCtrl', function($scope, $location, RegistrationService, PepesService) {
+.controller('NavCtrl', function($scope, $location, RegistrationService, PepesService, $window) {
   /*$scope.logout = function() {
     RegistrationService.logout();
     $location.path("/register");
