@@ -15,8 +15,8 @@ angular.module('pepeTrader.controllers', [])
     };
     $scope.parsePepes = function(n,d){
         x=(''+n).length,p=Math.pow,d=p(10,d)
-        x-=x%3
-        return Math.round(n*d/p(10,x))/d+" kMGTPE"[x/3]
+        x-=x%4
+        return Math.round(n*d/p(10,x))/d+" kMGTPE"[x/4]
     };
 })
 
