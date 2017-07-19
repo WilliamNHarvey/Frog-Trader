@@ -1,12 +1,14 @@
 angular.module('pepeTrader.controllers', [])
 
-.controller('NavCtrl', function($scope, $location, RegistrationService, PepesService) {
+.controller('NavCtrl', function($scope, $location, RegistrationService, PepesService, $window) {
   /*$scope.logout = function() {
     RegistrationService.logout();
     $location.path("/register");
   }
   $scope.timeleft = '0 secs';*/
     var pow=Math.pow, floor=Math.floor, abs=Math.abs, log=Math.log, precision = 2;
+    console.log($window);
+    console.log($window.localStorage);
     function round(n, precision) {
         var prec = Math.pow(10, precision);
         return Math.floor(n*prec)/prec;
