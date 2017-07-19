@@ -38,6 +38,9 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
       StatusBar.styleDefault();
     }
   });
+    window.addEventListener("orientationchange", function(){
+        screen.lockOrientation('portrait');
+    });
 })
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
