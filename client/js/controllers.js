@@ -9,7 +9,7 @@ angular.module('pepeTrader.controllers', [])
     var pow=Math.pow, floor=Math.floor, abs=Math.abs, log=Math.log;
     function round(n, precision) {
         var prec = Math.pow(10, precision);
-        return Math.round(n*prec)/prec;
+        return Math.floor(n*prec)/prec;
     }
     PepesService.get().then(function() {
         //fade in score
