@@ -20,7 +20,7 @@
     display:block;
     height: 300px;
     width: 300px;
-    background: darkgreen;
+    /*background: darkgreen;
     -moz-border-radius: 150px;
     -webkit-border-radius: 150px;
     border-radius: 150px;
@@ -31,7 +31,9 @@
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
-    transition-property: transform;
+    transition-property: transform;*/
+    background-image: url('../img/pepe.png');
+    background-size:contain;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,18 +45,27 @@
     display:block;
     height: 50px;
     width: 50px;
-    background: lawngreen;
+    /*background: lawngreen;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
-    border-radius: 25px;
-    position: absolute;
-    z-index: 99 !important;
+    border-radius: 25px;*/
+    background-image: url('../img/pepe.png');
+    background-size:contain;
+    z-index: 2 !important;
 }
 
 .fadeupandout {
+    pointer-events: none;
     animation: moveUp 1.5s ease-out 1, fade 1.5s linear;
     -webkit-animation: moveUp 1.5s ease-out 1, fade 1.5s linear;
     opacity: 1;
+}
+
+.pepes-count {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 .bar, .bar-stable, .bar-header, .toolbar-background {
