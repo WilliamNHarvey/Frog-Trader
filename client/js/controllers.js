@@ -15,10 +15,19 @@ angular.module('pepeTrader.controllers', [])
     }
     PepesService.get().then(function() {
         //fade in score
-        $scope.pepes = 0;
+        var pepes = $window.localStorage.getItem('pepes');
+        if(pepes) {
+            $scope.pepes = pepes;
+        }
+        else {
+            $window.localStorage.setItem('pepes', 0)
+            $scope.pepes = 0;
+        }
+
     });
     $scope.increasePepes = function() {
         $scope.pepes++;
+        $window.localStorage.setItem('pepes', $scope.pepes);
     };
     $scope.parsePepes = function(n){
         if(n == 0) return n + ' pepes';
