@@ -13,7 +13,7 @@ angular.module('pepeTrader.controllers', [])
     }
     PepesService.get().then(function() {
         //fade in score
-        $scope.pepes = 999999;
+        $scope.pepes = 1000999;
     });
     $scope.increasePepes = function() {
         $scope.pepes++;
