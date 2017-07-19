@@ -6,6 +6,11 @@ angular.module('pepeTrader.controllers', [])
     $location.path("/register");
   }
   $scope.timeleft = '0 secs';*/
+    var pow=Math.pow, floor=Math.floor, abs=Math.abs, log=Math.log;
+    function round(n, precision) {
+        var prec = Math.pow(10, precision);
+        return Math.round(n*prec)/prec;
+    }
     PepesService.get().then(function() {
         //fade in score
         $scope.pepes = 950;
@@ -14,9 +19,9 @@ angular.module('pepeTrader.controllers', [])
         $scope.pepes++;
     };
     $scope.parsePepes = function(n,d){
-        x=(''+n).length,p=Math.pow,d=p(10,d)
-        x-=x%4
-        return Math.round(n*d/p(10,x))/d+" kMGTPE"[x/4]
+        var base = floor(log(abs(n))/log(1000));
+        var suffix = 'kmb'[base-1];
+        return suffix ? round(n/pow(1000,base),2)+suffix : ''+n;
     };
 })
 
