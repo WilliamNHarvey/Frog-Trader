@@ -1,0 +1,125 @@
+/* Add your own CSS if you like */
+.button {
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.button.button-positive {
+    background-color: #00a1df;
+    border-color: #00a1df;
+}
+
+/* home screen */
+.tappage-content {
+    /*background: url(/img/splash-background.png) no-repeat;
+    background-size: cover;*/
+    background-color: white;
+}
+
+.tapbutton {
+    display:block;
+    height: 300px;
+    width: 300px;
+    background: darkgreen;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: -150px;
+}
+
+.pepimg {
+    display:block;
+    height: 50px;
+    width: 50px;
+    background: lawngreen;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 99 !important;
+}
+
+.fadeupandout {
+    animation: moveUp 1.5s ease-out 1, fade 1.5s linear;
+    -webkit-animation: moveUp 1.5s ease-out 1, fade 1.5s linear;
+    opacity: 1;
+}
+
+.bar, .bar-stable, .bar-header, .toolbar-background {
+    border: none !important;
+    background: none !important;
+    background-color: transparent !important;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-75px);
+    }
+}
+
+@-webkit-keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(0px);
+    }
+    100% {
+        -webkit-transform: translateY(-75px);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.home-content > .scroll {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.home-content h1 {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home-content .row-logo {
+    flex-grow: 1;
+}
+
+.home-content .row-buttons {
+    flex-grow: 0;
+}
+
+.home-content .button:last-child {
+    margin-bottom: 0;
+}
