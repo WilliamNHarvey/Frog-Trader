@@ -20,7 +20,7 @@ angular.module('pepeTrader.controllers', [])
     };
     $scope.parsePepes = function(n){
         var base = floor(log(abs(n))/log(1000));
-        var suffix = 'kMGTPEZY'[base-1];
+        var suffix = ['Kilo','Mega','Giga','Tera','Peta','Exa','Zetta','Yotta'][base-1] + 'pepes';
         return suffix ? round(n/pow(1000,base),2)+suffix : ''+n;
     };
 })
