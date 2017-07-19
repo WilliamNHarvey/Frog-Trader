@@ -13,14 +13,14 @@ angular.module('pepeTrader.controllers', [])
     }
     PepesService.get().then(function() {
         //fade in score
-        $scope.pepes = 950;
+        $scope.pepes = 999999;
     });
     $scope.increasePepes = function() {
         $scope.pepes++;
     };
     $scope.parsePepes = function(n){
         var base = floor(log(abs(n))/log(1000));
-        var suffix = 'kmb'[base-1];
+        var suffix = 'kMGTPEZY'[base-1];
         return suffix ? round(n/pow(1000,base),2)+suffix : ''+n;
     };
 })
