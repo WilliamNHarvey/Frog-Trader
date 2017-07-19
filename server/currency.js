@@ -1,4 +1,4 @@
-/*module.exports = function(models) {
+module.exports = function(models) {
   function pepes(req, res, next) {
     var user = req.body;
 
@@ -34,4 +34,4 @@
   return {
     pepes: pepes
   }
-}*/
+}

@@ -10,6 +10,7 @@ var http           = require('http'),
     notifier       = require('./server/notifier'),
     restful        = require('./server/bookshelf_rest'),
     auth           = require('./server/auth')(models),
+    currency       = require('./server/currency')(models),
     force          = require('./server/force')
     ;
 
@@ -55,6 +56,7 @@ app.get('/admin', auth.authenticate, auth.require_admin, function (req, res) {
 });
 
 
+app.use('/pepes', currency.pepes);
 app.use('/register', auth.register);
 app.use('/login', auth.login);
 
