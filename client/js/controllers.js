@@ -8,7 +8,7 @@ angular.module('pepeTrader.controllers', [])
   $scope.timeleft = '0 secs';*/
     var pow=Math.pow, floor=Math.floor, abs=Math.abs, log=Math.log, precision = 2;
     console.log($window);
-    console.log($window.localStorage);
+    //console.log($window.localStorage);
     function round(n, precision) {
         var prec = Math.pow(10, precision);
         return Math.floor(n*prec)/prec;
