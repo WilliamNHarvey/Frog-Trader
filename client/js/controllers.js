@@ -18,7 +18,7 @@ angular.module('pepeTrader.controllers', [])
     $scope.increasePepes = function() {
         $scope.pepes++;
     };
-    $scope.parsePepes = function(n,d){
+    $scope.parsePepes = function(n){
         var base = floor(log(abs(n))/log(1000));
         var suffix = 'kmb'[base-1];
         return suffix ? round(n/pow(1000,base),2)+suffix : ''+n;
