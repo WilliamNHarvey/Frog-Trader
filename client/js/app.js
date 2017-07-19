@@ -39,8 +39,16 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
     }
   });
     window.addEventListener("orientationchange", function(){
-        screen.lockOrientation('portrait');
-    });
+        if (window.orientation == -90) {
+            document.getElementById('orient').className = 'orientright';
+        }
+        if (window.orientation == 90) {
+            document.getElementById('orient').className = 'orientleft';
+        }
+        if (window.orientation == 0) {
+            document.getElementById('orient').className = '';
+        }
+    }, true);
 })
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
