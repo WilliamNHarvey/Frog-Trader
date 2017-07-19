@@ -56,7 +56,7 @@ app.get('/admin', auth.authenticate, auth.require_admin, function (req, res) {
 });
 
 
-app.use('/pepes', currency.pepes);
+app.use('/getPepes', currency.getPepes);
 app.use('/register', auth.register);
 app.use('/login', auth.login);
 

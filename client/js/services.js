@@ -44,12 +44,12 @@ angular.module('pepeTrader.services', [])
     return {
         get: function() {
             return $.when(null);
-        },
+        }/*,
         save: function() {
             //save locally
             //http request to post to server if logged in, only if beyond point of prompting sign up & online
             return $.when(null);
-        }
+        }*/
     }
 })
 
