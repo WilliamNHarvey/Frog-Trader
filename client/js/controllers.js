@@ -8,7 +8,7 @@ angular.module('pepeTrader.controllers', [])
   $scope.timeleft = '0 secs';*/
     PepesService.get().then(function() {
         //fade in score
-        $scope.pepes = 0;
+        $scope.pepes = 950;
     });
     $scope.increasePepes = function() {
         $scope.pepes++;
