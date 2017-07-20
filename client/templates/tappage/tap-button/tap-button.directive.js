@@ -80,20 +80,28 @@ angular.module('pepeTrader.tap', [])
             function makeHappy() {
                 sad = false;
                 $('#tapbutton').addClass('sadtohappy');
-                $('#tapbutton').removeClass('sad');
+                setTimeout(function(){
+                    $('#tapbutton').removeClass('sad');
+                }, 50);
                 setTimeout(function(){
                     $('#tapbutton').addClass('happy');
-                    $('#tapbutton').removeClass('sadtohappy');
+                    setTimeout(function(){
+                        $('#tapbutton').removeClass('sadtohappy');
+                    }, 50);
                 }, 1660);
             }
 
             function makeSad() {
                 sad = true;
                 $('#tapbutton').addClass('happytosad');
-                $('#tapbutton').removeClass('happy');
+                setTimeout(function(){
+                    $('#tapbutton').removeClass('happy');
+                }, 50);
                 setTimeout(function(){
                     $('#tapbutton').addClass('sad');
-                    $('#tapbutton').removeClass('happytosad');
+                    setTimeout(function(){
+                        $('#tapbutton').removeClass('happytosad');
+                    }, 50);
                 }, 1660);
             }
         }
