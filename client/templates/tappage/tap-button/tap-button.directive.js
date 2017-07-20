@@ -7,7 +7,7 @@ angular.module('pepeTrader.tap', [])
         template: '<div id="tapbutton" class="tapbutton" layout-align="center center" ng-click="tapButton($event)"></div>',
         controller: function($scope, $element){
 
-            $('#tapbutton').css("background-image", "url('../img/sadpepe.png')");
+            //$('#tapbutton').css("background-image", "url('../img/sadpepe.png')");
             var sad = true;
             var sadTimer;
             $scope.tapButton = function(e){
@@ -82,13 +82,25 @@ angular.module('pepeTrader.tap', [])
             function makeHappy() {
                 sad = false;
                 $('#tapbutton').css("background-image", "url('../img/sadtohappypepe.gif')");
-                setTimeout(function(){ $('#tapbutton').css("background-image", "url('../img/originalpepe.png')"); }, 1660);
+                $('#tapbutton').css('width', '300px');
+                $('#tapbutton').css('height', '300px');
+                setTimeout(function(){
+                    $('#tapbutton').css("background-image", "url('../img/originalpepe.png')");
+                    $('#tapbutton').css('width', '300px');
+                    $('#tapbutton').css('height', '300px');
+                }, 1660);
             }
 
             function makeSad() {
                 sad = true;
                 $('#tapbutton').css("background-image", "url('../img/happytosadpepe.gif')");
-                setTimeout(function(){ $('#tapbutton').css("background-image", "url('../img/sadpepe.png')"); }, 1660);
+                $('#tapbutton').css('width', '300px');
+                $('#tapbutton').css('height', '300px');
+                setTimeout(function(){
+                    $('#tapbutton').css("background-image", "url('../img/sadpepe.png')");
+                    $('#tapbutton').css('width', '300px');
+                    $('#tapbutton').css('height', '300px');
+                }, 1660);
             }
         }
     }
