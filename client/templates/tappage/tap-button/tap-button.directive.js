@@ -81,13 +81,13 @@ angular.module('pepeTrader.tap', [])
 
             function makeHappy() {
                 sad = false;
-                $('#tapbutton').css('margin-top', '38px');
+                $('#tapbutton').css('margin-top', '138px');
                 $('#tapbutton').css("background-image", "url('../img/sadtohappypepe.gif')");
                 $('#tapbutton').css('width', '300px');
                 $('#tapbutton').css('height', '300px');
 
                 setTimeout(function(){
-                    $('#tapbutton').css('margin-top', '0px');
+                    $('#tapbutton').css('margin-top', '100px');
                     $('#tapbutton').css("background-image", "url('../img/happypepe.png')");
                     $('#tapbutton').css('width', '300px');
                     $('#tapbutton').css('height', '300px');
@@ -96,12 +96,12 @@ angular.module('pepeTrader.tap', [])
 
             function makeSad() {
                 sad = true;
-                $('#tapbutton').css('margin-top', '38px');
+                $('#tapbutton').css('margin-top', '138px');
                 $('#tapbutton').css("background-image", "url('../img/happytosadpepe.gif')");
                 $('#tapbutton').css('width', '300px');
                 $('#tapbutton').css('height', '300px');
                 setTimeout(function(){
-                    $('#tapbutton').css('margin-top', '0px');
+                    $('#tapbutton').css('margin-top', '100px');
                     $('#tapbutton').css("background-image", "url('../img/sadpepe.png')");
                     $('#tapbutton').css('width', '300px');
                     $('#tapbutton').css('height', '300px');
