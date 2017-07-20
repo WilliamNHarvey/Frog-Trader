@@ -42,21 +42,21 @@
 }
 
 .happy {
-    src: url('../img/happypepe.png');
+    background-image: url('../img/happypepe.png');
 }
 
 .sad {
-    src: url('../img/sadpepe.png');
+    background-image: url('../img/sadpepe.png');
 }
 
 .sadtohappy {
     margin-top: 116px;
-    src: url('../img/sadtohappypepe.gif');
+    background-image: url('../img/sadtohappypepe.gif');
 }
 
 .happytosad {
     margin-top: 116px;
-    src: url('../img/happytosadpepe.gif');
+    background-image: url('../img/happytosadpepe.gif');
 }
 
 .pepimg {

@@ -39,11 +39,14 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
     }
   });
 
-    function preload(arrayOfImages) {
+    function preload(arrayOfImages, arrayOfClasses) {
         $(arrayOfImages).each(function(){
             $('<img/>')[0].src = this;
             // Alternatively you could use:
             // (new Image()).src = this;
+        });
+        $(arrayOfClasses).each(function(){
+            $('<img/>')[0].className = this;
         });
     }
     preload([
@@ -51,6 +54,11 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
         '../img/sadtohappypepe.gif',
         '../img/happypepe.png',
         '../img/sadpepe.png'
+    ],[
+        'happytosad',
+        'sadtohappy',
+        'happy',
+        'sad'
     ]);
 })
 
