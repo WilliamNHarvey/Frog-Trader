@@ -4,7 +4,7 @@ angular.module('pepeTrader.tap', [])
     return {
         restrict: 'AE',
         scope: true,
-        template: '<div id="tapbutton" class="tapbutton" layout-align="center center" ng-click="tapButton($event)"></div>',
+        template: '<div id="tapbutton" class="tapbutton sad" layout-align="center center" ng-click="tapButton($event)"></div>',
         controller: function($scope, $element){
             var sad = true;
             var sadTimer;
@@ -79,30 +79,39 @@ angular.module('pepeTrader.tap', [])
 
             function makeHappy() {
                 sad = false;
-                $('#tapbutton').css('margin-top', '118px');
+                /*$('#tapbutton').css('margin-top', '117px');
                 $('#tapbutton').css("background-image", "url('../img/sadtohappypepe.gif')");
                 $('#tapbutton').css('width', '300px');
-                $('#tapbutton').css('height', '300px');
+                $('#tapbutton').css('height', '300px');*/
+                $('#tapbutton').removeClass('sad');
+                $('#tapbutton').addClass('sadtohappy');
 
                 setTimeout(function(){
-                    $('#tapbutton').css('margin-top', '100px');
+                    /*$('#tapbutton').css('margin-top', '100px');
                     $('#tapbutton').css("background-image", "url('../img/happypepe.png')");
                     $('#tapbutton').css('width', '300px');
-                    $('#tapbutton').css('height', '300px');
+                    $('#tapbutton').css('height', '300px');*/
+                    $('#tapbutton').removeClass('sadtohappy');
+                    $('#tapbutton').addClass('happy');
                 }, 1640);
             }
 
             function makeSad() {
                 sad = true;
-                $('#tapbutton').css('margin-top', '118px');
-                $('#tapbutton').css("background-image", "url('../img/happytosadpepe.gif')");
-                $('#tapbutton').css('width', '300px');
-                $('#tapbutton').css('height', '300px');
+                /*$('#tapbutton').css('margin-top', '117px');
+                 $('#tapbutton').css("background-image", "url('../img/sadtohappypepe.gif')");
+                 $('#tapbutton').css('width', '300px');
+                 $('#tapbutton').css('height', '300px');*/
+                $('#tapbutton').removeClass('happy');
+                $('#tapbutton').addClass('happytosad');
+
                 setTimeout(function(){
-                    $('#tapbutton').css('margin-top', '100px');
-                    $('#tapbutton').css("background-image", "url('../img/sadpepe.png')");
-                    $('#tapbutton').css('width', '300px');
-                    $('#tapbutton').css('height', '300px');
+                    /*$('#tapbutton').css('margin-top', '100px');
+                     $('#tapbutton').css("background-image", "url('../img/happypepe.png')");
+                     $('#tapbutton').css('width', '300px');
+                     $('#tapbutton').css('height', '300px');*/
+                    $('#tapbutton').removeClass('happytosad');
+                    $('#tapbutton').addClass('sad');
                 }, 1640);
             }
         }
