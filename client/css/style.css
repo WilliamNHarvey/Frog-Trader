@@ -50,10 +50,12 @@
 }
 
 .sadtohappy {
+    margin-top: 116px;
     background-image: url('../img/sadtohappypepe.gif');
 }
 
 .happytosad {
+    margin-top: 116px;
     background-image: url('../img/happytosadpepe.gif');
 }
 
