@@ -81,7 +81,7 @@ angular.module('pepeTrader.tap', [])
 
             function makeHappy() {
                 sad = false;
-                $('#tapbutton').css('margin-top', '120px');
+                $('#tapbutton').css('margin-top', '118px');
                 $('#tapbutton').css("background-image", "url('../img/sadtohappypepe.gif')");
                 $('#tapbutton').css('width', '300px');
                 $('#tapbutton').css('height', '300px');
@@ -91,12 +91,12 @@ angular.module('pepeTrader.tap', [])
                     $('#tapbutton').css("background-image", "url('../img/happypepe.png')");
                     $('#tapbutton').css('width', '300px');
                     $('#tapbutton').css('height', '300px');
-                }, 1660);
+                }, 1640);
             }
 
             function makeSad() {
                 sad = true;
-                $('#tapbutton').css('margin-top', '120px');
+                $('#tapbutton').css('margin-top', '118px');
                 $('#tapbutton').css("background-image", "url('../img/happytosadpepe.gif')");
                 $('#tapbutton').css('width', '300px');
                 $('#tapbutton').css('height', '300px');
@@ -105,7 +105,7 @@ angular.module('pepeTrader.tap', [])
                     $('#tapbutton').css("background-image", "url('../img/sadpepe.png')");
                     $('#tapbutton').css('width', '300px');
                     $('#tapbutton').css('height', '300px');
-                }, 16660);
+                }, 1640);
             }
         }
     }
