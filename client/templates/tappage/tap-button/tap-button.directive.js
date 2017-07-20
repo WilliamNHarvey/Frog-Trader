@@ -88,7 +88,7 @@ angular.module('pepeTrader.tap', [])
                     setTimeout(function(){
                         $('#tapbutton').removeClass('sadtohappy');
                     }, 100);
-                }, 1650);
+                }, 1550);
             }
 
             function makeSad() {
@@ -102,7 +102,7 @@ angular.module('pepeTrader.tap', [])
                     setTimeout(function(){
                         $('#tapbutton').removeClass('happytosad');
                     }, 100);
-                }, 1650);
+                }, 1550);
             }
         }
     }
