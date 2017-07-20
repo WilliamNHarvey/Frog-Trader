@@ -85,7 +85,7 @@ angular.module('pepeTrader.tap', [])
                 $('#tapbutton').css('width', '300px');
                 $('#tapbutton').css('height', '300px');
                 setTimeout(function(){
-                    $('#tapbutton').css("background-image", "url('../img/originalpepe.png')");
+                    $('#tapbutton').css("background-image", "url('../img/happypepe.png')");
                     $('#tapbutton').css('width', '300px');
                     $('#tapbutton').css('height', '300px');
                 }, 1660);

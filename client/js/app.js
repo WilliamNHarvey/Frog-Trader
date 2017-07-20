@@ -41,7 +41,7 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
 
     (new Image).src = '../img/happytosadpepe.gif';
     (new Image).src = '../img/sadtohappypepe.gif';
-    (new Image).src = '../img/originalpepe.png';
+    (new Image).src = '../img/happypepe.png';
     (new Image).src = '../img/sadpepe.png';
 })
 
