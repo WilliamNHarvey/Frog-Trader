@@ -18,7 +18,7 @@
 
 .tapbutton {
     display:block;
-    height: auto;
+    height: 300px;
     width: 300px;
     /*background: darkgreen;
     -moz-border-radius: 150px;
@@ -32,8 +32,9 @@
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
     transition-property: transform;*/
-    background-image: url('../img/largepepe.png');
+    background-image: url('../img/originalpepe.png');
     background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,13 +44,13 @@
 
 .pepimg {
     display:block;
-    height: auto;
+    height: 50px;
     width: 50px;
     /*background: lawngreen;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;*/
-    background-image: url('../img/largepepe.png');
+    background-image: url('../img/originalpepe.png');
     background-size:contain;
     z-index: 2 !important;
 }
