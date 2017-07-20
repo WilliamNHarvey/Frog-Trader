@@ -82,13 +82,13 @@ angular.module('pepeTrader.tap', [])
                 $('#tapbutton').addClass('sadtohappy');
                 setTimeout(function(){
                     $('#tapbutton').removeClass('sad');
-                }, 50);
+                }, 100);
                 setTimeout(function(){
                     $('#tapbutton').addClass('happy');
                     setTimeout(function(){
                         $('#tapbutton').removeClass('sadtohappy');
-                    }, 50);
-                }, 1600);
+                    }, 100);
+                }, 1650);
             }
 
             function makeSad() {
@@ -96,13 +96,13 @@ angular.module('pepeTrader.tap', [])
                 $('#tapbutton').addClass('happytosad');
                 setTimeout(function(){
                     $('#tapbutton').removeClass('happy');
-                }, 50);
+                }, 100);
                 setTimeout(function(){
                     $('#tapbutton').addClass('sad');
                     setTimeout(function(){
                         $('#tapbutton').removeClass('happytosad');
-                    }, 50);
-                }, 1600);
+                    }, 100);
+                }, 1650);
             }
         }
     }
