@@ -38,17 +38,7 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
       StatusBar.styleDefault();
     }
   });
-    window.addEventListener("orientationchange", function(){
-        if (window.orientation == -90) {
-            document.getElementById('orient').className = 'orientright';
-        }
-        if (window.orientation == 90) {
-            document.getElementById('orient').className = 'orientleft';
-        }
-        if (window.orientation == 0) {
-            document.getElementById('orient').className = '';
-        }
-    }, true);
+
 })
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {

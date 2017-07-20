@@ -32,7 +32,7 @@
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
     transition-property: transform;*/
-    background-image: url('../img/pepe.png');
+    background-image: url('../img/originalpepe.png');
     background-size:contain;
     position: absolute;
     top: 50%;
@@ -49,7 +49,7 @@
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;*/
-    background-image: url('../img/pepe.png');
+    background-image: url('../img/originalpepe.png');
     background-size:contain;
     z-index: 2 !important;
 }
@@ -133,14 +133,4 @@
 
 .home-content .button:last-child {
     margin-bottom: 0;
-}
-
-.orientleft #shell {
-    -webkit-transform: rotate(-90deg);
-    -webkit-transform-origin:160px 160px;
-}
-
-.orientright #shell {
-    -webkit-transform: rotate(90deg);
-    -webkit-transform-origin:230px 230px;
 }
