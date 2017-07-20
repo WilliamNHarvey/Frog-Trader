@@ -79,42 +79,22 @@ angular.module('pepeTrader.tap', [])
 
             function makeHappy() {
                 sad = false;
-                /*$('#tapbutton').css('margin-top', '117px');
-                $('#tapbutton').css("background-image", "url('../img/sadtohappypepe.gif')");
-                $('#tapbutton').css('width', '300px');
-                $('#tapbutton').css('height', '300px');*/
-
                 $('#tapbutton').addClass('sadtohappy');
                 $('#tapbutton').removeClass('sad');
-
                 setTimeout(function(){
-                    /*$('#tapbutton').css('margin-top', '100px');
-                    $('#tapbutton').css("background-image", "url('../img/happypepe.png')");
-                    $('#tapbutton').css('width', '300px');
-                    $('#tapbutton').css('height', '300px');*/
                     $('#tapbutton').addClass('happy');
                     $('#tapbutton').removeClass('sadtohappy');
-
-                }, 1640);
+                }, 1660);
             }
 
             function makeSad() {
                 sad = true;
-                /*$('#tapbutton').css('margin-top', '117px');
-                 $('#tapbutton').css("background-image", "url('../img/sadtohappypepe.gif')");
-                 $('#tapbutton').css('width', '300px');
-                 $('#tapbutton').css('height', '300px');*/
-                $('#tapbutton').removeClass('happy');
                 $('#tapbutton').addClass('happytosad');
-
+                $('#tapbutton').removeClass('happy');
                 setTimeout(function(){
-                    /*$('#tapbutton').css('margin-top', '100px');
-                     $('#tapbutton').css("background-image", "url('../img/happypepe.png')");
-                     $('#tapbutton').css('width', '300px');
-                     $('#tapbutton').css('height', '300px');*/
-                    $('#tapbutton').removeClass('happytosad');
                     $('#tapbutton').addClass('sad');
-                }, 1640);
+                    $('#tapbutton').removeClass('happytosad');
+                }, 1660);
             }
         }
     }
