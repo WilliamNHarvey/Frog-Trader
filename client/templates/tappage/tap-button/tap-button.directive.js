@@ -19,9 +19,7 @@ angular.module('pepeTrader.tap', [])
                     $('#tapbutton').css('top', '50%');
                     $('#tapbutton').css('left', '50%');
                 }
-                if(sadTimer) {
-                    sadTimer.clearTimeout();
-                }
+                clearTimeout(sadTimer);
                 sadTimer = setTimeout(function(){ makeSad(); }, 10000);
                 if(sad) {
                     makeHappy();
