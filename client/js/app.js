@@ -50,13 +50,13 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
         });
     }
     preload([
-        '../img/happytosadpepe.gif',
-        '../img/sadtohappypepe.gif',
+        //'../img/happytosadpepe.gif',
+        //'../img/sadtohappypepe.gif',
         '../img/happypepe.png',
         '../img/sadpepe.png'
     ],[
-        'happytosad',
-        'sadtohappy',
+        //'happytosad',
+        //'sadtohappy',
         'happy',
         'sad'
     ]);
