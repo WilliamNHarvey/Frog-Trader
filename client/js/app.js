@@ -39,10 +39,19 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
     }
   });
 
-    (new Image).src = '../img/happytosadpepe.gif';
-    (new Image).src = '../img/sadtohappypepe.gif';
-    (new Image).src = '../img/happypepe.png';
-    (new Image).src = '../img/sadpepe.png';
+    function preload(arrayOfImages) {
+        $(arrayOfImages).each(function(){
+            $('<img/>')[0].src = this;
+            // Alternatively you could use:
+            // (new Image()).src = this;
+        });
+    }
+    preload([
+        '../img/happytosadpepe.gif',
+        '../img/sadtohappypepe.gif',
+        '../img/happypepe.png',
+        '../img/sadpepe.png'
+    ]);
 })
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
