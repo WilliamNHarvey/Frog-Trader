@@ -83,16 +83,18 @@ angular.module('pepeTrader.tap', [])
                 $('#tapbutton').css("background-image", "url('../img/sadtohappypepe.gif')");
                 $('#tapbutton').css('width', '300px');
                 $('#tapbutton').css('height', '300px');*/
-                $('#tapbutton').removeClass('sad');
+
                 $('#tapbutton').addClass('sadtohappy');
+                $('#tapbutton').removeClass('sad');
 
                 setTimeout(function(){
                     /*$('#tapbutton').css('margin-top', '100px');
                     $('#tapbutton').css("background-image", "url('../img/happypepe.png')");
                     $('#tapbutton').css('width', '300px');
                     $('#tapbutton').css('height', '300px');*/
-                    $('#tapbutton').removeClass('sadtohappy');
                     $('#tapbutton').addClass('happy');
+                    $('#tapbutton').removeClass('sadtohappy');
+
                 }, 1640);
             }
 
