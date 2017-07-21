@@ -89,7 +89,7 @@ angular.module('pepeTrader.tap', [])
                     setTimeout(function(){
                         $('#tapbutton').removeClass('sadtohappy');
                     }, 200);
-                }, 1450);
+                }, 1400);
             }
 
             function makeSad() {
