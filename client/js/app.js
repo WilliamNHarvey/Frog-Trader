@@ -3,7 +3,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'ngResource'])
+angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgradeButton', 'pepeTrader.upgradeDirective', 'ngResource'])
 
 .run(function($window, $location, $ionicPlatform, $rootScope, AuthenticationService) {
   $rootScope.user = {
@@ -70,7 +70,7 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
   // Each state's controller can be found in controllers.js
   $stateProvider.state('tappage', {
     url: "/tappage",
-    templateUrl: "templates/tappage/tappage.html",
+    templateUrl: "templates/tappage/upgrade-store.html",
     controller: 'TapPageCtrl'
   })
 
@@ -84,6 +84,12 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
     url: "/login",
     templateUrl: "templates/login.html",
     controller: 'LoginCtrl'
+  })
+
+  .state('upgrade-store', {
+      url: "/upgrade-store",
+      templateUrl: "templates/upgrade-store/upgrade-store.html",
+      controller: 'UpgradeStoreCtrl'
   })
 
   // setup an abstract state for the tabs directive

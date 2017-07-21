@@ -48,7 +48,7 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
   // Each state's controller can be found in controllers.js
   $stateProvider.state('tappage', {
     url: "/tappage",
-    templateUrl: "templates/tappage/tappage.html",
+    templateUrl: "templates/tappage/upgrade-store.html",
     controller: 'TapPageCtrl'
   })
 

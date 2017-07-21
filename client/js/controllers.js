@@ -34,7 +34,6 @@ angular.module('pepeTrader.controllers', [])
         round(n/pow(1000,base), precision) == 1 ? suffix += 'pepe' : suffix += 'pepes';
         return suffix ? round(n/pow(1000,base), precision)+suffix : ''+n;
     };
-
 })
 
 
@@ -215,10 +214,13 @@ angular.module('pepeTrader.controllers', [])
 .controller('TapPageCtrl', function($scope, $location, PepesService) {
     document.addEventListener('mousemove', function(e) {e.preventDefault()}, false);
     document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
-    var dark = true;
 
     $scope.lightenUp = function() {
         //$("#bg").animate({ opacity: 0 }, 1500)
         $("#pepeCount").animate({ opacity: 1 }, 1500)
     }
+})
+
+.controller('UpgradeStoreCtrl', function($scope, $location, PepesService) {
+
 })
