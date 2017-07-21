@@ -87,31 +87,9 @@ angular.module('pepeTrader.tap', [])
                     $('<img/>')[0].className = this;
                 });
             }
-            preload([
-                '../img/happytosadpepe.gif',
-                '../img/sadtohappypepe.gif',
-                '../img/happypepe.png',
-                '../img/sadpepe.png'
-            ],[
-                'happytosad',
-                'sadtohappy',
-                'happy',
-                'sad'
-            ]);
 
             function makeHappy() {
                 sad = false;
-                preload([
-                    '../img/happytosadpepe.gif',
-                    '../img/sadtohappypepe.gif',
-                    '../img/happypepe.png',
-                    '../img/sadpepe.png'
-                ],[
-                    'happytosad',
-                    'sadtohappy',
-                    'happy',
-                    'sad'
-                ]);
                 $('#tapbutton').addClass('sadtohappy');
                 $('#tapbutton').offsetHeight;
 
@@ -130,17 +108,6 @@ angular.module('pepeTrader.tap', [])
 
             function makeSad() {
                 sad = true;
-                preload([
-                    '../img/happytosadpepe.gif',
-                    '../img/sadtohappypepe.gif',
-                    '../img/happypepe.png',
-                    '../img/sadpepe.png'
-                ],[
-                    'happytosad',
-                    'sadtohappy',
-                    'happy',
-                    'sad'
-                ]);
                 $('#tapbutton').addClass('happytosad');
                 $('#tapbutton').offsetHeight;
 
