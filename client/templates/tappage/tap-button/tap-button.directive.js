@@ -79,15 +79,16 @@ angular.module('pepeTrader.tap', [])
 
             function makeHappy() {
                 sad = false;
-                $('#tapbutton').addClass('sadtohappy');
+                //$('#tapbutton').addClass('sadtohappy');
+                $('#tapbutton').css('margin-top', '117px');
                 $('#tapbutton').css('background-image', "url(../img/sadtohappypepe.gif?a="+Math.random()+')');
                 setTimeout(function(){
                     $('#tapbutton').removeClass('sad');
                 }, 200);
                 setTimeout(function(){
-                    $('#tapbutton').css('background-image', "");
                     $('#tapbutton').addClass('happy');
                     setTimeout(function(){
+                        $('#tapbutton').css('background-image', "");
                         $('#tapbutton').removeClass('sadtohappy');
                     }, 200);
                 }, 1450);
@@ -95,15 +96,16 @@ angular.module('pepeTrader.tap', [])
 
             function makeSad() {
                 sad = true;
-                $('#tapbutton').addClass('happytosad');
+                //$('#tapbutton').addClass('happytosad');
+                $('#tapbutton').css('margin-top', '117px');
                 $('#tapbutton').css('background-image', "url(../img/happytosadpepe.gif?x="+Math.random()+')');
                 setTimeout(function(){
                     $('#tapbutton').removeClass('happy');
                 }, 200);
                 setTimeout(function(){
-                    $('#tapbutton').css('background-image', "");
                     $('#tapbutton').addClass('sad');
                     setTimeout(function(){
+                        $('#tapbutton').css('background-image', "");
                         $('#tapbutton').removeClass('happytosad');
                     }, 200);
                 }, 1450);
