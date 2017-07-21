@@ -80,7 +80,7 @@ angular.module('pepeTrader.tap', [])
             function makeHappy() {
                 sad = false;
                 $('#tapbutton').addClass('sadtohappy');
-                var bg = $(this).css('background-image');
+                var bg = $('#tapbutton').css('background-image');
                 console.log(bg);
                 //$('#tapbutton').css('background-image', bg + .);
                 setTimeout(function(){
