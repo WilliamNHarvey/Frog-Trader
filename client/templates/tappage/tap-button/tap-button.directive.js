@@ -80,9 +80,7 @@ angular.module('pepeTrader.tap', [])
             function makeHappy() {
                 sad = false;
                 $('#tapbutton').addClass('sadtohappy');
-                var bg = $('#tapbutton').css('background-image');
-                console.log(bg);
-                //$('#tapbutton').css('background-image', bg + .);
+                $('#tapbutton').css('background-image', "url(https://pepetrader.herokuapp.com/img/sadtohappypepe.gif?a="+Math.random()+')');
                 setTimeout(function(){
                     $('#tapbutton').removeClass('sad');
                 }, 200);
@@ -97,6 +95,7 @@ angular.module('pepeTrader.tap', [])
             function makeSad() {
                 sad = true;
                 $('#tapbutton').addClass('happytosad');
+                $('#tapbutton').css('background-image', "url(https://pepetrader.herokuapp.com/img/happytosadpepe.gif?a="+Math.random()+')');
                 setTimeout(function(){
                     $('#tapbutton').removeClass('happy');
                 }, 200);
