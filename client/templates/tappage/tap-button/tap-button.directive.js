@@ -95,7 +95,7 @@ angular.module('pepeTrader.tap', [])
                 img.src = "https://pepetrader.herokuapp.com/img/sadtohappypepe.gif?p" + new Date().getTime();
 
                 /* Once the image has loaded, set it as the background-image */
-                $(img).load(function(){
+                $(img).on('load', function(){
                     $('#tapbutton').css({backgroundImage: "url("+img.src+")"});
                 });
 
@@ -120,7 +120,7 @@ angular.module('pepeTrader.tap', [])
                 img.src = "https://pepetrader.herokuapp.com/img/happytosadpepe.gif?p" + new Date().getTime();
 
                 /* Once the image has loaded, set it as the background-image */
-                $(img).load(function(){
+                $(img).on('load', function(){
                     $('#tapbutton').css({backgroundImage: "url("+img.src+")"});
                 });
 
