@@ -105,6 +105,7 @@ angular.module('pepeTrader.tap', [])
                     $('#tapbutton').removeClass('sad');
                 }, 200);
                 setTimeout(function(){
+                    $('#tapbutton').css({backgroundImage: "none"});
                     $('#tapbutton').addClass('happy');
                     setTimeout(function(){
                         //$('#tapbutton').css('background-image', "");
@@ -129,6 +130,7 @@ angular.module('pepeTrader.tap', [])
                     $('#tapbutton').removeClass('happy');
                 }, 200);
                 setTimeout(function(){
+                    $('#tapbutton').css({backgroundImage: "none"});
                     $('#tapbutton').addClass('sad');
                     setTimeout(function(){
                         //$('#tapbutton').css('background-image', "");
