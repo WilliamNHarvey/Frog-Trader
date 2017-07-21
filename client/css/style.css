@@ -140,6 +140,7 @@
     padding:0;
 
     opacity: 1;
+    z-index: 5 !important;
 }
 
 .home-content > .scroll {
