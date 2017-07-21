@@ -218,7 +218,7 @@ angular.module('pepeTrader.controllers', [])
     var dark = true;
 
     $scope.lightenUp = function() {
-        $("#bg").animate({ opacity: 0 }, 1500)
+        //$("#bg").animate({ opacity: 0 }, 1500)
         $("#pepeCount").animate({ opacity: 1 }, 1500)
     }
 })
