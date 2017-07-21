@@ -143,6 +143,12 @@
     z-index: 100 !important;
 }
 
+.navbar {
+    .toolbar-background {
+        background: transparent;
+    }
+}
+
 .home-content > .scroll {
     display: flex;
     flex-direction: column;
