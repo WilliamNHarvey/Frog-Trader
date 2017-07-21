@@ -34,6 +34,7 @@ angular.module('pepeTrader.controllers', [])
         round(n/pow(1000,base), precision) == 1 ? suffix += 'pepe' : suffix += 'pepes';
         return suffix ? round(n/pow(1000,base), precision)+suffix : ''+n;
     };
+
 })
 
 
