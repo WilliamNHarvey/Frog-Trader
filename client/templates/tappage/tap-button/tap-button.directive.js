@@ -77,10 +77,44 @@ angular.module('pepeTrader.tap', [])
                 }, 150);
             }
 
+            function preload(arrayOfImages, arrayOfClasses) {
+                $(arrayOfImages).each(function(){
+                    $('<img/>')[0].src = this;
+                    // Alternatively you could use:
+                    // (new Image()).src = this;
+                });
+                $(arrayOfClasses).each(function(){
+                    $('<img/>')[0].className = this;
+                });
+            }
+            preload([
+                '../img/happytosadpepe.gif',
+                '../img/sadtohappypepe.gif',
+                '../img/happypepe.png',
+                '../img/sadpepe.png'
+            ],[
+                'happytosad',
+                'sadtohappy',
+                'happy',
+                'sad'
+            ]);
+
             function makeHappy() {
                 sad = false;
+                preload([
+                    '../img/happytosadpepe.gif',
+                    '../img/sadtohappypepe.gif',
+                    '../img/happypepe.png',
+                    '../img/sadpepe.png'
+                ],[
+                    'happytosad',
+                    'sadtohappy',
+                    'happy',
+                    'sad'
+                ]);
                 $('#tapbutton').addClass('sadtohappy');
                 $('#tapbutton').offsetHeight;
+
                 //$('#tapbutton').css('background-image', "url(../img/sadtohappypepe.gif?a="+Math.random()+')');
                 setTimeout(function(){
                     $('#tapbutton').removeClass('sad');
@@ -96,8 +130,20 @@ angular.module('pepeTrader.tap', [])
 
             function makeSad() {
                 sad = true;
+                preload([
+                    '../img/happytosadpepe.gif',
+                    '../img/sadtohappypepe.gif',
+                    '../img/happypepe.png',
+                    '../img/sadpepe.png'
+                ],[
+                    'happytosad',
+                    'sadtohappy',
+                    'happy',
+                    'sad'
+                ]);
                 $('#tapbutton').addClass('happytosad');
                 $('#tapbutton').offsetHeight;
+
                 //$('#tapbutton').css('background-image', "url(../img/happytosadpepe.gif?x="+Math.random()+')');
                 setTimeout(function(){
                     $('#tapbutton').removeClass('happy');
