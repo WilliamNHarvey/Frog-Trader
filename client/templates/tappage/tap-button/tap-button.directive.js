@@ -17,10 +17,11 @@ angular.module('pepeTrader.tap', [])
                     $('#tapbutton').css('top', '50%');
                     $('#tapbutton').css('left', '50%');
                 }
-                clearTimeout(sadTimer);
-                sadTimer = setTimeout(function(){ makeSad(); }, 5000);
+                /*clearTimeout(sadTimer);
+                sadTimer = setTimeout(function(){ makeSad(); }, 5000);*/
                 if(sad) {
                     makeHappy();
+                    $scope.lightenUp();
                 }
                 var hue = 'hue-rotate('+Math.random()*360+'deg)';
 
@@ -77,38 +78,15 @@ angular.module('pepeTrader.tap', [])
                 }, 150);
             }
 
-            function preload(arrayOfImages, arrayOfClasses) {
-                $(arrayOfImages).each(function(){
-                    $('<img/>')[0].src = this;
-                    // Alternatively you could use:
-                    // (new Image()).src = this;
-                });
-                $(arrayOfClasses).each(function(){
-                    $('<img/>')[0].className = this;
-                });
-            }
-
             function makeHappy() {
                 sad = false;
                 $('#tapbutton').addClass('sadtohappy');
-                var img = document.createElement('img');
-                img.src = "https://pepetrader.herokuapp.com/img/sadtohappypepe.gif?p" + new Date().getTime();
-
-                /* Once the image has loaded, set it as the background-image */
-                $(img).on('load', function(){
-                    $('#tapbutton').css({backgroundImage: "url("+img.src+")"});
-                });
-
-
-                //$('#tapbutton').css('background-image', "url(../img/sadtohappypepe.gif?a="+Math.random()+')');
                 setTimeout(function(){
                     $('#tapbutton').removeClass('sad');
                 }, 200);
                 setTimeout(function(){
-                    $('#tapbutton').css({backgroundImage: "none"});
                     $('#tapbutton').addClass('happy');
                     setTimeout(function(){
-                        //$('#tapbutton').css('background-image', "");
                         $('#tapbutton').removeClass('sadtohappy');
                     }, 200);
                 }, 1450);
@@ -117,23 +95,12 @@ angular.module('pepeTrader.tap', [])
             function makeSad() {
                 sad = true;
                 $('#tapbutton').addClass('happytosad');
-                var img = document.createElement('img');
-                img.src = "https://pepetrader.herokuapp.com/img/happytosadpepe.gif?p" + new Date().getTime();
-
-                /* Once the image has loaded, set it as the background-image */
-                $(img).on('load', function(){
-                    $('#tapbutton').css({backgroundImage: "url("+img.src+")"});
-                });
-
-                //$('#tapbutton').css('background-image', "url(../img/happytosadpepe.gif?x="+Math.random()+')');
                 setTimeout(function(){
                     $('#tapbutton').removeClass('happy');
                 }, 200);
                 setTimeout(function(){
-                    $('#tapbutton').css({backgroundImage: "none"});
                     $('#tapbutton').addClass('sad');
                     setTimeout(function(){
-                        //$('#tapbutton').css('background-image', "");
                         $('#tapbutton').removeClass('happytosad');
                     }, 200);
                 }, 1450);

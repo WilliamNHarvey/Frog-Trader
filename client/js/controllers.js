@@ -214,6 +214,9 @@ angular.module('pepeTrader.controllers', [])
 .controller('TapPageCtrl', function($scope, $location, PepesService) {
     document.addEventListener('mousemove', function(e) {e.preventDefault()}, false);
     document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
+    var dark = true;
 
-
+    $scope.lightenUp = function() {
+        $("#bg").animate({ opacity: 0 }, 1500)
+    }
 })

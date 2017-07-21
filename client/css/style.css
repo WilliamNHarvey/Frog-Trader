@@ -39,6 +39,7 @@
     left: 50%;
     margin-top: 100px;
     margin-left: -150px;
+    z-index: 10 !important;
 }
 
 .happy {
@@ -69,7 +70,7 @@
     border-radius: 25px;*/
     background-image: url('../img/originalpepe.png');
     background-size:contain;
-    z-index: 2 !important;
+    z-index: 15 !important;
 }
 
 .fadeupandout {
@@ -126,6 +127,18 @@
     100% {
         opacity: 0;
     }
+}
+
+#bg {
+    position: fixed;
+    background-color: black;
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding:0;
+
+    opacity: 1;
 }
 
 .home-content > .scroll {
