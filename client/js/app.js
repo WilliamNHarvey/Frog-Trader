@@ -126,7 +126,7 @@ angular.module('pepeTrader', ['ionic', 'ionic-native-transitions', 'pepeTrader.c
     });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/tab/quiz');
+    $urlRouterProvider.otherwise('/tappage');
 
     // Register middleware to ensure our auth token is passed to the server
     $httpProvider.interceptors.push('TokenInterceptor');
