@@ -216,7 +216,7 @@ angular.module('pepeTrader.controllers', [])
     document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
 
     $scope.lightenUp = function() {
-        //$("#bg").animate({ opacity: 0 }, 1500)
+        $("#bg").animate({ opacity: 0 }, 1500)
         $("#pepeCount").animate({ opacity: 1 }, 1500)
     }
 })
