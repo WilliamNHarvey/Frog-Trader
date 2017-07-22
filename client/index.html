@@ -52,12 +52,12 @@
     <ion-nav-buttons nav-transition="none" animation="no-animation" side="left">
 
     </ion-nav-buttons>-->
-      <div class="nav navbar-nav">
+      <nav class="navbar navbar-default">
           <span id="pepeCount" style="opacity: 0">
             <a nav-transition="none" animation="no-animation" class="pepimg" ng-click="go('#/upgrade-store', 'slideUp')"></a><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
           </span>
           <a ng-show="$scope.onUpgradeStore" style="float:right" ng-click="go('#/tappage', 'slideRight')"><i class="icon-chevron-right"></i></a>
-      </div>
+      </nav>
 
     <!-- 
       The views will be rendered in the <ion-nav-view> directive below
