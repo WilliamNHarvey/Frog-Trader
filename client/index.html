@@ -33,24 +33,27 @@
 
     <!-- 
       The nav bar that will be updated as we navigate between views.
-    -->
+
     <ion-nav-bar nav-transition="none" animation="no-animation" class="bar-stable">
       <!--<ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
         Back
-      </ion-nav-back-button>-->
+      </ion-nav-back-button>
 
     </ion-nav-bar>
 
     <ion-nav-buttons nav-transition="none" animation="no-animation" side="right">
-        <!--<button class="button button-clear" ng-click="logout()">Logout</button>-->
         <a ng-show="$scope.onUpgradeStore" ng-click="go('#/tappage', 'slideRight')"><i class="icon-chevron-right"></i></a>
     </ion-nav-buttons>
 
     <ion-nav-buttons nav-transition="none" animation="no-animation" side="left">
-        <span id="pepeCount" style="opacity: 0">
-          <a nav-transition="none" animation="no-animation" class="pepimg" ng-click="go('#/upgrade-store', 'slideUp')"></a><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
-        </span>
-    </ion-nav-buttons>
+
+    </ion-nav-buttons>-->
+      <nav>
+          <span id="pepeCount" style="opacity: 0">
+            <a nav-transition="none" animation="no-animation" class="pepimg" ng-click="go('#/upgrade-store', 'slideUp')"></a><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
+          </span>
+          <a ng-show="$scope.onUpgradeStore" style="float:right" ng-click="go('#/tappage', 'slideRight')"><i class="icon-chevron-right"></i></a>
+      </nav>
 
     <!-- 
       The views will be rendered in the <ion-nav-view> directive below
