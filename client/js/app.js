@@ -66,8 +66,7 @@ angular.module('pepeTrader', ['ionic', 'ionic-native-transitions', 'pepeTrader.c
     });
 })
 
-.config(function($stateProvider, $urlRouterProvider, $httpProvider, $ionicNativeTransitionsProvider) {
-    $ionicNativeTransitions.enable(false, true);
+.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
     // Set up the various states which the app can be in.
