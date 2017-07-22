@@ -32,18 +32,20 @@
       The nav bar that will be updated as we navigate between views.
     -->
     <ion-nav-bar class="bar-stable nav-title-slide-ios7">
-      <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
+      <!--<ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
         Back
-      </ion-nav-back-button>
+      </ion-nav-back-button>-->
+
     </ion-nav-bar>
 
     <ion-nav-buttons side="right">
         <!--<button class="button button-clear" ng-click="logout()">Logout</button>-->
+        <a nav-direction="back" class="button ion-chevron-right button-clear" style="display: none" ng-show="state.name == upgrade-store" ng-href="#/tappage"></a>
     </ion-nav-buttons>
 
     <ion-nav-buttons side="left">
         <span id="pepeCount" style="opacity: 0">
-          <a class="pepimg" ng-href="#/upgrade-store"></a><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
+          <a nav-direction="back" class="pepimg" ng-href="#/upgrade-store"></a><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
         </span>
     </ion-nav-buttons>
 
