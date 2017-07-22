@@ -62,7 +62,7 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
     ]);
 })
 
-.config(function($stateProvider, $urlRouterProvider, $httpProvider, $ionicConfigProvider) {
+.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
@@ -126,6 +126,4 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
 
     // Register middleware to ensure our auth token is passed to the server
     $httpProvider.interceptors.push('TokenInterceptor');
-
-    $ionicConfigProvider.navBar.transition('none');
 })
