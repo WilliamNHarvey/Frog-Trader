@@ -3,9 +3,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'ngResource'])
+angular.module('pepeTrader', ['pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'ngResource'])
 
-.run(function($window, $location, $ionicPlatform, $rootScope, AuthenticationService) {
+.run(function($window, $location, $rootScope, AuthenticationService) {
   $rootScope.user = {
     name: $window.sessionStorage.name,
     is_admin: $window.sessionStorage.is_admin
@@ -27,17 +27,7 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
 
   });
 
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if (window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-    }
-    if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-    }
-  });
+  
 
     function preload(arrayOfImages, arrayOfClasses) {
         $(arrayOfImages).each(function(){
