@@ -50,9 +50,9 @@
     </ion-nav-buttons>-->
       <md-nav-bar>
           <span id="pepeCount" style="opacity: 0">
-            <a nav-transition="none" animation="no-animation" class="pepimg" ng-click="go('#/upgrade-store', 'slideUp')"></a><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
+            <md-nav-item nav-transition="none" animation="no-animation" class="pepimg" ng-click="go('#/upgrade-store', 'slideUp')"></md-nav-item><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
           </span>
-          <a ng-show="$scope.onUpgradeStore" style="float:right" ng-click="go('#/tappage', 'slideRight')"><i class="icon-chevron-right"></i></a>
+          <md-nav-item ng-show="$scope.onUpgradeStore" style="float:right" ng-click="go('#/tappage', 'slideRight')"><i class="icon-chevron-right"></i></md-nav-item>
       </md-nav-bar>
 
     <!-- 
