@@ -1,6 +1,6 @@
 angular.module('pepeTrader.controllers', [])
 
-.controller('NavCtrl', function($rootScope, $scope, $location, RegistrationService, PepesService, $window) {
+.controller('NavCtrl', function($scope, $location, RegistrationService, PepesService, $window) {
   /*$scope.logout = function() {
     RegistrationService.logout();
     $location.path("/register");
@@ -34,6 +34,26 @@ angular.module('pepeTrader.controllers', [])
         round(n/pow(1000,base), precision) == 1 ? suffix += 'pepe' : suffix += 'pepes';
         return suffix ? round(n/pow(1000,base), precision)+suffix : ''+n;
     };
+
+    $scope.go = function (path, pageAnimationClass) {
+
+        if (typeof(pageAnimationClass) === 'undefined') { // Use a default, your choice
+            $rootScope.pageAnimationClass = 'crossFade';
+        }
+
+        else { // Use the specified animation
+            $rootScope.pageAnimationClass = pageAnimationClass;
+        }
+
+        if (path === 'back') { // Allow a 'back' keyword to go to previous page
+            $window.history.back();
+        }
+
+        else { // Go to the specified path
+            $location.path(path);
+        }
+    };
+
 })
 
 
