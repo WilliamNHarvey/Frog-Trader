@@ -40,12 +40,12 @@
 
     <ion-nav-buttons side="right">
         <!--<button class="button button-clear" ng-click="logout()">Logout</button>-->
-        <a nav-direction="forward" style="display: none" ng-show="onUpgradeStore" ng-href="#/tappage"><i class="icon-chevron-right"></i></a>
+        <div ng-show="$scope.onUpgradeStore" ng-click="go('#/tappage', 'slideRight')"><i class="icon-chevron-right"></i></div>
     </ion-nav-buttons>
 
     <ion-nav-buttons side="left">
         <span id="pepeCount" style="opacity: 0">
-          <a nav-direction="back" class="pepimg" ng-href="#/upgrade-store"></a><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
+          <div nav-direction="back" class="pepimg" ng-click="go('#/upgrade-store', 'slideLeft')"></div><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
         </span>
     </ion-nav-buttons>
 
