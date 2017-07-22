@@ -126,6 +126,6 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
 
     // Register middleware to ensure our auth token is passed to the server
     $httpProvider.interceptors.push('TokenInterceptor');
-console.log($ionicConfigProvider);
-    $ionicConfigProvider.views.transition('none');
+
+    $ionicConfigProvider.navBar.transition('none');
 })
