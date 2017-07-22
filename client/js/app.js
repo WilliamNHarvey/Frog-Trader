@@ -62,46 +62,46 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
     ]);
 })
 
-.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+.config(function($stateProvider, $urlRouterProvider, $httpProvider, $ionicConfigProvider) {
 
-  // Ionic uses AngularUI Router which uses the concept of states
-  // Learn more here: https://github.com/angular-ui/ui-router
-  // Set up the various states which the app can be in.
-  // Each state's controller can be found in controllers.js
-  $stateProvider.state('tappage', {
+    // Ionic uses AngularUI Router which uses the concept of states
+    // Learn more here: https://github.com/angular-ui/ui-router
+    // Set up the various states which the app can be in.
+    // Each state's controller can be found in controllers.js
+    $stateProvider.state('tappage', {
     url: "/tappage",
     templateUrl: "templates/tappage/tappage.html",
     controller: 'TapPageCtrl'
-  })
+    })
 
-  .state('register', {
+    .state('register', {
     url: "/register",
     templateUrl: "templates/register.html",
     controller: 'RegisterCtrl'
-  })
+    })
 
-  .state('login', {
+    .state('login', {
     url: "/login",
     templateUrl: "templates/login.html",
     controller: 'LoginCtrl'
-  })
+    })
 
-  .state('upgrade-store', {
+    .state('upgrade-store', {
       url: "/upgrade-store",
       templateUrl: "templates/upgrade-store/upgrade-store.html",
       controller: 'UpgradeStoreCtrl'
-  })
+    })
 
-  // setup an abstract state for the tabs directive
-  .state('tab', {
+    // setup an abstract state for the tabs directive
+    .state('tab', {
     url: "/tab",
     abstract: true,
     templateUrl: "templates/tabs-container.html"
-  })
+    })
 
-  // Each tab has its own nav history stack:
+    // Each tab has its own nav history stack:
 
-  .state('tab.quiz', {
+    .state('tab.quiz', {
     url: '/quiz',
     views: {
       'tab-quiz': {
@@ -109,9 +109,9 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
         controller: 'QuizCtrl'
       }
     }
-  })
+    })
 
-  .state('tab.leaders', {
+    .state('tab.leaders', {
     url: '/leaders',
     views: {
       'tab-leaders': {
@@ -119,12 +119,13 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
         controller: 'LeadersCtrl'
       }
     }
-  });
+    });
 
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/quiz');
+    // if none of the above states are matched, use this as the fallback
+    $urlRouterProvider.otherwise('/tab/quiz');
 
-  // Register middleware to ensure our auth token is passed to the server
-  $httpProvider.interceptors.push('TokenInterceptor');
+    // Register middleware to ensure our auth token is passed to the server
+    $httpProvider.interceptors.push('TokenInterceptor');
 
+    $ionicConfigProvider.views.transition('none');
 })
