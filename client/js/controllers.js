@@ -50,7 +50,7 @@ angular.module('pepeTrader.controllers', [])
         }
 
         else { // Go to the specified path
-            window.location = path;
+            $location.path(path);;
         }
     };
 })

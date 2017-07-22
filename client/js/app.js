@@ -3,9 +3,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'ngResource'])
+angular.module('pepeTrader', ['ionic', 'ionic-native-transitions', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'ngResource'])
 
-.run(function($window, $location, $ionicPlatform, $rootScope, AuthenticationService) {
+.run(function($window, $location, $ionicPlatform, $rootScope, AuthenticationService, $ionicHistory) {
   $rootScope.user = {
     name: $window.sessionStorage.name,
     is_admin: $window.sessionStorage.is_admin
@@ -60,10 +60,14 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
         'happy',
         'sad'
     ]);
+
+    $ionicHistory.nextViewOptions({
+        disableAnimate: true
+    });
 })
 
-.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
-
+.config(function($stateProvider, $urlRouterProvider, $httpProvider, $ionicNativeTransitionsProvider) {
+    $ionicNativeTransitions.enable(false, true);
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
     // Set up the various states which the app can be in.
