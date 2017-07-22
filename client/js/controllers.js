@@ -214,16 +214,20 @@ angular.module('pepeTrader.controllers', [])
 .controller('TapPageCtrl', function($scope, $location, PepesService) {
     document.addEventListener('mousemove', function(e) {e.preventDefault()}, false);
     document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
-    $scope.onUpgradeStore = false;
+    $scope.$apply(function(){
+        $scope.onUpgradeStore = false;
+    });
 
     $scope.lightenUp = function() {
         $("#bg").animate({ opacity: 0 }, 1500)
         $("#pepeCount").animate({ opacity: 1 }, 1500)
     }
-    $scope.upgrades = 'test';
 })
 
 .controller('UpgradeStoreCtrl', function($scope, $location, PepesService) {
-    $scope.onUpgradeStore = true;
-    $scope.upgrades = 'test';
+    $scope.$apply(function(){
+        $scope.onUpgradeStore = true;
+        $scope.upgrades = 'test';
+    });
+
 })
