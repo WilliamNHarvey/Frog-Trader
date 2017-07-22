@@ -5,7 +5,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'ngResource'])
 
-.run(function($window, $location, $ionicPlatform, $rootScope, AuthenticationService, $ionicHistory) {
+.run(function($window, $location, $ionicPlatform, $rootScope, AuthenticationService) {
   $rootScope.user = {
     name: $window.sessionStorage.name,
     is_admin: $window.sessionStorage.is_admin
@@ -61,9 +61,6 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
         'sad'
     ]);
 
-    $ionicHistory.nextViewOptions({
-        disableAnimate: true
-    });
 })
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
