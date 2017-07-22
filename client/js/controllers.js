@@ -219,6 +219,7 @@ angular.module('pepeTrader.controllers', [])
         $("#bg").animate({ opacity: 0 }, 1500)
         $("#pepeCount").animate({ opacity: 1 }, 1500)
     }
+    $scope.upgrades = 'test';
 })
 
 .controller('UpgradeStoreCtrl', function($scope, $location, PepesService) {
