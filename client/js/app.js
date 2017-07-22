@@ -3,9 +3,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('pepeTrader', ['pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'ngResource'])
+angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'ngResource'])
 
-.run(function($window, $location, $rootScope, AuthenticationService) {
+.run(function($window, $location, $ionicPlatform, $rootScope, AuthenticationService, $ionicHistory) {
   $rootScope.user = {
     name: $window.sessionStorage.name,
     is_admin: $window.sessionStorage.is_admin
@@ -27,7 +27,17 @@ angular.module('pepeTrader', ['pepeTrader.controllers', 'pepeTrader.services', '
 
   });
 
-  
+  $ionicPlatform.ready(function() {
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
+    if (window.cordova && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+    }
+    if (window.StatusBar) {
+      // org.apache.cordova.statusbar required
+      StatusBar.styleDefault();
+    }
+  });
 
     function preload(arrayOfImages, arrayOfClasses) {
         $(arrayOfImages).each(function(){
@@ -51,6 +61,9 @@ angular.module('pepeTrader', ['pepeTrader.controllers', 'pepeTrader.services', '
         'sad'
     ]);
 
+    $ionicHistory.nextViewOptions({
+        disableAnimate: true
+    });
 })
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
@@ -58,7 +71,6 @@ angular.module('pepeTrader', ['pepeTrader.controllers', 'pepeTrader.services', '
     // Learn more here: https://github.com/angular-ui/ui-router
     // Set up the various states which the app can be in.
     // Each state's controller can be found in controllers.js
-
     $stateProvider.state('tappage', {
     url: "/tappage",
     templateUrl: "templates/tappage/tappage.html",
@@ -111,7 +123,6 @@ angular.module('pepeTrader', ['pepeTrader.controllers', 'pepeTrader.services', '
       }
     }
     });
-
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/tappage');
