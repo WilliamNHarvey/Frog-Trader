@@ -7,7 +7,7 @@ angular.module('pepeTrader.upgrades', [])
             upgrade: '='
         },
         template: '<div col-sm-6>description</div><div col-sm-6>button</div>',
-        controller: function($scope, scope){
+        controller: function($scope){
 
         }
     }
