@@ -27,7 +27,7 @@
     <script src="templates/tappage/tap-button/tap-button.directive.js"></script>
     <script src="templates/upgrade-store/upgrades/upgrades.directive.js"></script>
   </head>
-  <body ng-app="pepeTrader" animation="slide-left-right-ios7" ng-controller="NavCtrl">
+  <body ng-app="pepeTrader" ng-controller="NavCtrl">
 
   <!--<nav class="navbar navbar-inverse" role="navigation">
       <ul class="nav navbar-nav">
@@ -47,7 +47,7 @@
     <!-- 
       The nav bar that will be updated as we navigate between views.
     -->
-    <ion-nav-bar nav-transition="none" class="bar-stable">
+    <ion-nav-bar class="bar-stable">
       <!--<ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
         Back
       </ion-nav-back-button>-->
@@ -55,12 +55,12 @@
     </ion-nav-bar>
 
     <ion-nav-buttons side="right">
-        <a ng-show="$scope.onUpgradeStore" ng-click="go('#/tappage', 'slideRight')"><i class="icon-chevron-right"></i></a>
+        <a ng-show="$scope.onUpgradeStore" ng-click="go('/tappage', 'slideRight')"><i class="icon-chevron-right"></i></a>
     </ion-nav-buttons>
 
     <ion-nav-buttons side="left">
         <span id="pepeCount" style="opacity: 0">
-          <a nav-transition="none" class="pepimg" ng-click="go('#/upgrade-store', 'slideUp')"></a><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
+          <a class="pepimg" ng-click="go('/upgrade-store', 'slideUp')"></a><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
         </span>
     </ion-nav-buttons>
 
@@ -69,6 +69,7 @@
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
     --><div class="page-container">
+        <div ui-view class="page-view" ng-class="pageAnimationClass"></div>
     <ion-nav-view></ion-nav-view>
       </div>
 
