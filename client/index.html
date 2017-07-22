@@ -13,6 +13,10 @@
     -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- ionic/angularjs js -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     <script src="lib/ionic/js/angular/angular-resource.js"></script>
     
@@ -48,12 +52,12 @@
     <ion-nav-buttons nav-transition="none" animation="no-animation" side="left">
 
     </ion-nav-buttons>-->
-      <md-nav-bar>
+      <div class="nav navbar-nav">
           <span id="pepeCount" style="opacity: 0">
-            <md-nav-item nav-transition="none" animation="no-animation" class="pepimg" ng-click="go('#/upgrade-store', 'slideUp')"></md-nav-item><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
+            <a nav-transition="none" animation="no-animation" class="pepimg" ng-click="go('#/upgrade-store', 'slideUp')"></a><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
           </span>
-          <md-nav-item ng-show="$scope.onUpgradeStore" style="float:right" ng-click="go('#/tappage', 'slideRight')"><i class="icon-chevron-right"></i></md-nav-item>
-      </md-nav-bar>
+          <a ng-show="$scope.onUpgradeStore" style="float:right" ng-click="go('#/tappage', 'slideRight')"><i class="icon-chevron-right"></i></a>
+      </div>
 
     <!-- 
       The views will be rendered in the <ion-nav-view> directive below
