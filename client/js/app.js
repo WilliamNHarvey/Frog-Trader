@@ -18,12 +18,12 @@ angular.module('pepeTrader', ['ionic', 'pepeTrader.controllers', 'pepeTrader.ser
   $rootScope.$on("$stateChangeStart", function(event, toState) {
     //redirect only if both isAuthenticated is false and no token is set
 
-    /*if (['tappage', 'login', 'logout', 'register'].indexOf(toState.name) === -1) {
+    if (['tappage', 'upgrade-store'].indexOf(toState.name) === -1) {
       if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
         event.preventDefault();
         $location.path("/tappage");
       }
-    }*/
+    }
 
   });
 
