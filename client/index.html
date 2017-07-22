@@ -69,5 +69,8 @@
           <a ng-click="go('/page4')">Page 4</a> <!-- note: no transition specified -->
       </nav>
 
+      <div class="page-container">
+          <div ng-view="" class="page-view" ng-class="pageAnimationClass"></div>
+      </div>
   </body>
 </html>
