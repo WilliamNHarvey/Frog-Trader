@@ -76,9 +76,11 @@
       <file leaf-file-name="tappage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/templates/tappage/tappage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="147">
+              <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <folding>
+                <marker date="1500768182290" expanded="false" signature="119:132" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -578,12 +580,12 @@
       <workItem from="1500488279233" duration="839000" />
       <workItem from="1500489699604" duration="21649000" />
       <workItem from="1500645830665" duration="20527000" />
-      <workItem from="1500760299091" duration="6946000" />
+      <workItem from="1500760299091" duration="6975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70044000" />
+    <option name="totallyTimeSpent" value="70073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1002,9 +1004,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/tappage/tappage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="147">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding>
+            <marker date="1500768182290" expanded="false" signature="119:132" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
