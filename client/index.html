@@ -41,7 +41,7 @@
               <a id="pepeIcon" class="pepimg store-icon" ui-sref="/upgrade-store" ng-click="switchPage('/upgrade-store', 'slideRight')"></a><span class="pepes-count" ng-bind="parsePepes(pepes)"></span>
           </li>
           <li class="navbar-header pull-right">
-              <a ng-hide="!onUpgradeStore" ui-sref="/tappage" ng-click="switchPage('/tappage', 'slideLeft')"> > </a>
+              <a ng-controller="UpgradeStoreCtrl" ng-show="onUpgradeStore" ui-sref="/tappage" ng-click="switchPage('/tappage', 'slideLeft')"> > </a>
           </li>
       </ul>
   </nav>

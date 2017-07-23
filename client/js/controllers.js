@@ -223,10 +223,7 @@ angular.module('pepeTrader.controllers', [])
 })
 
 .controller('UpgradeStoreCtrl', function($scope, $location, PepesService) {
-    $scope.$apply(function() {
-        $scope.onUpgradeStore = true;
-    });
-
+    $scope.onUpgradeStore = true;
     console.log($scope)
     $scope.upgrades = 'test';
 })
