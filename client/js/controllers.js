@@ -35,7 +35,7 @@ angular.module('pepeTrader.controllers', [])
         return suffix ? round(n/pow(1000,base), precision)+suffix : ''+n;
     };
 
-    $scope.switchPage = $rootScope.switchPage;
+
 
     $scope.isActive = function(viewLocation) {
         return viewLocation === $location.path();
@@ -226,7 +226,5 @@ angular.module('pepeTrader.controllers', [])
 })
 
 .controller('UpgradeStoreCtrl', function($scope, $location, PepesService) {
-    $scope.onUpgradeStore = true;
-    console.log($scope)
     $scope.upgrades = 'test';
 })

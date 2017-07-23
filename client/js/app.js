@@ -56,7 +56,6 @@ angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers'
         }
 
         else { // Use the specified animation
-            console.log('trans');
             $rootScope.pageAnimationClass = pageAnimationClass;
         }
 
