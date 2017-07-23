@@ -4,7 +4,7 @@ angular.module('pepeTrader.tap', [])
     return {
         restrict: 'AE',
         scope: true,
-        template: '<div id="tapbutton" class="tapbutton sad" layout-align="center center" ng-click="tapButton($event)"></div>',
+        template: '<div id="tapbutton" class="tapbutton sad" layout-align="" ng-click="tapButton($event)"></div>',
         controller: function($scope, $element){
             var sad = true;
             var sadTimer;
@@ -14,8 +14,8 @@ angular.module('pepeTrader.tap', [])
                 if($('#tapbutton').width() != 300) {
                     $('#tapbutton').css('width', '300px');
                     $('#tapbutton').css('height', '300px');
-                    $('#tapbutton').css('top', '50%');
-                    $('#tapbutton').css('left', '50%');
+                    $('#tapbutton').css('top', '50vh');
+                    $('#tapbutton').css('left', '50vw');
                 }
                 /*clearTimeout(sadTimer);
                 sadTimer = setTimeout(function(){ makeSad(); }, 5000);*/

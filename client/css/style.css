@@ -35,8 +35,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50vh;
+    left: 50vw;
     margin-top: -150px;
     margin-left: -150px;
     z-index: 110 !important;
@@ -51,12 +51,12 @@
 }
 
 .sadtohappy {
-    /*margin-top: 117px;*/
+    margin-top: -133px;
     background-image: url('../img/sadtohappypepe.gif');
 }
 
 .happytosad {
-    /*margin-top: 117px;*/
+    margin-top: -133px;
     background-image: url('../img/happytosadpepe.gif');
 }
 
