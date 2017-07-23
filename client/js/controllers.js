@@ -37,6 +37,9 @@ angular.module('pepeTrader.controllers', [])
 
     $scope.switchPage = $rootScope.switchPage;
 
+    $scope.isActive = function(viewLocation) {
+        return viewLocation === $location.path();
+    };
 })
 
 

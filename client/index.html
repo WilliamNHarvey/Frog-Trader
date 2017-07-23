@@ -35,16 +35,33 @@
   </head>
   <body ng-app="pepeTrader" ng-controller="NavCtrl">
 
-  <nav class="navbar navbar-inverse" role="navigation">
+  <!--<nav class="navbar navbar-inverse" role="navigation">
       <ul class="nav navbar-nav">
           <li>
               <a id="pepeIcon" class="pepimg store-icon" ui-sref="/upgrade-store" ng-click="switchPage('/upgrade-store', 'slideRight')"></a><span class="pepes-count" ng-bind="parsePepes(pepes)"></span>
           </li>
           <li class="navbar-header pull-right">
-              <a ng-controller="UpgradeStoreCtrl" ng-show="onUpgradeStore" ui-sref="/tappage" ng-click="switchPage('/tappage', 'slideLeft')"> > </a>
+              <a ng-show="isActive('/upgrade-store')" ui-sref="/tappage" ng-click="switchPage('/tappage', 'slideLeft')"> > </a>
           </li>
       </ul>
-  </nav>
+  </nav>-->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+
+          </div>
+          <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <li>
+                      <a id="pepeIcon" class="pepimg store-icon" ui-sref="/upgrade-store" ng-click="switchPage('/upgrade-store', 'slideRight')"></a><span class="pepes-count" ng-bind="parsePepes(pepes)"></span>
+                  </li>
+                  <li class="navbar-header pull-right">
+                      <a ng-show="isActive('/upgrade-store')" ui-sref="/tappage" ng-click="switchPage('/tappage', 'slideLeft')"> > </a>
+                  </li>
+              </ul>
+          </div><!--/.nav-collapse -->
+      </div>
+  </div>
   <!--<script src="https://code.angularjs.org/1.2.0/angular.js"></script>
   <script src="https://code.angularjs.org/1.2.0/angular-route.js"></script>
   <script src="https://code.angularjs.org/1.2.0/angular-animate.js"></script>
