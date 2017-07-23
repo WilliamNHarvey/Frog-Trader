@@ -3,7 +3,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('pepeTrader', ['ui.router', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'ngResource'])
+angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'ngResource'])
 
 .run(function($window, $location, $rootScope, AuthenticationService) {
   $rootScope.user = {
@@ -50,12 +50,13 @@ angular.module('pepeTrader', ['ui.router', 'pepeTrader.controllers', 'pepeTrader
     ]);
 
     $rootScope.switchPage = function (path, pageAnimationClass) {
-        console.log('trans');
+
         if (typeof(pageAnimationClass) === 'undefined') { // Use a default, your choice
             $rootScope.pageAnimationClass = 'crossFade';
         }
 
         else { // Use the specified animation
+            console.log('trans');
             $rootScope.pageAnimationClass = pageAnimationClass;
         }
 

@@ -41,7 +41,7 @@
               <a class="pepimg store-icon" ui-sref="/upgrade-store" ng-click="switchPage('/upgrade-store', 'slideLeft')"></a><span class="pepes-count" ng-bind="parsePepes(pepes)"></span>
           </li>
           <li>
-              <a ng-show="onUpgradeStore" ui-sref="/tappage" ng-click="switchPage('/tappage', 'slideRight')"><i class="icon-chevron-right"></i></a>
+              <a ng-show="onUpgradeStore == true" ui-sref="/tappage" ng-click="switchPage('/tappage', 'slideRight')"><i class="icon-chevron-right"></i></a>
           </li>
       </ul>
   </nav>
@@ -78,9 +78,10 @@
       The views will be rendered in the <ion-nav-view> directive below
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
-    --><div class="page-container">
+    -->
+    <div class="page-container">
         <div ui-view class="page-view" ng-class="pageAnimationClass"></div>
-      </div>
+    </div>
 
   </body>
 </html>
