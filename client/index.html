@@ -31,8 +31,8 @@
 
   <nav class="navbar navbar-inverse" role="navigation">
       <ul class="nav navbar-nav">
-          <a class="pepimg" ui-sref="/upgrade-store" ng-click="go('/upgrade-store', 'slideUp')"></a><div class="pepes-count" ng-bind="parsePepes(pepes)"></div>
-          <a ng-show="onUpgradeStore" ui-sref="/tappage" ng-click="go('/tappage', 'slideDown')"><i class="icon-chevron-right"></i></a>
+          <a class="pepimg" ui-sref="/upgrade-store" ng-click="transition('/upgrade-store', 'slideLeft')"></a><span class="pepes-count" ng-bind="parsePepes(pepes)"></span>
+          <a ng-show="onUpgradeStore" ui-sref="/tappage" ng-click="transition('/tappage', 'slideRight')"><i class="icon-chevron-right"></i></a>
       </ul>
   </nav>
   <!--<script src="https://code.angularjs.org/1.2.0/angular.js"></script>
