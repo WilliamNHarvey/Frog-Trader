@@ -88,7 +88,7 @@ angular.module('pepeTrader.services', [])
   };
 })
 
-.factory('RegistrationService', function($window, $http, $ionicPopup, $rootScope, AuthenticationService) {
+.factory('RegistrationService', function($window, $http, $rootScope, AuthenticationService) {
   return {
     login: function(email, password) {
       return $http.post('/login', {
@@ -104,10 +104,7 @@ angular.module('pepeTrader.services', [])
         $window.sessionStorage.is_admin = result.data.is_admin;
         $window.localStorage.token      = result.data.token;
       }).catch(function(err) {
-        $ionicPopup.alert({
-          title: 'Failed',
-          content: err.data
-        });
+
       });;
     },
 
@@ -124,10 +121,7 @@ angular.module('pepeTrader.services', [])
         $window.localStorage.token      = result.data.token;
         console.log(result.data);
       }).catch(function(err) {
-        $ionicPopup.alert({
-          title: 'Failed',
-          content: err.data
-        });
+
       });
     }
   }

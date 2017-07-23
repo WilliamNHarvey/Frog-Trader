@@ -39,7 +39,7 @@ angular.module('pepeTrader.controllers', [])
 })
 
 
-.controller('QuizCtrl', function($scope, $ionicPopup, $ionicLoading, SocketIO, Question, Answer, 
+.controller('QuizCtrl', function($scope, SocketIO, Question, Answer,
                                  AuthenticationService, RegistrationService, UserResponse) {
   $scope.q = {};
   $scope.q.answers = ['one', 'two', 'three'];
@@ -124,22 +124,18 @@ angular.module('pepeTrader.controllers', [])
     }
 
     $scope.timer = 3;
-    $ionicLoading.show({
-      template: 'Next question in 3 seconds...'
-    });
+
 
     var timer = setInterval(function() {
       $scope.timer--;
-      $ionicLoading.show({
-        template: 'Next question in ' + $scope.timer + ' seconds...'
-      });
+
 
       if ($scope.timer <= 0) {
         clearInterval(timer);
         if (msg.question != 'end') {
           hideLeaders();
         }
-        $ionicLoading.hide();
+
         $scope.q = msg;
         check_start();
         $scope.$apply();
