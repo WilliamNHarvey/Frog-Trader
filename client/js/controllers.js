@@ -35,7 +35,7 @@ angular.module('pepeTrader.controllers', [])
         return suffix ? round(n/pow(1000,base), precision)+suffix : ''+n;
     };
 
-    $scope.switchPage = $rootScope.switchPage();
+    $scope.switchPage = $rootScope.switchPage;
 
 })
 
