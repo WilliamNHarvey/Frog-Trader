@@ -32,7 +32,7 @@
   <nav class="navbar navbar-inverse" role="navigation">
       <ul class="nav navbar-nav">
           <li>
-              <a class="pepimg" ui-sref="/upgrade-store" ng-click="transition('/upgrade-store', 'slideLeft')"><span class="pepes-count" ng-bind="parsePepes(pepes)"></span></a>
+              <a class="pepimg" ui-sref="/upgrade-store" ng-click="transition('/upgrade-store', 'slideLeft')"></a><span class="navbar-text pepes-count" ng-bind="parsePepes(pepes)"></span>
           </li>
           <li>
               <a ng-show="onUpgradeStore" ui-sref="/tappage" ng-click="transition('/tappage', 'slideRight')"><i class="icon-chevron-right"></i></a>
