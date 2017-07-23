@@ -49,8 +49,8 @@ angular.module('pepeTrader', ['ui.router', 'pepeTrader.controllers', 'pepeTrader
         'sad'
     ]);
 
-    $rootScope.transition = function (path, pageAnimationClass) {
-
+    $rootScope.switchPage = function (path, pageAnimationClass) {
+        console.log('trans');
         if (typeof(pageAnimationClass) === 'undefined') { // Use a default, your choice
             $rootScope.pageAnimationClass = 'crossFade';
         }
