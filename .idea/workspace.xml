@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02e4c579-4ccb-40c2-bd4e-9f22e9d07bed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/app.js" afterPath="$PROJECT_DIR$/client/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,23 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tappage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/tappage/tappage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-              <folding>
-                <marker date="1500768182290" expanded="false" signature="119:132" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            <state relative-caret-position="441">
+              <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -100,9 +89,35 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="74" lean-forward="true" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+            <state relative-caret-position="420">
+              <caret line="20" column="106" lean-forward="false" selection-start-line="20" selection-start-column="106" selection-end-line="20" selection-end-column="106" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/angular-ui-router/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+              <folding>
+                <marker date="1500777872067" expanded="true" signature="0:5484" ph="{&quot;name&quot;: &quot;angular-ui-router&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="776:841" ph="{&quot;url&quot;: &quot;https://github.com/angular-ui/ui-router/issues&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="892:1280" ph="[...]" />
+                <marker date="1500777872067" expanded="true" signature="898:999" ph="{&quot;name&quot;: &quot;Nate Abele&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="1005:1096" ph="{&quot;name&quot;: &quot;Chris Thielen&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="1102:1185" ph="{&quot;name&quot;: &quot;Tim Kindberg&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="1191:1276" ph="{&quot;name&quot;: &quot;Karsten Sperling&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="1300:1335" ph="{&quot;@uirouter/core&quot;: &quot;5.0.3&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="1611:3160" ph="{&quot;@types/angular&quot;: &quot;^1.5.14&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="3175:3202" ph="{&quot;node&quot;: &quot;&gt;=4.0.0&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="3349:3453" ph="[...]" />
+                <marker date="1500777872067" expanded="true" signature="3355:3449" ph="{&quot;name&quot;: &quot;UIRouter Team&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="3508:3538" ph="{&quot;angular&quot;: &quot;&gt;=1.2.0&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="3556:3641" ph="{&quot;type&quot;: &quot;git&quot;...}" />
+                <marker date="1500777872067" expanded="true" signature="3656:5429" ph="{&quot;artifacts&quot;: &quot;node scripts/artifact_tagging.js&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -284,6 +299,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pepeTrader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pepeTrader" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -416,6 +445,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pepeTrader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pepeTrader" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -466,18 +513,18 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\William\Documents\Cordova\pepeTrader\client\lib" />
+      <recent name="C:\Users\William\Documents\Cordova\pepeTrader\client\templates\upgrade-store" />
+      <recent name="C:\Users\William\Documents\Cordova\pepeTrader\client\img" />
+      <recent name="C:\Users\William\Documents\Cordova\frogTrader\client\css" />
+      <recent name="C:\Users\William\Documents\Cordova\frogTrader\client" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\William\Documents\Cordova\pepeTrader\client\img" />
       <recent name="C:\Users\William\Documents\Cordova\frogTrader\client\js" />
       <recent name="C:\Users\William\Documents\Cordova\frogTrader\client\templates\tappage\tap-button" />
       <recent name="C:\Users\William\Documents\Cordova\frogTrader\client\templates\tappage" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\William\Documents\Cordova\pepeTrader\client\templates\upgrade-store" />
-      <recent name="C:\Users\William\Documents\Cordova\pepeTrader\client\img" />
-      <recent name="C:\Users\William\Documents\Cordova\frogTrader\client\css" />
-      <recent name="C:\Users\William\Documents\Cordova\frogTrader\client" />
-      <recent name="C:\Users\William\Documents\Cordova\frogTrader\client\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -591,12 +638,12 @@
       <workItem from="1500488279233" duration="839000" />
       <workItem from="1500489699604" duration="21649000" />
       <workItem from="1500645830665" duration="20527000" />
-      <workItem from="1500760299091" duration="12677000" />
+      <workItem from="1500760299091" duration="13285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75775000" />
+    <option name="totallyTimeSpent" value="76383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -657,22 +704,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3906">
-          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/tappage/tap-button/tap-button.directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1029">
@@ -1007,20 +1038,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/angular-ui-router/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <marker date="1500777872067" expanded="true" signature="0:5484" ph="{&quot;name&quot;: &quot;angular-ui-router&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="776:841" ph="{&quot;url&quot;: &quot;https://github.com/angular-ui/ui-router/issues&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="892:1280" ph="[...]" />
+            <marker date="1500777872067" expanded="true" signature="898:999" ph="{&quot;name&quot;: &quot;Nate Abele&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="1005:1096" ph="{&quot;name&quot;: &quot;Chris Thielen&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="1102:1185" ph="{&quot;name&quot;: &quot;Tim Kindberg&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="1191:1276" ph="{&quot;name&quot;: &quot;Karsten Sperling&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="1300:1335" ph="{&quot;@uirouter/core&quot;: &quot;5.0.3&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="1611:3160" ph="{&quot;@types/angular&quot;: &quot;^1.5.14&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="3175:3202" ph="{&quot;node&quot;: &quot;&gt;=4.0.0&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="3349:3453" ph="[...]" />
+            <marker date="1500777872067" expanded="true" signature="3355:3449" ph="{&quot;name&quot;: &quot;UIRouter Team&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="3508:3538" ph="{&quot;angular&quot;: &quot;&gt;=1.2.0&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="3556:3641" ph="{&quot;type&quot;: &quot;git&quot;...}" />
+            <marker date="1500777872067" expanded="true" signature="3656:5429" ph="{&quot;artifacts&quot;: &quot;node scripts/artifact_tagging.js&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        <state relative-caret-position="441">
+          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/angular-ui-router/lib/legacy/stateEvents.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="74" lean-forward="true" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+        <state relative-caret-position="420">
+          <caret line="20" column="106" lean-forward="false" selection-start-line="20" selection-start-column="106" selection-end-line="20" selection-end-column="106" />
           <folding />
         </state>
       </provider>
