@@ -50,11 +50,11 @@
           <div class="navbar-header">
 
           </div>
-          <a id="pepeIcon" class="navbar-brand pepimg store-icon" ui-sref="/upgrade-store" ng-click="switchPage('/upgrade-store', 'slideRight')"></a><span class="pepes-count" ng-bind="parsePepes(pepes)"></span>
+          <a id="pepeIcon" class="navbar-brand pepimg store-icon" ui-sref="/upgrade-store" ng-click="$root.switchPage('/upgrade-store', 'slideRight')"></a><span class="pepes-count" ng-bind="parsePepes(pepes)"></span>
           <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
                   <li class="pull-right">
-                      <a ng-show="isActive('/upgrade-store')" ui-sref="/tappage" ng-click="switchPage('/tappage', 'slideLeft')"> > </a>
+                      <a ng-show="isActive('/upgrade-store')" ui-sref="/tappage" ng-click="$root.switchPage('/tappage', 'slideLeft')"> > </a>
                   </li>
               </ul>
           </div><!--/.nav-collapse -->
