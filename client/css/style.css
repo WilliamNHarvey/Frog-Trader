@@ -60,8 +60,9 @@
     background-image: url('../img/happytosadpepe.gif');
 }
 
-a:hover {
-    display: none;
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav > .active > a:hover,  {
+    background-color: initial;
 }
 
 .pepimg {
