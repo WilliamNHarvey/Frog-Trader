@@ -60,6 +60,10 @@
     background-image: url('../img/happytosadpepe.gif');
 }
 
+a:hover {
+    display: none;
+}
+
 .pepimg {
     display:block;
     height: 50px;
@@ -83,7 +87,7 @@
 .pepes-count {
     font-weight: bold;
     font-size: 25px;
-    top: -35px;
+    top: -40px;
     position: relative;
     margin-left: 65px;
 }
