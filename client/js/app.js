@@ -69,6 +69,7 @@ angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers'
     };
 
     $rootScope.lightened = false;
+    $rootScope.sad = true;
 })
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {

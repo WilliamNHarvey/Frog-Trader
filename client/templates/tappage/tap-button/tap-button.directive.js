@@ -4,9 +4,16 @@ angular.module('pepeTrader.tap', [])
     return {
         restrict: 'AE',
         scope: true,
-        template: '<div id="tapbutton" class="tapbutton sad" layout-align="" ng-click="tapButton($event)"></div>',
-        controller: function($scope, $element){
-            var sad = true;
+        template: '<div id="tapbutton" class="tapbutton" layout-align="" ng-click="tapButton($event)"></div>',
+        controller: function($rootScope, $scope, $element){
+            if($rootScope.sad) {
+                var sad = true;
+                $('#tapbutton').addClass('sad');
+            }
+            else {
+                var sad = false;
+                $('#tapbutton').addClass('happy');
+            }
             var sadTimer;
             $scope.tapButton = function(e){
 
@@ -19,9 +26,11 @@ angular.module('pepeTrader.tap', [])
                 }
                 /*clearTimeout(sadTimer);
                 sadTimer = setTimeout(function(){ makeSad(); }, 5000);*/
+
                 if(sad) {
                     makeHappy();
                     $scope.lightenUp();
+                    $rootScope.sad = false;
                 }
                 var hue = 'hue-rotate('+Math.random()*360+'deg)';
 
