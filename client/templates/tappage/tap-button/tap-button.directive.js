@@ -8,11 +8,11 @@ angular.module('pepeTrader.tap', [])
         controller: function($rootScope, $scope, $element){
             if($rootScope.sad) {
                 var sad = true;
-                $('#tapbutton').addClass('sad');
+                $('#tapbutton').addClass('sad').animate({ opacity: 1 }, 1000);
             }
             else {
                 var sad = false;
-                $('#tapbutton').addClass('happy');
+                $('#tapbutton').addClass('happy').animate({ opacity: 1 }, 1000);
             }
             var sadTimer;
             $scope.tapButton = function(e){

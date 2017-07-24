@@ -40,6 +40,7 @@
     margin-top: -150px;
     margin-left: -150px;
     z-index: 110 !important;
+    opacity: 0;
 }
 
 .happy {
