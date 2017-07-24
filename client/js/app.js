@@ -67,6 +67,8 @@ angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers'
             $location.path(path);;
         }
     };
+
+    $rootScope.lightened = false;
 })
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
