@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02e4c579-4ccb-40c2-bd4e-9f22e9d07bed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/style.css" afterPath="$PROJECT_DIR$/client/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/tappage/tappage.html" afterPath="$PROJECT_DIR$/client/templates/tappage/tappage.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
@@ -97,14 +97,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tappage.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tappage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/templates/tappage/tappage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state relative-caret-position="168">
+              <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1501008373424" expanded="true" signature="114:127" ph="..." />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1501008957463" expanded="true" signature="119:132" ph="..." />
               </folding>
             </state>
           </provider>
@@ -201,8 +201,8 @@
         <option value="$PROJECT_DIR$/client/templates/upgrade-store/upgrades/upgrades.directive.js" />
         <option value="$PROJECT_DIR$/client/templates/upgrade-store/upgrade-store.html" />
         <option value="$PROJECT_DIR$/client/index.html" />
-        <option value="$PROJECT_DIR$/client/templates/tappage/tappage.html" />
         <option value="$PROJECT_DIR$/client/css/style.css" />
+        <option value="$PROJECT_DIR$/client/templates/tappage/tappage.html" />
       </list>
     </option>
   </component>
@@ -626,12 +626,12 @@
       <workItem from="1500488279233" duration="839000" />
       <workItem from="1500489699604" duration="21649000" />
       <workItem from="1500645830665" duration="20527000" />
-      <workItem from="1500760299091" duration="28993000" />
+      <workItem from="1500760299091" duration="29370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92091000" />
+    <option name="totallyTimeSpent" value="92468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1065,17 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/tappage/tappage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1501008373424" expanded="true" signature="114:127" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/upgrade-store/upgrade-store.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1089,6 +1078,17 @@
         <state relative-caret-position="399">
           <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/tappage/tappage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1501008957463" expanded="true" signature="119:132" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
