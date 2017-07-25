@@ -11,8 +11,8 @@
 
 /* home screen */
 .tappage-content {
-    /*background: url(/img/splash-background.png) no-repeat;
-    background-size: cover;*/
+    background: url(../img/greenback.jpg) no-repeat;
+    background-size: cover;
     background-color: white;
 }
 
@@ -169,6 +169,19 @@
 
     opacity: 1;
     z-index: 100 !important;
+}
+
+.tappage-background {
+    background-image:    url(images/background.svg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+    z-index: -1 !important;
+    position: absolute;
+    left: 0;
+    top: -45px;
+    margin: 0;
+    padding:0;
 }
 
 .home-content > .scroll {
