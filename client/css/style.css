@@ -114,7 +114,6 @@
     /*background: none !important;*/
     max-height: 50px !important;
     background-color: greenyellow !important;
-    z-index: 50 !important;
 }
 
 .bar.bar-light {

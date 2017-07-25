@@ -221,8 +221,7 @@ angular.module('pepeTrader.controllers', [])
 
     $scope.lightenUp = function() {
         $("#bg").animate({ opacity: 0 }, 1500);
-        $("#pepeCount").animate({ opacity: 1 }, 1500);
-        $("#pepeIcon").animate({ opacity: 1 }, 1500);
+        $("#navbar").animate({ opacity: 1 }, 1500);
         $rootScope.lightened = true;
     }
     $scope.upgrades = 'test';
