@@ -174,16 +174,20 @@
 }
 
 .tappage-background {
-    background-image:    url(../img/greenback.jpg);
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;              /* optional, center the image */
-    z-index: -1 !important;
     position: absolute;
+    /*background-color: black;*/
+    background-image:    url(../img/greenback.jpg);
     left: 0;
     top: -45px;
+    height: 110vh;
+    width: 110vw;
     margin: 0;
     padding:0;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    opacity: 1;
+    z-index: 100 !important;
 }
 
 .home-content > .scroll {
