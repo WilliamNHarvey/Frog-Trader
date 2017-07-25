@@ -11,9 +11,10 @@
 
 /* home screen */
 .tappage-content {
-    background: url(../img/greenback.jpg) no-repeat;
+    background: url(../img/greenback.jpg);
     background-size: cover;
-    background-color: white;
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 
 .tapbutton {
