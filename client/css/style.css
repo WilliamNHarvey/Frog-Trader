@@ -112,8 +112,9 @@
 .bar, .navbar-collapse, .bar-stable, .bar-header, .toolbar-background {
     border: none !important;
     /*background: none !important;*/
-    height: 50px !important;
+    max-height: 50px !important;
     background-color: greenyellow !important;
+    z-index: 50 !important;
 }
 
 .bar.bar-light {
@@ -188,7 +189,7 @@
     background-repeat:   no-repeat;
     background-position: center center;
     opacity: 1;
-    z-index: 99 !important;
+    z-index: 2 !important;
 }
 
 .home-content > .scroll {
