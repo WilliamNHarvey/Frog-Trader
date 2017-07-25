@@ -536,3 +536,17 @@ tr {
     -o-transform: translate3d(0,-100%,0);
     transform: translate3d(0,-100%,0);
 }
+
+@media screen and (max-width: 500px) {
+    .store-icon {
+        margin-left: 20px;
+        top: -5px;
+    }
+    .pepes-count {
+        margin-left: 75px;
+        top: -45px;
+    }
+    .back-arrow {
+        top: -82px;
+    }
+}
