@@ -173,7 +173,7 @@
 }
 
 .tappage-background {
-    background-image:    url(images/background.svg);
+    background-image:    url(../img/greenback.jpg);
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;              /* optional, center the image */
