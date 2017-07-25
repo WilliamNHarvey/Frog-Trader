@@ -160,7 +160,8 @@
 
 #bg {
     position: absolute;
-    background-color: black;
+    /*background-color: black;*/
+    background-image:    url(../img/greenback.jpg);
     left: 0;
     top: -45px;
     height: 110vh;
