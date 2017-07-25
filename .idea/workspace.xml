@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="02e4c579-4ccb-40c2-bd4e-9f22e9d07bed" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/css/style.css" afterPath="$PROJECT_DIR$/client/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,8 +58,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="163" column="49" lean-forward="false" selection-start-line="163" selection-start-column="49" selection-end-line="163" selection-end-column="49" />
+            <state relative-caret-position="710">
+              <caret line="114" column="33" lean-forward="false" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -154,12 +153,12 @@
       <find>hover</find>
       <find>ionic</find>
       <find>tapbu</find>
-      <find>bg</find>
       <find>image</find>
       <find>url</find>
       <find>background-</find>
       <find>background-ima</find>
       <find>navbar</find>
+      <find>bg</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\William\Documents\Cordova\mobile-template1</dir>
@@ -618,12 +617,12 @@
       <workItem from="1500488279233" duration="839000" />
       <workItem from="1500489699604" duration="21649000" />
       <workItem from="1500645830665" duration="20527000" />
-      <workItem from="1500760299091" duration="30551000" />
+      <workItem from="1500760299091" duration="30787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93649000" />
+    <option name="totallyTimeSpent" value="93885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1079,8 +1078,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="163" column="49" lean-forward="false" selection-start-line="163" selection-start-column="49" selection-end-line="163" selection-end-column="49" />
+        <state relative-caret-position="710">
+          <caret line="114" column="33" lean-forward="false" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
           <folding />
         </state>
       </provider>

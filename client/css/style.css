@@ -64,7 +64,7 @@
 
 .navbar-collapse .navbar-nav li a:hover,
 .navbar-collapse .navbar-nav > .active > a:hover {
-    background-color: green;
+    background-color: initial;
 }
 
 .pepimg {
@@ -112,7 +112,7 @@
 .bar, .bar-stable, .bar-header, .toolbar-background {
     border: none !important;
     background: none !important;
-    background-color: transparent !important;
+    background-color: greenyellow !important;
 }
 
 .bar.bar-light {
