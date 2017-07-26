@@ -236,6 +236,12 @@ tr {
     pointer-events: none;
 }
 
+.back-arrow {
+    right: 10px;
+}
+
+
+
 
 
 /* Transitions */
