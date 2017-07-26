@@ -40,6 +40,10 @@ angular.module('pepeTrader.controllers', [])
     $scope.isActive = function(viewLocation) {
         return viewLocation === $location.path();
     };
+
+    if($rootScope.lightened) {
+        $("#navbar").css({ opacity: 1 });
+    }
 })
 
 
@@ -216,7 +220,7 @@ angular.module('pepeTrader.controllers', [])
 .controller('TapPageCtrl', function($rootScope, $scope, $location, PepesService) {
     //document.addEventListener('mousemove', function(e) {e.preventDefault()}, false);
     //document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
-
+    $(document).scrollTop(0);
     $(document).bind('touchmove', false);
     $scope.onUpgradeStore = false;
     $scope.lightened = $rootScope.lightened;
