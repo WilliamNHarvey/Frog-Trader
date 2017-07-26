@@ -93,6 +93,7 @@
     top: -40px;
     position: relative;
     margin-left: 65px;
+    color: white;
 }
 
 .store-icon {
@@ -113,7 +114,7 @@
     border: none !important;
     /*background: none !important;*/
     max-height: 50px !important;
-    background-color: greenyellow !important;
+    background-color: black !important;
 }
 
 .bar.bar-light {
@@ -224,6 +225,15 @@ tr {
     line-height: 75px;
     min-height: 75px;
     height: 75px;
+}
+
+.right-nav {
+    position: absolute;
+    right: 5px;
+}
+
+.pointer-none {
+    pointer-events: none;
 }
 
 
