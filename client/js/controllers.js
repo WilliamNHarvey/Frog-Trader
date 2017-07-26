@@ -41,7 +41,7 @@ angular.module('pepeTrader.controllers', [])
         return viewLocation === $location.path();
     };
 
-    if($location.path() != '/tappage') {
+    if($location.path() != '/tappage' || $rootScope.lightened()) {
         $("#navbar").css({ opacity: 1 });
     }
 })
