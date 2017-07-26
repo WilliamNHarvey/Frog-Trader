@@ -62,8 +62,8 @@
     background-image: url('../img/happytosadpepe.gif');
 }
 
-.navbar-collapse .navbar-nav li a:hover,
-.navbar-collapse .navbar-nav > .active > a:hover {
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav > .active > a:hover {
     background-color: initial;
 }
 
