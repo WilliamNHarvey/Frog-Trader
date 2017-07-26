@@ -214,8 +214,10 @@ angular.module('pepeTrader.controllers', [])
 })
 
 .controller('TapPageCtrl', function($rootScope, $scope, $location, PepesService) {
-    document.addEventListener('mousemove', function(e) {e.preventDefault()}, false);
-    document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
+    //document.addEventListener('mousemove', function(e) {e.preventDefault()}, false);
+    //document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
+
+    $(document).bind('touchmove', false);
     $scope.onUpgradeStore = false;
     $scope.lightened = $rootScope.lightened;
 
@@ -229,4 +231,5 @@ angular.module('pepeTrader.controllers', [])
 
 .controller('UpgradeStoreCtrl', function($scope, $location, PepesService) {
     $scope.upgrades = 'test';
+    $(document).unbind('touchmove');
 })
