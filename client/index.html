@@ -47,23 +47,30 @@
           </li>
       </ul>
   </nav>-->
-  <div id="navbar" class="navbar navbar-fixed-top" style="opacity: 0;">
-      <div class="">
-          <div class="navbar-header">
-
-          </div>
-          <div class="">
-              <ul class="nav navbar-nav">
-                  <li>
-                      <a id="pepeIcon" class="pepimg store-icon" ui-sref="/upgrade-store" ng-click="switchPage('/upgrade-store', 'slideRight')"></a><span id="pepeCount" class="pepes-count" ng-bind="parsePepes(pepes)"></span>
-                  </li>
-                  <li class="pull-right right-nav">
-                      <a ng-show="isActive('/upgrade-store')" ui-sref="/tappage" ng-click="switchPage('/tappage', 'slideRight')"> <span class="back-arrow glyphicon glyphicon-chevron-right"></span> </a>
-                  </li>
-              </ul>
-          </div><!--/.nav-collapse -->
+  <!--<div id="navbar" class="navbar navbar-fixed-top" style="opacity: 0;">
+      <ul class="nav navbar-nav">
+          <li>
+              <a id="pepeIcon" class="pepimg store-icon" ui-sref="/upgrade-store" ng-click="switchPage('/upgrade-store', 'slideRight')"></a><span id="pepeCount" class="pepes-count" ng-bind="parsePepes(pepes)"></span>
+          </li>
+          <li class="pull-right right-nav">
+              <a ng-show="isActive('/upgrade-store')" ui-sref="/tappage" ng-click="switchPage('/tappage', 'slideRight')"> <span class="back-arrow glyphicon glyphicon-chevron-right"></span> </a>
+          </li>
+      </ul>
+  </div>-->
+  <nav id="navbar" class="navbar navbar-fixed-top" style="opacity: 0;">
+      <div class="container-fluid">
+          <ul class="nav navbar-nav">
+              <li>
+                  <a id="pepeIcon" class="pepimg store-icon" ui-sref="/upgrade-store" ng-click="switchPage('/upgrade-store', 'slideRight')"></a><span id="pepeCount" class="pepes-count" ng-bind="parsePepes(pepes)"></span>
+              </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li>
+                  <a ng-show="isActive('/upgrade-store')" ui-sref="/tappage" ng-click="switchPage('/tappage', 'slideRight')"> <span class="back-arrow glyphicon glyphicon-chevron-right"></span> </a>
+              </li>
+          </ul>
       </div>
-  </div>
+  </nav>
   <!--<script src="https://code.angularjs.org/1.2.0/angular.js"></script>
   <script src="https://code.angularjs.org/1.2.0/angular-route.js"></script>
   <script src="https://code.angularjs.org/1.2.0/angular-animate.js"></script>
