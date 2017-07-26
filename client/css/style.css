@@ -240,7 +240,13 @@ tr {
     right: 10px;
 }
 
+.pepes {
+    left: -15px;
+}
 
+.navbar {
+    opacity: 0;
+}
 
 
 
@@ -564,5 +570,10 @@ tr {
     }
     .back-arrow {
         top: -82px;
+    }
+    .navbar-right {
+        position: absolute;
+        top: 0px;
+        right: 15px;
     }
 }
