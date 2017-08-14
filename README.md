@@ -99,5 +99,7 @@ Christiaan Oostenbrug <Christiaan_Oostenbrug@yahoo.com>
 
 ## License
 
-See LICENSE. This code is available under the MIT license.
+This code holds no license for use.
+
+Copyright © 2017 William Harvey, Christiaan Oostenbrug
 
