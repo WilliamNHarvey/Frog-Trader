@@ -2,6 +2,8 @@
 
 Trade frogs, get rich
 
+https://pepetrader.herokuapp.com/#/tappage
+
 ## Documentation
 
 Tech documents: 

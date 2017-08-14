@@ -19,10 +19,10 @@ angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers'
     //redirect only if both isAuthenticated is false and no token is set
 
     if (['tappage', 'upgrade-store'].indexOf(toState.name) === -1) {
-      if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
+      //if (!AuthenticationService.isAuthenticated && !$window.localStorage.token) {
         event.preventDefault();
         $location.path("/tappage");
-      }
+      //}
     }
 
   });
