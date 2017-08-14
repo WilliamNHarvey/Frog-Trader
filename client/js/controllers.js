@@ -1,6 +1,6 @@
 angular.module('pepeTrader.controllers', [])
 
-.controller('NavCtrl', function($rootScope, $scope, $location, RegistrationService, PepesService, $window) {
+.controller('NavCtrl', function($rootScope, $scope, $location, RegistrationService, PepesService, UpgradesService, $window) {
   /*$scope.logout = function() {
     RegistrationService.logout();
     $location.path("/register");
@@ -236,7 +236,26 @@ angular.module('pepeTrader.controllers', [])
     $scope.upgrades = 'test';
 })
 
-.controller('UpgradeStoreCtrl', function($scope, $location, PepesService) {
-    $scope.upgrades = 'test';
+.controller('UpgradeStoreCtrl', function($scope, $location, PepesService, UpgradesService) {
+    $scope.upgrades = [];
     $(document).unbind('touchmove');
+
+    var upgradesJson = require('../lib/objects/upgrades.json');
+
+    angular.forEach(upgradesJson, function(upgrade, key) {
+        if(upgrade['name'] && upgrade['button'] && (upgrade['cost'] || upgrade['cost-fn'])) {
+            var nextCost;
+            if($upgrade['cost']) {
+                nextCost = $upgrade['cost'];
+            }
+            else {
+                nextCost = UpgradesService.eval($upgrade['cost-fn'] + '()');
+            }
+            if(typeof nextCost !== 'undefined') {
+                $scope.upgrades.push([$upgrade['name'], nextCost, $upgrade['button']])
+            }
+
+        }
+    });
+
 })

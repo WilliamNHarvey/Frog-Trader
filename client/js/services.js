@@ -53,6 +53,25 @@ angular.module('pepeTrader.services', [])
     }
 })
 
+.factory('UpgradesService', function() {
+    return {
+        tapPower: function () {
+
+        },
+        noScopeTags: function () {
+
+        },
+        get: function() {
+            return $.when(null);
+        }/*,
+       save: function() {
+       //save locally
+       //http request to post to server if logged in, only if beyond point of prompting sign up & online
+       return $.when(null);
+       }*/
+    }
+})
+
 .factory('TokenInterceptor', function($q, $window, $location, AuthenticationService) {
   return {
     request: function(config) {

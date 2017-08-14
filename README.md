@@ -1,123 +1,30 @@
-# Heroku template mobile app `Quiz Live`
+# Frog Trader
 
-This sample application implements a simple "live quiz" mobile game. The mobile
-app itself is a hybrid AngularJS app composed of HTML, CSS and Javascript. The
-server side is implemented as an Express Node.js application running on top of 
-a Postgres database.
+Trade frogs, get rich
 
-This application should serve as a good base for creating mobile apps to deploy on
-Heroku.
+## Documentation
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+Tech documents: 
 
-## How to play
+* Feature development progress
+* MVP's
+* Business documents
 
-A set of players opens the app on their phones and registers to play. The app maintains 
-this list of users plus a set of quiz questions. During the game, questions
-are presented to each user running the app, and points are awarded for correct answers
-to questions. As players earn points a realtime leaderboard is displayed to each
-player.
+https://drive.google.com/drive/folders/0B7qbEg69j00Ea2ZZdEIwNjhkb28
 
-Notification of new questions and answer results are broadcast via Websocket to the
-mobile app using the SocketIO library.
-
-**Game screenshot**
-
-<img src="docs/game_shot.png" />
-
-
-**Admin screenshot**
-
-<img src="docs/admin_shot.png" />
-
-## Architecture
-
-The app has two major pieces: An AngularJS based client app which comprises the front-end
-which runs on the phone, and a Node.js backend which provides an API to the client app for 
-user registration, data storage, and event broadcast.
-
-    /---mobile app-----\
-    | Ionic framework  |
-    | Angular JS       |
-    \------------------/
-           |
-           | http / websocket
-           |
-    /-------Node.js app-\
-    |                   |
-    | express           |
-    |   bookshelf       |
-    |      node-pg      |
-    \-------------------/
-           |
-       [Postgres DB]
-
-# Deployment
+## Deployment
 
 The app can be deployed to Heroku, and distributed to the mobile device either through
 the mobile web browser, or by compiling the AngularJS application into a native app
 using an Apache Cordova container.
 
-# Installation and setup
-
-Clone this repo to your local machine and install the requirements:
-
-    npm install
-
-Now create a database on your local server called
-`quizlive`:
-
-    createdb quizlive
-
-Now create the database schema and initial data:
-
-    ./bootstrap.sh
-
-And now run the server app:
-
-    node server.js
-
-and open the client app:
-
-    http://localhost:5000
-
-From the home screen click "Register". Enter your name and email and click `Register`. The first user
-is automatically marked as the administrator. Click the _Open Admin Page_ link on the quiz page.
-
-On the admin page, use the following controls
- 
-`Next Question` - queue up the next quiz question
-`Restart Quiz` - erase all current scores and start over
-
-As you click `Next Question` a new question will appear automatically for anyone running
-the app. Additional users can register for the app and play at the same time. Users accumulate
-points by answering questions correctly, with a bonus awarded to the person who answers
-correctly first.
-
-
-# Deploy to Heroku
+## Deploy to Heroku
 
 When you are ready to share the app, just create a new Heroku app, provision a Postgres
 database addon for your app, and then deploy the code. After you deploy you should
 bootstrap the database:
 
     $ heroku run ./bootstrap.sh
-
-# Understanding the code
-
-The components of the application are organized as follows:
-
-| component | folder |
-|------------|---------|
-| client app | client |
-| ..app code | client/js |
-| ..html templates | client/templates |
-| ..ionic/angular frameworks | client/lib | 
-|            |        |
-| express app | server.js, server/* |
-| ..db migrations | server/migrations |    
-| ..question list | server/load_question.js |
-| admin app  | admin  |
 
 ## Front-end app
 
@@ -127,14 +34,7 @@ are all drawn in the browser DOM.
 
 Angular
 
-## Accessing Force.com
-
-As an option, the app can be configured so that each person who registers to play is
-recorded as a Lead record in Salesforce. This template shows how to access the 
-Force.com API to exchange data with a Salesforce account. See [FORCE_README](docs/FORCE_README.md) 
-for full instructions. 
-
-# Debugging
+## Debugging
 
 Install `node-debug` to use the Chrome debugger with Node.js:
 
@@ -146,7 +46,7 @@ so the server starts:
     $ node-debug server.js
 
 
-# Building a native app
+## Building a native app
 
 To bundle your client app as a native mobile app, you can use the Cordova tool. Note that to build
 a native app you will need the corresponding native build tools. So for iOS apps you will need
@@ -164,7 +64,7 @@ Initialize the wrapper:
 
     $ mkdir wrapper
     $ cd wrapper
-    $ cordova create . QuizLive
+    $ cordova create . FrogTrader
     $ rm -rf www
     $ ln -s ../client www
 
@@ -187,13 +87,15 @@ The Ajax calls used in the Angular client are written using simple relative path
 
 However, when you package the client files into the Cordova wrapper, then they are provided to the mobile device from the local filesystem, rather than being served from the web. As a result there is no `domain` to tell the Ajax calls where to go. To correct this, you need to specify your web domain explicitly in all client Ajax calls, such as the login call:
 
-https://github.com/heroku/mobile-template1/blob/master/client/js/services.js#L80
+https://github.com/WilliamNHarvey/Frog-Trader/blob/master/client/js/services.js#L93
 
-# Contact
+## Contact
 
-Scott Persinger <scottp@heroku.com>
+William Harvey <william.n.harvey@gmail.com>
 
-# License
+Christiaan Oostenbrug <Christiaan_Oostenbrug@yahoo.com>
+
+## License
 
 See LICENSE. This code is available under the MIT license.
 

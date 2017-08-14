@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Pepes per tap",
+    "button": "tap-power.jpg",
+    "cost-fn": "tapPower"
+  },
+  {
+    "name": "No-scope taps",
+    "button": "no-scope.jpg",
+    "cost-fn": "noScopeTaps"
+  }
+]
