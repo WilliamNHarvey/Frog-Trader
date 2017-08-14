@@ -58,7 +58,7 @@ angular.module('pepeTrader.services', [])
         tapPower: function () {
 
         },
-        noScopeTags: function () {
+        noScopeTaps: function () {
 
         },
         get: function() {
