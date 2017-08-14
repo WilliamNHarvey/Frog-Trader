@@ -226,7 +226,6 @@ angular.module('pepeTrader.controllers', [])
     $(document).scrollTop(0);
     $(document).bind('touchmove', false);
     $scope.onUpgradeStore = false;
-    console.log($location.path());
     $scope.lightened = $rootScope.lightened;
 
     $scope.lightenUp = function() {
