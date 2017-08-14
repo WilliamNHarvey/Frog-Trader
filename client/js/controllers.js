@@ -42,7 +42,7 @@ angular.module('pepeTrader.controllers', [])
     };
 
     if($location.path() != '/tappage' || $rootScope.lightened) {
-        if(!$rootScope.lightened) {
+        if(!$rootScope.lightened && $location.path() != '') {
             $rootScope.lightened = true;
         }
         $("#navbar").css({ opacity: 1 });
@@ -226,7 +226,7 @@ angular.module('pepeTrader.controllers', [])
     $(document).scrollTop(0);
     $(document).bind('touchmove', false);
     $scope.onUpgradeStore = false;
-    console.log($rootScope);
+    console.log($location.path());
     $scope.lightened = $rootScope.lightened;
 
     $scope.lightenUp = function() {
