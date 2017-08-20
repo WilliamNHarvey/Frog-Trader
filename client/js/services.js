@@ -53,7 +53,7 @@ angular.module('pepeTrader.services', [])
     }
 })
 
-.factory('UpgradesService', function() {
+.factory('UpgradesService', function($http) {
     return {
         tapPower: function () {
 
@@ -61,8 +61,14 @@ angular.module('pepeTrader.services', [])
         noScopeTaps: function () {
 
         },
-        get: function() {
-            return $.when(null);
+        get: function(route) {
+            $http.get(route)
+                .success(function(data){
+                    return data;
+                })
+                .error(function(data){
+                    return data;
+                });
         }/*,
        save: function() {
        //save locally
