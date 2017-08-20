@@ -1,31 +1,19 @@
 angular.module('pepeTrader.controllers', [])
 
 .controller('NavCtrl', function($rootScope, $scope, $location, RegistrationService, PepesService, UpgradesService, $window) {
-  /*$scope.logout = function() {
-    RegistrationService.logout();
-    $location.path("/register");
-  }
-  $scope.timeleft = '0 secs';*/
-    var pow=Math.pow, floor=Math.floor, abs=Math.abs, log=Math.log, precision = 2;
-    function round(n, precision) {
-        var prec = Math.pow(10, precision);
-        return Math.floor(n*prec)/prec;
-    }
-    //PepesService.get().then(function() {
-        //fade in score
-        var pepes = PepesService.getPepes();//$window.localStorage.getItem('pepes');
-        if(pepes) {
-            $scope.pepes = pepes;
-        }
-        else {
-            PepesService.getPepes(0);//$window.localStorage.setItem('pepes', 0)
-            $scope.pepes = 0;
-        }
 
-    //});
+    var pepes = PepesService.getPepes();
+    if(pepes) {
+        $scope.pepes = pepes;
+    }
+    else {
+        PepesService.getPepes(0);
+        $scope.pepes = 0;
+    }
+
     $scope.increasePepes = function() {
         $scope.pepes++;
-        PepesService.setPepes($scope.pepes);//$window.localStorage.setItem('pepes', $scope.pepes);
+        PepesService.setPepes($scope.pepes);
     };
     $scope.parsePepes = $rootScope.parsePepes;
 

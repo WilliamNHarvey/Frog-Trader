@@ -71,6 +71,12 @@ angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers'
     $rootScope.lightened = false;
     $rootScope.sad = true;
 
+    var pow=Math.pow, floor=Math.floor, abs=Math.abs, log=Math.log, precision = 2;
+    function round(n, precision) {
+        var prec = Math.pow(10, precision);
+        return Math.floor(n*prec)/prec;
+    }
+
     $rootScope.parsePepes = function(n){
         if(n == 0) return n + ' pepes';
         var base = floor(log(abs(n))/log(1000));
