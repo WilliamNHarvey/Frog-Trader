@@ -8,10 +8,10 @@ angular.module('pepeTrader.upgrades', [])
         },
         template:   '<td class="col-md-9">{{description}}</td>' +
                     '<td class="col-md-3">{{button}}</td>',
-        controller: function(scope){
-            console.log(scope.upgrade);
-            scope.description = scope.upgrade[0];
-            scope.button = scope.upgrade[2];
+        controller: function($scope){
+            console.log($scope.upgrade);
+            $scope.description = $scope.upgrade[0];
+            $scope.button = $scope.upgrade[2];
         }
     }
 })
