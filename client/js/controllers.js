@@ -236,7 +236,7 @@ angular.module('pepeTrader.controllers', [])
 })
 
 .controller('UpgradeStoreCtrl', function($scope, $location, PepesService, UpgradesService) {
-    $scope.upgrades = [];
+    $scope.upgradeObject = [];
     $(document).unbind('touchmove');
 
     UpgradesService.get('../lib/objects/upgrades.json').then(function(upgradesJson) {
@@ -251,11 +251,11 @@ angular.module('pepeTrader.controllers', [])
                     nextCost = eval('UpgradesService.' + upgrade['cost-fn'] + '()');
                 }
                 if(typeof nextCost !== 'undefined') {
-                    $scope.upgrades.push([upgrade['name'], nextCost, upgrade['button']])
+                    $scope.upgradeObject.push([upgrade['name'], nextCost, upgrade['button']])
                 }
             }
         });
-        console.log($scope.upgrades);
+        console.log($scope.upgradeObject);
     });
 
 })
