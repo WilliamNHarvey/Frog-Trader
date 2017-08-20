@@ -233,7 +233,6 @@ angular.module('pepeTrader.controllers', [])
         $("#navbar").animate({ opacity: 1 }, 1500);
         $rootScope.lightened = true;
     }
-    //$scope.upgrades = 'test';
 })
 
 .controller('UpgradeStoreCtrl', function($scope, $location, PepesService, UpgradesService) {
@@ -245,9 +244,6 @@ angular.module('pepeTrader.controllers', [])
             console.log(upgrade);
             if(upgrade['name'] && upgrade['button'] && (upgrade['cost'] || upgrade['cost-fn'])) {
                 var nextCost;
-                console.log(upgrade['cost-fn']);
-                console.log("eval('UpgradesService.'" + upgrade['cost-fn'] + "'()');");
-                console.log(eval('UpgradesService.' + upgrade['cost-fn'] + '()'));
                 if(upgrade['cost']) {
                     nextCost = upgrade['cost'];
                 }
@@ -258,8 +254,8 @@ angular.module('pepeTrader.controllers', [])
                     $scope.upgrades.push([upgrade['name'], nextCost, upgrade['button']])
                 }
             }
-        })
-        //console.log($scope.upgrades);
+        });
+        console.log($scope.upgrades);
     });
 
 })
