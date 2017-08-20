@@ -261,6 +261,8 @@
     right: 10%;
     bottom: 10%;
     color: white;
+    opacity: 1.0 !important;
+    font-size: 150%;
 }
 
 .disabled {
