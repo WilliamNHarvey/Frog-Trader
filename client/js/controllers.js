@@ -241,23 +241,21 @@ angular.module('pepeTrader.controllers', [])
     $(document).unbind('touchmove');
 
     UpgradesService.get('../lib/objects/upgrades.json').then(function(upgradesJson) {
-        console.log(upgradesJson);
         angular.forEach(upgradesJson.data, function(upgrade, key) {
-            console.log(upgrade);
             if(upgrade['name'] && upgrade['button'] && (upgrade['cost'] || upgrade['cost-fn'])) {
                 var nextCost;
-                if($upgrade['cost']) {
-                    nextCost = $upgrade['cost'];
+                if(upgrade['cost']) {
+                    nextCost = upgrade['cost'];
                 }
                 else {
-                    nextCost = UpgradesService.eval($upgrade['cost-fn'] + '()');
+                    nextCost = UpgradesService.eval(upgrade['cost-fn'] + '()');
                 }
                 if(typeof nextCost !== 'undefined') {
-                    $scope.upgrades.push([$upgrade['name'], nextCost, $upgrade['button']])
+                    $scope.upgrades.push([upgrade['name'], nextCost, upgrade['button']])
                 }
-
             }
         })
+        console.log($scope.upgrades);
     });
 
 })
