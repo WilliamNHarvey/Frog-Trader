@@ -11,21 +11,21 @@ angular.module('pepeTrader.controllers', [])
         var prec = Math.pow(10, precision);
         return Math.floor(n*prec)/prec;
     }
-    PepesService.get().then(function() {
+    //PepesService.get().then(function() {
         //fade in score
-        var pepes = $window.localStorage.getItem('pepes');
+        var pepes = PepesService.getPepes();//$window.localStorage.getItem('pepes');
         if(pepes) {
             $scope.pepes = pepes;
         }
         else {
-            $window.localStorage.setItem('pepes', 0)
+            PepesService.getPepes(0);//$window.localStorage.setItem('pepes', 0)
             $scope.pepes = 0;
         }
 
-    });
+    //});
     $scope.increasePepes = function() {
         $scope.pepes++;
-        $window.localStorage.setItem('pepes', $scope.pepes);
+        PepesService.setPepes($scope.pepes);//$window.localStorage.setItem('pepes', $scope.pepes);
     };
     $scope.parsePepes = function(n){
         if(n == 0) return n + ' pepes';

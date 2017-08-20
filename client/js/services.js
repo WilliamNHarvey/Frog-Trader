@@ -40,10 +40,40 @@ angular.module('pepeTrader.services', [])
   return auth;
 })
 
-.factory('PepesService', function() {
+
+.factory("LS", function($window, $rootScope) {
+    angular.element($window).on('storage', function(event) {
+        if (event.key === 'my-storage') {
+            $rootScope.$apply();
+        }
+    });
+    return {
+        setData: function(val) {
+            $window.localStorage && $window.localStorage.setItem('my-storage', val);
+            return this;
+        },
+        getData: function() {
+            return $window.localStorage && $window.localStorage.getItem('my-storage');
+        }
+    };
+})
+
+.factory('PepesService', function($window, $rootScope) {
+    angular.element($window).on('storage', function(event) {
+        if (event.key === 'pepes') {
+            $rootScope.$apply();
+        }
+    });
     return {
         get: function() {
             return $.when(null);
+        },
+        setPepes: function(val) {
+            $window.localStorage && $window.localStorage.setItem('pepes', val);
+            return this;
+        },
+        getPepes: function() {
+            return $window.localStorage && $window.localStorage.getItem('pepes');
         }/*,
         save: function() {
             //save locally
