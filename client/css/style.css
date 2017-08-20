@@ -252,6 +252,13 @@
     float: right;
 }
 
+.cost {
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
 .disabled {
     opacity: 0.4;
     filter: alpha(opacity=40); /* msie */

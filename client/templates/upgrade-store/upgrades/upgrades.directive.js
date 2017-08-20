@@ -11,19 +11,19 @@ angular.module('pepeTrader.upgrades', [])
                         '<br/>' +
                         '<span class="upgrade-description">{{description}}</span>' +
                     '</td>' +
-                    '<td class="upgrade-button-td" ng-click="tapUpgrade($event)"><img src="{{button}}" class="upgrade-button" ng-class="{disabled: disabled}"></td>',
-        controller: function($scope, PepesService){
+                    '<td class="upgrade-button-td" ng-click="tapUpgrade($event)"><span class="cost">{{displayCost}}</span><img src="{{button}}" class="upgrade-button" ng-class="{disabled: disabled}"></td>',
+        controller: function($scope, PepesService, $rootScope){
             $scope.upgrade = JSON.parse($scope.upgrade);
             $scope.name = $scope.upgrade[0];
             $scope.description = $scope.upgrade[1];
             $scope.button = '../../../img/upgrades/' + $scope.upgrade[2];
             $scope.cost = $scope.upgrade[3];
+            $scope.displayCost = $rootScope.parsePepes($scope.cost);
 
             $scope.disabled = PepesService.getPepes() < $scope.cost;
             setInterval(function(){
                 $scope.disabled = PepesService.getPepes() < $scope.cost;
             }, 2000);
-            console.log($scope.disabled);
 
             $scope.tapUpgrade = function(e){
 

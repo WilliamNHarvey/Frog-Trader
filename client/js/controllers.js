@@ -27,13 +27,7 @@ angular.module('pepeTrader.controllers', [])
         $scope.pepes++;
         PepesService.setPepes($scope.pepes);//$window.localStorage.setItem('pepes', $scope.pepes);
     };
-    $scope.parsePepes = function(n){
-        if(n == 0) return n + ' pepes';
-        var base = floor(log(abs(n))/log(1000));
-        var suffix = ' ' + ['', 'kilo','Mega','Giga','Tera','Peta','Exa','Zetta','Yotta'][base];
-        round(n/pow(1000,base), precision) == 1 ? suffix += 'pepe' : suffix += 'pepes';
-        return suffix ? round(n/pow(1000,base), precision)+suffix : ''+n;
-    };
+    $scope.parsePepes = $rootScope.parsePepes;
 
     $scope.switchPage = $rootScope.switchPage;
 
