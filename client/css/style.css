@@ -224,6 +224,7 @@
 .upgrade-description-td {
     width: 60%;
     text-align: center;
+    vertical-align: middle;
 }
 
 .upgrade-name {
@@ -231,8 +232,7 @@
 }
 
 .upgrade-description {
-    margin-left: 10%;
-    margin-right: 10%;
+
 }
 
 .upgrade-button-td {
