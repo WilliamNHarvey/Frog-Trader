@@ -250,6 +250,7 @@
     width: 100%;
     height: auto;
     float: right;
+    position: relative;
 }
 
 .cost {
@@ -257,6 +258,7 @@
     position: absolute;
     right: 10px;
     bottom: 10px;
+    color: white;
 }
 
 .disabled {
