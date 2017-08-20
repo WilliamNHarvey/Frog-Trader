@@ -234,6 +234,7 @@
     line-height: 1.5;
     display: inline-block;
     vertical-align: middle;
+    font-size: larger;
 }
 
 .upgrade-description {
@@ -250,7 +251,7 @@
     width: 100%;
     height: auto;
     float: right;
-    position: relative !important;
+
 }
 
 .cost {
@@ -259,7 +260,6 @@
     right: 5%;
     bottom: 5%;
     color: white;
-    font-size: larger;
 }
 
 .disabled {
