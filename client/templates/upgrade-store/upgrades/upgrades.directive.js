@@ -7,12 +7,12 @@ angular.module('pepeTrader.upgrades', [])
             upgrade: '@'
         },
         template:   '<td class="col-md-9">{{description}}</td>' +
-                    '<td class="col-md-3">{{button}}</td>',
+                    '<td class="col-md-3"><img src="{{button}}"</td>',
         controller: function($scope){
             $scope.upgrade = JSON.parse($scope.upgrade);
             console.log($scope.upgrade);
             $scope.description = $scope.upgrade[0];
-            $scope.button = $scope.upgrade[2];
+            $scope.button = '../../../img/upgrades/' + $scope.upgrade[2];
         }
     }
 })
