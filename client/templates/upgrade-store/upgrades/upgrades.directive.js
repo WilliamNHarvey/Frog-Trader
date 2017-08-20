@@ -7,7 +7,7 @@ angular.module('pepeTrader.upgrades', [])
             upgrade: '@'
         },
         template:   '<td ng-class="\'col-md-10\'">{{description}}</td>' +
-                    '<td ng-class="\'col-md-2\'"><img src="{{button}}" style="width: 100%; height: auto; float: right;"></td>',
+                    '<td ng-class="\'col-md-2\'"><img src="{{button}}" style="width: 40%; height: auto; float: right;"></td>',
         controller: function($scope){
             $scope.upgrade = JSON.parse($scope.upgrade);
             $scope.description = $scope.upgrade[0];
