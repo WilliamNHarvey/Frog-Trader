@@ -255,7 +255,6 @@
 .disabled {
     opacity: 0.4;
     filter: alpha(opacity=40); /* msie */
-    background-color: #000;
 }
 
 .right-nav {
