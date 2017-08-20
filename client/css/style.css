@@ -226,6 +226,7 @@
     text-align: center;
     line-height: 20%;
     height: 20%;
+    vertical-align: middle;
 }
 
 .upgrade-name {
