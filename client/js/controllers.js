@@ -256,6 +256,7 @@ angular.module('pepeTrader.controllers', [])
 
             }
         })
+        console.log($scope.upgrades);
     });
     console.log($scope.upgrades);
 

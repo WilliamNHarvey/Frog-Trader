@@ -62,7 +62,7 @@ angular.module('pepeTrader.services', [])
 
         },
         get: function(route) {
-            $http.get(route)
+            return $http.get(route)
                 .success(function(data){
                     return data;
                 })
