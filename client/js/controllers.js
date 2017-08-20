@@ -233,7 +233,7 @@ angular.module('pepeTrader.controllers', [])
         $("#navbar").animate({ opacity: 1 }, 1500);
         $rootScope.lightened = true;
     }
-    $scope.upgrades = 'test';
+    //$scope.upgrades = 'test';
 })
 
 .controller('UpgradeStoreCtrl', function($scope, $location, PepesService, UpgradesService) {
