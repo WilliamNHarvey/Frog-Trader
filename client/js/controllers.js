@@ -242,8 +242,12 @@ angular.module('pepeTrader.controllers', [])
 
     UpgradesService.get('../lib/objects/upgrades.json').then(function(upgradesJson) {
         angular.forEach(upgradesJson.data, function(upgrade, key) {
+            console.log(upgrade);
             if(upgrade['name'] && upgrade['button'] && (upgrade['cost'] || upgrade['cost-fn'])) {
                 var nextCost;
+                console.log(upgrade['cost-fn']);
+                console.log("eval('UpgradesService.' + upgrade['cost-fn'] + '()');");
+                console.log(eval('UpgradesService.' + upgrade['cost-fn'] + '()'));
                 if(upgrade['cost']) {
                     nextCost = upgrade['cost'];
                 }
@@ -255,7 +259,7 @@ angular.module('pepeTrader.controllers', [])
                 }
             }
         })
-        console.log($scope.upgrades);
+        //console.log($scope.upgrades);
     });
 
 })
