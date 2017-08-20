@@ -221,10 +221,10 @@
     margin-top: 50px;
 }
 
-tr {
-    line-height: 30%;
-    min-height: 30%;
-    height: 30%;
+.upgrade-tr {
+    line-height: 20% !important;
+    min-height: 20% !important;
+    height: 20% !important;
 }
 
 .right-nav {

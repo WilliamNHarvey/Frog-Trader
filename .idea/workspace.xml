@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="226" column="13" lean-forward="false" selection-start-line="226" selection-start-column="13" selection-end-line="226" selection-end-column="13" />
+            <state relative-caret-position="290">
+              <caret line="224" column="18" lean-forward="false" selection-start-line="224" selection-start-column="18" selection-end-line="224" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -82,20 +82,20 @@
       <file leaf-file-name="upgrade-store.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/upgrade-store/upgrade-store.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="294">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upgrades.directive.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="upgrades.directive.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/templates/upgrade-store/upgrades/upgrades.directive.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+            <state relative-caret-position="168">
+              <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
               <folding>
-                <marker date="1503197004629" expanded="true" signature="319:345" ph="..." />
+                <marker date="1503197299619" expanded="true" signature="320:346" ph="..." />
               </folding>
             </state>
           </provider>
@@ -181,9 +181,9 @@
         <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/client/js/services.js" />
         <option value="$PROJECT_DIR$/client/js/controllers.js" />
-        <option value="$PROJECT_DIR$/client/templates/upgrade-store/upgrades/upgrades.directive.js" />
-        <option value="$PROJECT_DIR$/client/templates/upgrade-store/upgrade-store.html" />
         <option value="$PROJECT_DIR$/client/css/style.css" />
+        <option value="$PROJECT_DIR$/client/templates/upgrade-store/upgrade-store.html" />
+        <option value="$PROJECT_DIR$/client/templates/upgrade-store/upgrades/upgrades.directive.js" />
       </list>
     </option>
   </component>
@@ -657,12 +657,12 @@
       <workItem from="1501538146780" duration="1862000" />
       <workItem from="1502745741539" duration="3959000" />
       <workItem from="1503189974774" duration="4981000" />
-      <workItem from="1503194994216" duration="2020000" />
+      <workItem from="1503194994216" duration="2302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115782000" />
+    <option name="totallyTimeSpent" value="116064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1038,16 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/upgrade-store/upgrades/upgrades.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-          <folding>
-            <marker date="1503197004629" expanded="true" signature="319:345" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
@@ -1068,19 +1058,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/upgrade-store/upgrade-store.html">
+    <entry file="file://$PROJECT_DIR$/client/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="290">
+          <caret line="224" column="18" lean-forward="false" selection-start-line="224" selection-start-column="18" selection-end-line="224" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/css/style.css">
+    <entry file="file://$PROJECT_DIR$/client/templates/upgrade-store/upgrade-store.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="226" column="13" lean-forward="false" selection-start-line="226" selection-start-column="13" selection-end-line="226" selection-end-column="13" />
+        <state relative-caret-position="294">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/upgrade-store/upgrades/upgrades.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding>
+            <marker date="1503197299619" expanded="true" signature="320:346" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
