@@ -222,9 +222,9 @@
 }
 
 tr {
-    line-height: 75px;
-    min-height: 75px;
-    height: 75px;
+    line-height: 20%;
+    min-height: 20%;
+    height: 20%;
 }
 
 .right-nav {
