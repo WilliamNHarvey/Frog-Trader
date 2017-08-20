@@ -221,10 +221,10 @@
     margin-top: 50px;
 }
 
-.upgrade-table tr {
-    line-height: 20% !important;
-    min-height: 20% !important;
-    height: 20% !important;
+.upgrade-table tr td{
+    line-height: 10%;
+    min-height: 10%;
+    height: 10%;
 }
 
 .right-nav {
