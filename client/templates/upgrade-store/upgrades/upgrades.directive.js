@@ -4,7 +4,7 @@ angular.module('pepeTrader.upgrades', [])
     return {
         restrict: 'AE',
         scope: {
-            upgrade: '='
+            upgrade: '@'
         },
         template:   '<td class="col-md-9">{{description}}</td>' +
                     '<td class="col-md-3">{{button}}</td>',
