@@ -11,7 +11,7 @@ angular.module('pepeTrader.upgrades', [])
                         '<br/>' +
                         '<span class="upgrade-description">{{description}}</span>' +
                     '</td>' +
-                    '<td class="upgrade-button-td" ng-click="tapUpgrade($event)"><img src="{{button}}" class="upgrade-button" ng-class=\'{"disabled" : disabled}\'></td>',
+                    '<td class="upgrade-button-td" ng-click="tapUpgrade($event)"><img src="{{button}}" class="upgrade-button" ng-class="{disabled: disabled}"></td>',
         controller: function($scope, PepesService){
             $scope.upgrade = JSON.parse($scope.upgrade);
             $scope.name = $scope.upgrade[0];
