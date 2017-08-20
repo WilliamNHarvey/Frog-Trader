@@ -19,9 +19,11 @@ angular.module('pepeTrader.upgrades', [])
             $scope.button = '../../../img/upgrades/' + $scope.upgrade[2];
             $scope.cost = $scope.upgrade[3];
 
+            $scope.disabled = PepesService.getPepes() < $scope.cost;
             setInterval(function(){
                 $scope.disabled = PepesService.getPepes() < $scope.cost;
             }, 2000);
+            console.log($scope.disabled);
 
             $scope.tapUpgrade = function(e){
 
