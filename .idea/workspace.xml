@@ -90,10 +90,10 @@
       <file leaf-file-name="upgrades.directive.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/templates/upgrade-store/upgrades/upgrades.directive.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+            <state relative-caret-position="294">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding>
-                <marker date="1503197692620" expanded="true" signature="320:345" ph="..." />
+                <marker date="1503197972418" expanded="true" signature="369:394" ph="..." />
               </folding>
             </state>
           </provider>
@@ -655,12 +655,12 @@
       <workItem from="1501538146780" duration="1862000" />
       <workItem from="1502745741539" duration="3959000" />
       <workItem from="1503189974774" duration="4981000" />
-      <workItem from="1503194994216" duration="2696000" />
+      <workItem from="1503194994216" duration="2972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116458000" />
+    <option name="totallyTimeSpent" value="116734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1074,10 +1074,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/upgrade-store/upgrades/upgrades.directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        <state relative-caret-position="294">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
-            <marker date="1503197692620" expanded="true" signature="320:345" ph="..." />
+            <marker date="1503197972418" expanded="true" signature="369:394" ph="..." />
           </folding>
         </state>
       </provider>
