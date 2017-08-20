@@ -221,10 +221,18 @@
     margin-top: 50px;
 }
 
-.upgrade-table tr td{
-    line-height: 10%;
-    min-height: 10%;
-    height: 10%;
+.upgrade-description-td {
+    width: 60%;
+}
+
+.upgrade-button-td {
+    width: 40%;
+}
+
+.upgrade-button {
+    width: 100%;
+    height: auto;
+    float: right;
 }
 
 .right-nav {
