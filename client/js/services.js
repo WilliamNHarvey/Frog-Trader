@@ -62,14 +62,12 @@ angular.module('pepeTrader.services', [])
 
         },
         get: function(route) {
-          console.log(route);
             return $http.get(route)
                 .success(function(data){
-                  console.log('succ');
+                  console.log(data);
                     return data;
                 })
                 .error(function(data){
-                    console.log('fail');
                     return data;
                 });
         }/*,
