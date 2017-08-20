@@ -2,12 +2,12 @@
 
     <ion-content class="upgrade-store-content" has-header="false" padding="true" style="height: 100%;">-->
         <div ng-if="upgradeObject" class="upgrade-holder">
-            <table class="table table-striped">
-                <tbody>
-                    <tr class="upgrade-tr" ng-repeat="upgrade in upgradeObject" upgrades upgrade="{{upgrade}}">
+            <table class="upgrade-table table table-striped">
+
+                    <tr ng-repeat="upgrade in upgradeObject" upgrades upgrade="{{upgrade}}">
 
                     </tr>
-                </tbody>
+
             </table>
         </div>
     <!--</ion-content>
