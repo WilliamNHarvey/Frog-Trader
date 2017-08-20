@@ -232,11 +232,13 @@
     font-weight: bold;
     line-height: 1.5;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .upgrade-description {
     line-height: 1.5;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .upgrade-button-td {
