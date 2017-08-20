@@ -56,10 +56,10 @@ angular.module('pepeTrader.services', [])
 .factory('UpgradesService', function($http) {
     return {
         tapPower: function () {
-
+            return 100;
         },
         noScopeTaps: function () {
-
+            return 10000;
         },
         get: function(route) {
             return $http.get(route)

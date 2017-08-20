@@ -246,7 +246,7 @@ angular.module('pepeTrader.controllers', [])
             if(upgrade['name'] && upgrade['button'] && (upgrade['cost'] || upgrade['cost-fn'])) {
                 var nextCost;
                 console.log(upgrade['cost-fn']);
-                console.log("eval('UpgradesService.' + upgrade['cost-fn'] + '()');");
+                console.log("eval('UpgradesService.'" + upgrade['cost-fn'] + "'()');");
                 console.log(eval('UpgradesService.' + upgrade['cost-fn'] + '()'));
                 if(upgrade['cost']) {
                     nextCost = upgrade['cost'];
