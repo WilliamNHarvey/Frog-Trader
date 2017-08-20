@@ -225,6 +225,16 @@
     width: 60%;
 }
 
+.upgrade-name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.upgrade-description {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .upgrade-button-td {
     width: 40%;
 }

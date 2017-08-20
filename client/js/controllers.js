@@ -250,7 +250,7 @@ angular.module('pepeTrader.controllers', [])
                     nextCost = eval('UpgradesService.' + upgrade['cost-fn'] + '()');
                 }
                 if(typeof nextCost !== 'undefined') {
-                    $scope.upgradeObject.push([upgrade['name'], nextCost, upgrade['button']])
+                    $scope.upgradeObject.push([upgrade['name'], upgrade['description'], upgrade['button'], nextCost])
                 }
             }
         });
