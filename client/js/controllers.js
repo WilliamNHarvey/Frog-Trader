@@ -242,7 +242,7 @@ angular.module('pepeTrader.controllers', [])
 
     UpgradesService.get('../lib/objects/upgrades.json').then(function(upgradesJson) {
         console.log(upgradesJson);
-        angular.forEach(upgradesJson, function(upgrade, key) {
+        angular.forEach(upgradesJson.data, function(upgrade, key) {
             console.log(upgrade);
             if(upgrade['name'] && upgrade['button'] && (upgrade['cost'] || upgrade['cost-fn'])) {
                 var nextCost;
