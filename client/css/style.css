@@ -223,10 +223,10 @@
 
 .upgrade-description-td {
     width: 60%;
+    text-align: center;
 }
 
 .upgrade-name {
-    text-align: center;
     font-weight: bold;
 }
 

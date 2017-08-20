@@ -8,6 +8,7 @@ angular.module('pepeTrader.upgrades', [])
         },
         template:   '<td ng-class="\'col-md-10\'" class="upgrade-description-td">' +
                         '<span class="upgrade-name">{{name}}</span>' +
+                        '<br/>' +
                         '<span class="upgrade-description">{{description}}</span>' +
                     '</td>' +
                     '<td ng-class="\'col-md-2\'" class="upgrade-button-td"><img src="{{button}}" class="upgrade-button"></td>',
