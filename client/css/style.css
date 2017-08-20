@@ -224,16 +224,19 @@
 .upgrade-description-td {
     width: 60%;
     text-align: center;
-
+    line-height: 20%;
+    height: 20%;
 }
 
 .upgrade-name {
     font-weight: bold;
-    vertical-align: middle;
+    line-height: 1.5;
+    display: inline-block;
 }
 
 .upgrade-description {
-    vertical-align: middle;
+    line-height: 1.5;
+    display: inline-block;
 }
 
 .upgrade-button-td {
