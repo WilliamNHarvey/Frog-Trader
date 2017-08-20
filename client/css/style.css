@@ -245,20 +245,21 @@
 
 .upgrade-button-td {
     width: 40%;
+    position: relative !important;
 }
 
 .upgrade-button {
     width: 100%;
     height: auto;
     float: right;
-
 }
 
 .cost {
     font-weight: bold;
     position: absolute;
-    right: 5%;
-    bottom: 5%;
+    z-index: 2;
+    right: 10%;
+    bottom: 10%;
     color: white;
 }
 
