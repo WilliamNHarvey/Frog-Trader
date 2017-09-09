@@ -37,7 +37,11 @@
     border-top: 20px dotted #B8312F;
 }
 
+.randomizeMachine img {
+    max-width: 100%;
+    height: auto;
+}
+
 .randomizeMachine {
     width: 100px;
-    height: 100px;
 }
