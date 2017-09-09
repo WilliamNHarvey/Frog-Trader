@@ -61,16 +61,16 @@ angular.module('pepeTrader.slotMachine', [])
         controller: function($scope, PepesService, $rootScope){
             $(document).ready(function(){
                 var machine1 = $("#machine1").slotMachine({
-                    active	: (Math.floor(Math.random() * 7)),
+                    active	: 4,
                     delay	: 500
                 });
                 var machine2 = $("#machine2").slotMachine({
-                    active	: (Math.floor(Math.random() * 7)),
+                    active	: (Math.floor(Math.random() * 7)) * 4,
                     delay	: 500,
                     direction: 'down'
                 });
                 var machine3 = $("#machine3").slotMachine({
-                    active	: (Math.floor(Math.random() * 7)),
+                    active	: (Math.floor(Math.random() * 7)) * 4,
                     delay	: 500
                 });
                 function onComplete(active){
