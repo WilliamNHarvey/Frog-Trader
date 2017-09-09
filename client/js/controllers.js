@@ -238,3 +238,7 @@ angular.module('pepeTrader.controllers', [])
         });
     });
 })
+
+.controller('SlotsCtrl', function($scope, $location, PepesService) {
+
+})

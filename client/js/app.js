@@ -3,7 +3,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'ngResource'])
+angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'pepeTrader.slot-machine', 'ngResource'])
 
 .run(function($window, $location, $rootScope, AuthenticationService) {
   $rootScope.user = {
@@ -113,6 +113,12 @@ angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers'
       url: "/upgrade-store",
       templateUrl: "templates/upgrade-store/upgrade-store.html",
       controller: 'UpgradeStoreCtrl'
+    })
+
+    $stateProvider.state('slots', {
+        url: "/slots",
+        templateUrl: "templates/slots/slots.html",
+        controller: 'SlotsCtrl'
     })
 
     // setup an abstract state for the tabs directive
