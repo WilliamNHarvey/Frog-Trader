@@ -3,7 +3,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'pepeTrader.slot-machine', 'ngResource'])
+angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers', 'pepeTrader.services', 'pepeTrader.tap', 'pepeTrader.upgrades', 'pepeTrader.slotMachine', 'ngResource'])
 
 .run(function($window, $location, $rootScope, AuthenticationService) {
   $rootScope.user = {

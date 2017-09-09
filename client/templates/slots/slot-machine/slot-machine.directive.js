@@ -1,6 +1,6 @@
-angular.module('pepeTrader.slot-machine', [])
+angular.module('pepeTrader.slotMachine', [])
 
-.directive('slot-machine', function(){
+.directive('slotMachine', function(){
     return {
         restrict: 'AE',
         scope: {
