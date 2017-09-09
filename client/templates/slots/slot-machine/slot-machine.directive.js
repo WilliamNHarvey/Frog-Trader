@@ -5,12 +5,12 @@ angular.module('pepeTrader.slotMachine', [])
         restrict: 'AE',
         template: '<div id="randomize">'+
         '    <div class="content container" style="text-align: center;max-width: 900px;">'+
-            '        <h1>Randomize your stuff!</h1>'+
+            '        <h1>Meme Machine</h1>'+
         ''+
         '        <div class="row">'+
         '            <div class="col-xs-4">'+
         '                <div>'+
-        '                    <div id="machine1" class="randomizeMachine" style="margin: auto">'+
+        '                    <div id="machine1" class="randomizeMachine">'+
         '                        <div><img src="../../../img/pepe.png" /></div>'+
         '                        <div><img src="../../../img/sadpepe.png" /></div>'+
         '                        <div><img src="../../../img/veryhappypepe.png" /></div>'+

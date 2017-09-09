@@ -32,9 +32,9 @@
 
 #randomize {
     height: 400px;
-    border-bottom: 10px solid rgb(72, 158, 48);
-    background-color: #EB6B56;
-    border-top: 20px dotted #B8312F;
+    border-bottom: 10px solid #3bff00;
+    background-color: #73e5eb;
+    border-top: 20px dotted #3bff00;
 }
 
 .randomizeMachine img {
@@ -45,6 +45,7 @@
 .randomizeMachine {
     width: 100px;
     height: 100px;
+    margin: auto
 }
 
 .slotMachineContainer {
