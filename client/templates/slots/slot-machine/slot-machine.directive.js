@@ -65,12 +65,12 @@ angular.module('pepeTrader.slotMachine', [])
                     delay	: 500
                 });
                 var machine2 = $("#machine2").slotMachine({
-                    active	: 1,
+                    active	: 0,
                     delay	: 500,
                     direction: 'down'
                 });
                 var machine3 = $("#machine3").slotMachine({
-                    active	: 2,
+                    active	: 0,
                     delay	: 500
                 });
                 function onComplete(active){
