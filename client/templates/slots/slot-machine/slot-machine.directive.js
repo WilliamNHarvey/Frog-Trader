@@ -3,9 +3,6 @@ angular.module('pepeTrader.slotMachine', [])
 .directive('slotMachine', function(){
     return {
         restrict: 'AE',
-        scope: {
-
-        },
         template: '<div id="randomize">'+
         '    <div class="content container" style="text-align: center;max-width: 900px;">'+
             '        <h1>Randomize your stuff!</h1>'+
