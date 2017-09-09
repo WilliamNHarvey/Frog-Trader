@@ -10,7 +10,7 @@ angular.module('pepeTrader.slotMachine', [])
         '        <div class="row">'+
         '            <div class="col-xs-4">'+
         '                <div>'+
-        '                    <div id="machine1" class="randomizeMachine">'+
+        '                    <div id="machine1" class="randomizeMachine" style="margin: auto">'+
         '                        <div><img src="../../../img/pepe.png" /></div>'+
         '                        <div><img src="../../../img/sadpepe.png" /></div>'+
         '                        <div><img src="../../../img/veryhappypepe.png" /></div>'+
