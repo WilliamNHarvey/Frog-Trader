@@ -206,6 +206,11 @@ angular.module('pepeTrader.controllers', [])
     //document.addEventListener('mousemove', function(e) {e.preventDefault()}, false);
     //document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
 
+    if($rootScope.pageAnimationClass == 'slideLeft') {
+        $('#page-view').removeClass('slideLeft');
+        $('#page-view').addClass('slideRight');
+    }
+
     $(document).scrollTop(0);
     $(document).bind('touchmove', false);
     $scope.onUpgradeStore = false;
