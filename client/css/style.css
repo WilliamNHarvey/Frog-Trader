@@ -885,11 +885,11 @@ nav a
     -o-transition-property: all;
     transition-property: all;
     /*transform*/
-    -webkit-transform: translate3d(100%,0,0);
-    -moz-transform: translate3d(100%,0,0);
-    -ms-transform: translate3d(100%,0,0);
-    -o-transform: translate3d(100%,0,0);
-    transform: translate3d(100%,0,0);
+    -webkit-transform: translate3d(-100%,0,0);
+    -moz-transform: translate3d(-100%,0,0);
+    -ms-transform: translate3d(-100%,0,0);
+    -o-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
 }
 /* slideDown */
 
