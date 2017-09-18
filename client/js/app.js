@@ -56,9 +56,8 @@ angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers'
         }
 
         else { // Use the specified animation
-            if(pageAnimationClass != 'slideLeft') {
-                $rootScope.pageAnimationClass = pageAnimationClass;
-            }
+            var temp = $rootScope.pageAnimationClass;
+            $rootScope.pageAnimationClass = pageAnimationClass;
         }
 
         if (path === 'back') { // Allow a 'back' keyword to go to previous page
@@ -67,6 +66,10 @@ angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers'
 
         else { // Go to the specified path
             $location.path(path);;
+        }
+
+        if($rootScope.pageAnimationClass == 'slideLeft') {
+            $rootScope.pageAnimationClass = temp;
         }
     };
 
