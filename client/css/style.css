@@ -1,4 +1,33 @@
-/* Add your own CSS if you like */
+
+.page-view
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+    /*backface-visibility*/
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /*perspective*/
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+}
+
+.page-container {
+    position: relative;
+}
+
 .button {
     border-radius: 3px;
     font-weight: bold;
