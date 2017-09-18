@@ -206,13 +206,10 @@ angular.module('pepeTrader.controllers', [])
     //document.addEventListener('mousemove', function(e) {e.preventDefault()}, false);
     //document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
 
-    if($rootScope.pageAnimationClass == 'slideLeft') {
-        $('#page-view').bind('cssClassChanged', function(){ $('#page-view').removeClass('slideLeft'); });
+    if($rootScope.removeSlideLeft) {
+
         $('#page-view').addClass('slideRight');
         $('#page-view').removeClass('slideLeft');
-    }
-    else {
-        $('#page-view').unbind('cssClassChanged');
     }
 
     $(document).scrollTop(0);
