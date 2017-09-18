@@ -612,6 +612,7 @@ body
     line-height: 20%;
     height: 20%;
     vertical-align: middle !important;
+    color: black;
 }
 
 .upgrade-name {
