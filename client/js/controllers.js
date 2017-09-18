@@ -207,7 +207,8 @@ angular.module('pepeTrader.controllers', [])
     //document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
 
     if($rootScope.removeSlideLeft == true) {
-        setTimeout($("#page-view").attr("class", "page-view ng-scope slideRight"), 1000);
+        $('#page-view').addClass('slideRight');
+        setTimeout(function(){ $('#page-view').removeClass('slideLeft') }, 300);
     }
 
     $(document).scrollTop(0);
