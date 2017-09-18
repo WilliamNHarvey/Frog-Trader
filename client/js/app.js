@@ -57,6 +57,7 @@ angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers'
 
         else { // Use the specified animation
             $rootScope.pageAnimationClass = pageAnimationClass;
+            $('#page-view').trigger('cssClassChanged')
         }
 
         if (path === 'back') { // Allow a 'back' keyword to go to previous page
