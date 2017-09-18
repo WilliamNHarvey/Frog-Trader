@@ -208,7 +208,7 @@ angular.module('pepeTrader.controllers', [])
 
     if($rootScope.removeSlideLeft == true) {
         $('#page-view').addClass('slideRight');
-        $('#page-view').removeClass('slideLeft');
+        setTimeout($('#page-view').removeClass('slideLeft'), 300);
     }
 
     $(document).scrollTop(0);
