@@ -206,8 +206,7 @@ angular.module('pepeTrader.controllers', [])
     //document.addEventListener('mousemove', function(e) {e.preventDefault()}, false);
     //document.addEventListener('touchmove', function(e) {e.preventDefault()}, false);
 
-    if($rootScope.removeSlideLeft) {
-
+    if($rootScope.removeSlideLeft == true) {
         $('#page-view').addClass('slideRight');
         $('#page-view').removeClass('slideLeft');
     }
