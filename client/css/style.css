@@ -161,11 +161,11 @@
 }
 
 #bg {
-    position: absolute;
+    /*position: absolute;*/
     background-color: black;
-    /*background-image:    url(../img/greenback.jpg);*/
+    /*background-image:    url(../img/greenback.jpg);
     left: 0;
-    top: -45px;
+    top: -45px;*/
     height: 110vh;
     width: 110vw;
     margin: 0;
@@ -176,11 +176,11 @@
 }
 
 .tappage-background {
-    position: absolute;
-    /*background-color: black;*/
+    /*position: absolute;
+    background-color: black;*/
     background-image:    url(../img/greenback.jpg);
-    left: 0;
-    top: -45px;
+    /*left: 0;
+    top: -45px;*/
     height: 110vh;
     width: 110vw;
     margin: 0;
@@ -189,7 +189,7 @@
     background-repeat:   no-repeat;
     background-position: center center;
     opacity: 1;
-    z-index: 2 !important;
+    /*z-index: 2 !important;*/
 }
 
 .home-content > .scroll {
