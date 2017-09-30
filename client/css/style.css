@@ -20,6 +20,7 @@ body
 
     width: 100%;
     height: 100%;
+    margin-top: 50px;
     /*transform*/
 
     -webkit-transform: translate3d(0,0,0);
@@ -602,7 +603,7 @@ body
 }
 
 .upgrade-holder {
-    
+
 }
 
 .upgrade-description-td {
@@ -649,7 +650,7 @@ body
 }
 
 .alert {
-    margin-top: 50px !important;
+    margin-bottom: 0px !important;
 }
 
 .upgrade-image {
