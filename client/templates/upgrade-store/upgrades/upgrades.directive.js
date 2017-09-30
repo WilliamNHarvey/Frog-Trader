@@ -6,12 +6,19 @@ angular.module('pepeTrader.upgrades', [])
         scope: {
             upgrade: '@'
         },
-        template:   '<td ng-class="" class="upgrade-description-td">' +
+        template:   '<td style="" class="upgrade-image-td" ng-click="tapUpgrade($event)">' +
+                        //'<span class="cost pointer-none">{{displayCost}}</span>' +
+                        '<img src="{{button}}" class="upgrade-image" ng-class="{disabled: disabled}">' +
+                    '</td>' +
+                    '<td ng-class="" class="upgrade-description-td">' +
                         '<span class="upgrade-name">{{name}}</span>' +
                         '<br/>' +
                         '<span class="upgrade-description">{{description}}</span>' +
                     '</td>' +
-                    '<td style="" class="upgrade-button-td" ng-click="tapUpgrade($event)"><span class="cost pointer-none">{{displayCost}}</span><img src="{{button}}" class="upgrade-button" ng-class="{disabled: disabled}"></td>',
+                    '<td class="upgrade-purchase-td" ng-click="tapUpgrade($event)">' +
+                        '<span class="cost pointer-none">{{displayCost}}</span>' +
+                        '<img src="../../../img/purchase.png" class="upgrade-purchase" ng-class="{disabled: disabled}">' +
+                    '</td>',
         controller: function($scope, PepesService, $rootScope){
             $scope.upgrade = JSON.parse($scope.upgrade);
             $scope.name = $scope.upgrade[0];

@@ -629,27 +629,29 @@ body
     vertical-align: middle;
 }
 
-.upgrade-button-td {
-    width: 40%;
+.upgrade-image-td, upgrade-purchase-td {
     position: relative !important;
 }
 
-.upgrade-button {
-    width: 100%;
+.upgrade-purchase {
+    text-align: center;
+    width: 80px;
     height: auto;
-    float: right;
+}
+
+.upgrade-image {
+    width: 140px;
+    height: auto;
 }
 
 .cost {
     font-weight: bold;
-    position: absolute;
     z-index: 2;
-    right: 10%;
-    bottom: 10%;
     color: white;
     opacity: 1.0 !important;
     font-size: larger;
-
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .disabled {
