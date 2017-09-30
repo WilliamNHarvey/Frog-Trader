@@ -1,12 +1,6 @@
 
 <div ng-if="upgradeObject" class="upgrade-holder">
-    <div class="alert alert-success" ng-show="showSuccessAlert">
-        <button type="button" class="close" data-ng-click="switchBool('showSuccessAlert')" >×</button>
-        <strong>Done!</strong> {{successTextAlert}}
-    </div>
     <table class="upgrade-table table table-striped">
         <tr ng-repeat="upgrade in upgradeObject" upgrades upgrade="{{upgrade}}" show-success-alert="showSuccessAlert" success-text-alert="successTextAlert"></tr>
     </table>
-
-<div ng-click="test()">test</div>
 </div>

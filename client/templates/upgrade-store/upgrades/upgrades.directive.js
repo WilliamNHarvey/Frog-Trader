@@ -22,7 +22,6 @@ angular.module('pepeTrader.upgrades', [])
                         '<img src="../../../img/purchase.png" ng-click="tapUpgrade($event)" class="upgrade-purchase" ng-class="{disabled: disabled}">' +
                     '</td>',
         controller: function($scope, PepesService, $rootScope){
-            console.log($scope);
             $scope.upgrade = JSON.parse($scope.upgrade);
             $scope.name = $scope.upgrade[0];
             $scope.description = $scope.upgrade[1];
@@ -38,13 +37,11 @@ angular.module('pepeTrader.upgrades', [])
             }, 2000);
 
             $scope.tapUpgrade = function(e){
-                console.log($scope);
                 if($scope.disabled) return;
 
                 if($scope.success) {
-                    $scope.successTextAlert = $scope.successMessage;
-                    $scope.showSuccessAlert = true;
-                    $scope.$applyAsync();
+                    $rootScope.successTextAlert = $scope.successMessage;
+                    $rootScope.showSuccessAlert = true;
                 }
             }
         }

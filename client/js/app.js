@@ -73,6 +73,7 @@ angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers'
 
     $rootScope.lightened = false;
     $rootScope.sad = true;
+    $rootScope.showSuccessAlert = false;
 
     var pow=Math.pow, floor=Math.floor, abs=Math.abs, log=Math.log, precision = 2;
     function round(n, precision) {
@@ -86,6 +87,11 @@ angular.module('pepeTrader', ['ui.router', 'ngAnimate', 'pepeTrader.controllers'
         var suffix = ' ' + ['', 'kilo','Mega','Giga','Tera','Peta','Exa','Zetta','Yotta'][base];
         round(n/pow(1000,base), precision) == 1 ? suffix += 'pepe' : suffix += 'pepes';
         return suffix ? round(n/pow(1000,base), precision)+suffix : ''+n;
+    };
+
+
+    $rootScope.switchBool = function(value) {
+        $rootScope[value] = !$rootScope[value];
     };
 })
 

@@ -226,7 +226,6 @@ angular.module('pepeTrader.controllers', [])
 .controller('UpgradeStoreCtrl', function($scope, $location, PepesService, UpgradesService) {
     $scope.upgradeObject = [];
     $(document).unbind('touchmove');
-    $scope.showSuccessAlert = false;
 
     UpgradesService.get('../lib/objects/upgrades.json').then(function(upgradesJson) {
         angular.forEach(upgradesJson.data, function(upgrade, key) {
@@ -245,13 +244,6 @@ angular.module('pepeTrader.controllers', [])
             }
         });
     });
-
-    $scope.switchBool = function(value) {
-        $scope[value] = !$scope[value];
-    };
-    $scope.test = function() {
-        console.log($scope);
-    }
 })
 
 .controller('SlotsCtrl', function($scope, $location, PepesService) {
