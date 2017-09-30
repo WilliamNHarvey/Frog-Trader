@@ -20,7 +20,7 @@ angular.module('pepeTrader.upgrades', [])
                         '<span class="cost pointer-none">{{displayCost}}</span>' +
                         '<img src="../../../img/purchase.png" ng-click="tapUpgrade($event)" class="upgrade-purchase" ng-class="{disabled: disabled}">' +
                     '</td>',
-        link: function(scope){
+        link: function($scope){
             $scope.showAlert = function() {
                 $scope.purchaseSuccess($scope.successMessage);
             }
