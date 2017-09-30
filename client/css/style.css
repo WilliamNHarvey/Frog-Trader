@@ -31,7 +31,7 @@ body
 }
 .page-view
 {
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
 
