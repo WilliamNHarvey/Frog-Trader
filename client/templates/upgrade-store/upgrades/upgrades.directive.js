@@ -4,7 +4,8 @@ angular.module('pepeTrader.upgrades', [])
     return {
         restrict: 'AE',
         scope: {
-            upgrade: '@'
+            upgrade: '@',
+            purchaseSuccess: '&alertPurchaseSuccess'
         },
         template:   '<td style="" class="upgrade-image-td" ng-click="tapUpgrade($event)">' +
                         //'<span class="cost pointer-none">{{displayCost}}</span>' +
@@ -25,6 +26,8 @@ angular.module('pepeTrader.upgrades', [])
             $scope.description = $scope.upgrade[1];
             $scope.button = '../../../img/upgrades/' + $scope.upgrade[2];
             $scope.cost = $scope.upgrade[3];
+            $scope.success = $scope.upgrade[4];
+            if($scope.success) $scope.successMessage = $scope.upgrade[5];
             $scope.displayCost = $rootScope.parsePepes($scope.cost);
 
             $scope.disabled = PepesService.getPepes() < $scope.cost;
@@ -35,8 +38,10 @@ angular.module('pepeTrader.upgrades', [])
             $scope.tapUpgrade = function(e){
                 if($scope.disabled) return;
 
-
+                if($scope.success) {
+                    $scope.purchaseSuccess($scope.successMessage);
+                }
             }
         }
     }
-})
+});

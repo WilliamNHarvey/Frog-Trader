@@ -226,6 +226,7 @@ angular.module('pepeTrader.controllers', [])
 .controller('UpgradeStoreCtrl', function($scope, $location, PepesService, UpgradesService) {
     $scope.upgradeObject = [];
     $(document).unbind('touchmove');
+    $scope.showSuccessAlert = false;
 
     UpgradesService.get('../lib/objects/upgrades.json').then(function(upgradesJson) {
         angular.forEach(upgradesJson.data, function(upgrade, key) {
@@ -238,11 +239,21 @@ angular.module('pepeTrader.controllers', [])
                     nextCost = eval('UpgradesService.' + upgrade['cost-fn'] + '()');
                 }
                 if(typeof nextCost !== 'undefined') {
-                    $scope.upgradeObject.push([upgrade['name'], upgrade['description'], upgrade['button'], nextCost])
+                    if(upgrade['success'] == true) $scope.upgradeObject.push([upgrade['name'], upgrade['description'], upgrade['button'], nextCost, upgrade['success'], upgrade['success-message']])
+                    else $scope.upgradeObject.push([upgrade['name'], upgrade['description'], upgrade['button'], nextCost, upgrade['success']]);
                 }
             }
         });
     });
+
+    $scope.alertPurchaseSuccess = function(message) {
+        $scope.successTextAlert = message;
+        $scope.showSuccessAlert = true;
+    }
+
+    $scope.switchBool = function(value) {
+        $scope[value] = !$scope[value];
+    };
 })
 
 .controller('SlotsCtrl', function($scope, $location, PepesService) {

@@ -3,12 +3,15 @@
     "name": "Pepe Tap Power",
     "description": "Increase the number of Pepes you get per tap",
     "button": "tap-power.jpg",
-    "cost-fn": "tapPower"
+    "cost-fn": "tapPower",
+    "success": true,
+    "success-message": "Pepe power increased"
   },
   {
     "name": "No-scope Taps",
     "description": "Get dank no-scope hit markers when you tap Pepe",
     "button": "no-scope.jpg",
-    "cost-fn": "noScopeTaps"
+    "cost-fn": "noScopeTaps",
+    "success": false
   }
 ]
