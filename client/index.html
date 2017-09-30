@@ -51,12 +51,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="alert alert-success" ng-show="showSuccessAlert">
-                <button type="button" class="close" data-ng-click="switchBool('showSuccessAlert')" >×</button>
-                <strong>Done!</strong> {{successTextAlert}}
-            </div>
         </nav>
-
+        <div class="alert alert-success" ng-show="showSuccessAlert">
+            <button type="button" class="close" data-ng-click="switchBool('showSuccessAlert')" >×</button>
+            <strong>Done!</strong> {{successTextAlert}}
+        </div>
         <div class="page-container">
             <div id="page-view" ui-view class="page-view" ng-class="pageAnimationClass"></div>
         </div>
