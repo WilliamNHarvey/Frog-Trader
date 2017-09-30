@@ -246,12 +246,6 @@ angular.module('pepeTrader.controllers', [])
         });
     });
 
-    $scope.alertPurchaseSuccess = function(message) {
-        console.log(message);
-        $scope.successTextAlert = message;
-        $scope.showSuccessAlert = true;
-    }
-
     $scope.switchBool = function(value) {
         $scope[value] = !$scope[value];
     };

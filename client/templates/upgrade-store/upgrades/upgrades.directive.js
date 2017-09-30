@@ -22,6 +22,7 @@ angular.module('pepeTrader.upgrades', [])
                         '<img src="../../../img/purchase.png" ng-click="tapUpgrade($event)" class="upgrade-purchase" ng-class="{disabled: disabled}">' +
                     '</td>',
         controller: function($scope, PepesService, $rootScope){
+            console.log($scope);
             $scope.upgrade = JSON.parse($scope.upgrade);
             $scope.name = $scope.upgrade[0];
             $scope.description = $scope.upgrade[1];
