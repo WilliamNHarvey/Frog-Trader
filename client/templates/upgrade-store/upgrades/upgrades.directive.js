@@ -7,7 +7,7 @@ angular.module('pepeTrader.upgrades', [])
             upgrade: '@',
             purchaseSuccess: '&alertPurchaseSuccess'
         },
-        template:   '<td style="" class="upgrade-image-td" ng-click="tapUpgrade($event)">' +
+        template:   '<td style="" class="upgrade-image-td">' +
                         //'<span class="cost pointer-none">{{displayCost}}</span>' +
                         '<img src="{{button}}" class="upgrade-image" ng-class="{disabled: disabled}">' +
                     '</td>' +
@@ -16,9 +16,9 @@ angular.module('pepeTrader.upgrades', [])
                         '<br/>' +
                         '<span class="upgrade-description">{{description}}</span>' +
                     '</td>' +
-                    '<td class="upgrade-purchase-td" ng-click="tapUpgrade($event)">' +
+                    '<td class="upgrade-purchase-td">' +
                         '<span class="cost pointer-none">{{displayCost}}</span>' +
-                        '<img src="../../../img/purchase.png" class="upgrade-purchase" ng-class="{disabled: disabled}">' +
+                        '<img src="../../../img/purchase.png" ng-click="tapUpgrade($event)" class="upgrade-purchase" ng-class="{disabled: disabled}">' +
                     '</td>',
         controller: function($scope, PepesService, $rootScope){
             $scope.upgrade = JSON.parse($scope.upgrade);
@@ -36,6 +36,7 @@ angular.module('pepeTrader.upgrades', [])
             }, 2000);
 
             $scope.tapUpgrade = function(e){
+                console.log($scope);
                 if($scope.disabled) return;
 
                 if($scope.success) {
