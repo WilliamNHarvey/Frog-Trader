@@ -608,7 +608,7 @@ body
 }
 
 .upgrade-holder {
-    margin-top: 50px;
+    
 }
 
 .upgrade-description-td {
@@ -655,9 +655,8 @@ body
 }
 
 .alert {
-    margin-bottom: 0px !important;
     position: absolute;
-    top: 50px;
+    width: 100%;
     z-index: 3;
 }
 
