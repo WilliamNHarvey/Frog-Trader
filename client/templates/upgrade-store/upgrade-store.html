@@ -1,7 +1,7 @@
 
 <div ng-if="upgradeObject" class="upgrade-holder">
     <table class="upgrade-table table table-striped">
-        <tr ng-repeat="upgrade in upgradeObject" upgrades upgrade="{{upgrade}}"></tr>
+        <tr ng-repeat="upgrade in upgradeObject" upgrades upgrade="{{upgrade}}" purchase-success="alertPurchaseSuccess(message)"></tr>
     </table>
 
     <div class="alert alert-success" ng-show="showSuccessAlert">
