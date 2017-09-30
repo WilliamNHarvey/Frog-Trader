@@ -249,6 +249,9 @@ angular.module('pepeTrader.controllers', [])
     $scope.switchBool = function(value) {
         $scope[value] = !$scope[value];
     };
+    $scope.test = function() {
+        console.log($scope);
+    }
 })
 
 .controller('SlotsCtrl', function($scope, $location, PepesService) {
