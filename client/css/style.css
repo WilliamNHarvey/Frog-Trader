@@ -20,7 +20,6 @@ body
 
     width: 100%;
     height: 100%;
-    margin-top: 50px;
     /*transform*/
 
     -webkit-transform: translate3d(0,0,0);
@@ -608,7 +607,7 @@ body
 }
 
 .upgrade-holder {
-    
+    margin-top: 50px;
 }
 
 .upgrade-description-td {
@@ -657,6 +656,7 @@ body
 .alert {
     position: absolute;
     width: 100%;
+    top: 50px;
     z-index: 3;
 }
 
