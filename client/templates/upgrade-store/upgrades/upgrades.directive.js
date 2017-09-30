@@ -44,7 +44,7 @@ angular.module('pepeTrader.upgrades', [])
                 if($scope.success) {
                     $scope.successTextAlert = $scope.successMessage;
                     $scope.showSuccessAlert = true;
-                    $scope.$apply()
+                    $scope.$applyAsync();
                 }
             }
         }
